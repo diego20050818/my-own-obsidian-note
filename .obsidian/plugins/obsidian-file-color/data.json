@@ -1,0 +1,72 @@
+{
+  "cascadeColors": false,
+  "colorBackground": false,
+  "palette": [
+    {
+      "id": "DMvzsLB5AIJK-CBwRFOHW",
+      "name": "垃圾论文",
+      "value": "#8785a2"
+    },
+    {
+      "id": "ZQlKI7cGKXdqlPoe7rZbN",
+      "name": "还没看",
+      "value": "#f6f6f6"
+    },
+    {
+      "id": "hW1i3E5THMwitqBqmkQy5",
+      "name": "没看完",
+      "value": "#ffe2e2"
+    },
+    {
+      "id": "lcqtbDx_HHdLZ_LHGeVvi",
+      "name": "好论文",
+      "value": "#ff9999"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "金融量化相关论文/A New Hybrid Forecasting Model Based on SW-LSTM and Wavelet Packet Decomposition A Case Study of Oil Futures Prices.pdf",
+      "color": "lcqtbDx_HHdLZ_LHGeVvi"
+    },
+    {
+      "path": "金融量化相关论文/An International Study of Application of Long Short-Term Memory (LSTM) Neural Networks for the Prediction of Stock And Forex Markets.pdf",
+      "color": "DMvzsLB5AIJK-CBwRFOHW"
+    },
+    {
+      "path": "金融量化相关论文/Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+      "color": "hW1i3E5THMwitqBqmkQy5"
+    },
+    {
+      "path": "金融量化相关论文/Forecasting directional movements of stock prices for intraday trading using LSTM and random forests.pdf",
+      "color": "hW1i3E5THMwitqBqmkQy5"
+    },
+    {
+      "path": "金融量化相关论文/Transformers with Attentive Federated Aggregation for Time Series Stock Forecasting.pdf",
+      "color": "hW1i3E5THMwitqBqmkQy5"
+    },
+    {
+      "path": "CV相关论文/C2P-CLIP njecting Category Common Prompt in CLIP to Enhance Generalization in Deepfake Detection.pdf",
+      "color": "DMvzsLB5AIJK-CBwRFOHW"
+    },
+    {
+      "path": "CV相关论文/FakeBench_Probing_Explainable_Fake_Image_Detection_via_Large_Multimodal_Models.pdf",
+      "color": "hW1i3E5THMwitqBqmkQy5"
+    },
+    {
+      "path": "CV相关论文/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.pdf",
+      "color": "lcqtbDx_HHdLZ_LHGeVvi"
+    },
+    {
+      "path": "CV相关论文/Cui_Forensics_Adapter_Adapting_CLIP_for_Generalizable_Face_Forgery_Detection_CVPR_2025_paper.pdf",
+      "color": "ZQlKI7cGKXdqlPoe7rZbN"
+    },
+    {
+      "path": "CV相关论文/Continual Face Forgery Detection via Historical Distribution Preserving.pdf",
+      "color": "hW1i3E5THMwitqBqmkQy5"
+    },
+    {
+      "path": "CV相关论文/D3QE.pdf",
+      "color": "hW1i3E5THMwitqBqmkQy5"
+    }
+  ]
+}

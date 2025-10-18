@@ -1,0 +1,315 @@
+{
+  "main": {
+    "id": "7bd9fcd73fff0e1e",
+    "type": "split",
+    "children": [
+      {
+        "id": "cec1f53047e8c9a6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "891c90a0dbc55f1a",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "CV相关论文/Continual Face Forgery Detection via Historical Distribution Preserving.pdf",
+                "page": 8,
+                "left": -19,
+                "top": 783,
+                "zoom": 0.8479260040720609
+              },
+              "icon": "lucide-file-text",
+              "title": "Continual Face Forgery Detection via Historical Distribution Preserving"
+            }
+          },
+          {
+            "id": "1874d444ee5d73b3",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "CV相关论文/D3QE.pdf",
+                "page": 1,
+                "left": -19,
+                "top": 796,
+                "zoom": 0.8247549019607843
+              },
+              "icon": "lucide-file-text",
+              "title": "D3QE"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "902719541ddcdc2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c02fc3fb55677665",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CV论文阅读笔记/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning"
+            }
+          },
+          {
+            "id": "9d66c76ca962210e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CV论文阅读笔记/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning"
+            }
+          },
+          {
+            "id": "fca6f3fa72adfe8a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CV论文阅读笔记/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "06a2844dc46747a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "5833549c9b015e6c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e9458f3d8fd9ff1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "939f63a19154bf15",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "135989ae4c16a249",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          },
+          {
+            "id": "463ffe2aeaa16ea7",
+            "type": "leaf",
+            "state": {
+              "type": "translator-view",
+              "state": {
+                "language_from": "auto",
+                "language_to": "zh",
+                "translation_service": "fanyi_baidu",
+                "auto_translate": false,
+                "apply_glossary": false,
+                "view_mode": 0,
+                "filter_mode": 0,
+                "show_attribution": false,
+                "top_buttons": [
+                  "change-service",
+                  "automatic-translation",
+                  "change-layout",
+                  "apply-filter",
+                  "open-settings"
+                ],
+                "left_buttons": [
+                  "paste",
+                  "clear"
+                ],
+                "right_buttons": [
+                  "copy"
+                ]
+              },
+              "icon": "fanyi_baidu",
+              "title": "Fanyi Baidu"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 213
+  },
+  "right": {
+    "id": "75d34375152ca33a",
+    "type": "split",
+    "children": [
+      {
+        "id": "5e969e9962d11d48",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cf4720a6e903391a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "论文/A New Hybrid Forecasting Model Based on SW-LSTM and Wavelet Packet Decomposition A Case Study of Oil Futures Prices.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "A New Hybrid Forecasting Model Based on SW-LSTM and Wavelet Packet Decomposition A Case Study of Oil Futures Prices 的反向链接列表"
+            }
+          },
+          {
+            "id": "9b5777ba66aed4d1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "论文/A New Hybrid Forecasting Model Based on SW-LSTM and Wavelet Packet Decomposition A Case Study of Oil Futures Prices.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "A New Hybrid Forecasting Model Based on SW-LSTM and Wavelet Packet Decomposition A Case Study of Oil Futures Prices 的出链列表"
+            }
+          },
+          {
+            "id": "963605a6f18c0810",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "a51475d173102452",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "TODO.md",
+                "followCursor": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "TODO 的大纲"
+            }
+          },
+          {
+            "id": "cf133760c5f9ad1a",
+            "type": "leaf",
+            "state": {
+              "type": "online.larslockefeer.obsidian-plugin-todo",
+              "state": {},
+              "icon": "checkmark",
+              "title": "Todo"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 264,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "translate:Open translation view": false
+    }
+  },
+  "active": "1874d444ee5d73b3",
+  "lastOpenFiles": [
+    "CV相关论文/CORE_Consistent_Representation_Learning_for_Face_Forgery_Detection.pdf",
+    "CV相关论文/Continual Face Forgery Detection via Historical Distribution Preserving.pdf",
+    "CV相关论文/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.pdf",
+    "CV论文阅读笔记/Continual Face Forgery Detection via Historical Distribution Preserving.md",
+    "CV论文阅读笔记/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.md",
+    "论文阅读笔记/A New Hybrid Forecasting Model Based on SW-LSTM and Wavelet Packet Decomposition—— A Case Study of Oil Futures Prices.md",
+    "CV论文阅读笔记/C2P-CLIP njecting Category Common Prompt in CLIP to Enhance Generalization in Deepfake Detection.md",
+    "CV论文阅读笔记/Forensics Adapter-Adapting CLIP for Generalizable Face Forgery Detection.md",
+    "CV相关论文/C2P-CLIP njecting Category Common Prompt in CLIP to Enhance Generalization in Deepfake Detection.pdf",
+    "CV相关论文/D3QE.pdf",
+    "CV相关论文/Cui_Forensics_Adapter_Adapting_CLIP_for_Generalizable_Face_Forgery_Detection_CVPR_2025_paper.pdf",
+    "CV论文阅读笔记",
+    "CV相关论文/精读",
+    "CV相关论文/FakeBench_Probing_Explainable_Fake_Image_Detection_via_Large_Multimodal_Models.pdf",
+    "NLP相关论文/Attention is All you Need 1.pdf",
+    "CV研究思考.md",
+    "论文阅读笔记/Transformers with Attentive Federated Aggregation for Time Series Stock Forecasting.md",
+    "金融研究思考.md",
+    "论文阅读笔记/Forecasting directional movements of stock prices for intraday trading using LSTM and random forests.md",
+    "论文阅读笔记/Multi-Transformer——A New Neural Network_Based Architecture for Forecasting S&P Volatility.md",
+    "TODO.md",
+    "欢迎.md",
+    "img/Pasted image 20250915174902.png",
+    "Highlights for A New Hybrid Forecasting Model Based on SW-LSTM and Wavelet Packet Decomposition A Case Study of Oil Futures Prices.md"
+  ]
+}
