@@ -32,7 +32,7 @@
                 "file": "CV相关论文/D3QE.pdf",
                 "page": 1,
                 "left": -13,
-                "top": 713,
+                "top": 796,
                 "zoom": 1.1862745098039216
               },
               "icon": "lucide-file-text",
@@ -281,11 +281,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9c5ca07991602ea7",
+  "active": "f0a942cc490b1b1d",
   "lastOpenFiles": [
+    "CV相关论文/D3QE.pdf",
     "CV论文阅读笔记/D3QE.md",
     "CV论文阅读笔记/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.md",
-    "CV相关论文/D3QE.pdf",
     "CV相关论文/CORE_Consistent_Representation_Learning_for_Face_Forgery_Detection.pdf",
     "CV相关论文/Continual Face Forgery Detection via Historical Distribution Preserving.pdf",
     "CV相关论文/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.pdf",
