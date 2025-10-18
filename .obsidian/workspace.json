@@ -31,9 +31,9 @@
               "state": {
                 "file": "CV相关论文/D3QE.pdf",
                 "page": 1,
-                "left": -19,
-                "top": 796,
-                "zoom": 0.8247549019607843
+                "left": -13,
+                "top": 713,
+                "zoom": 1.1862745098039216
               },
               "icon": "lucide-file-text",
               "title": "D3QE"
@@ -61,31 +61,17 @@
             }
           },
           {
-            "id": "9d66c76ca962210e",
+            "id": "f0a942cc490b1b1d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CV论文阅读笔记/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.md",
+                "file": "CV论文阅读笔记/D3QE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning"
-            }
-          },
-          {
-            "id": "fca6f3fa72adfe8a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CV论文阅读笔记/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning"
+              "title": "D3QE"
             }
           }
         ],
@@ -243,13 +229,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md",
+                "file": "CV论文阅读笔记/D3QE.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "TODO 的大纲"
+              "title": "D3QE 的大纲"
             }
           },
           {
@@ -261,14 +247,23 @@
               "icon": "checkmark",
               "title": "Todo"
             }
+          },
+          {
+            "id": "9c5ca07991602ea7",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 264,
-    "collapsed": true
+    "width": 264
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -282,21 +277,23 @@
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
-      "translate:Open translation view": false
+      "translate:Open translation view": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1874d444ee5d73b3",
+  "active": "9c5ca07991602ea7",
   "lastOpenFiles": [
+    "CV论文阅读笔记/D3QE.md",
+    "CV论文阅读笔记/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.md",
+    "CV相关论文/D3QE.pdf",
     "CV相关论文/CORE_Consistent_Representation_Learning_for_Face_Forgery_Detection.pdf",
     "CV相关论文/Continual Face Forgery Detection via Historical Distribution Preserving.pdf",
     "CV相关论文/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.pdf",
     "CV论文阅读笔记/Continual Face Forgery Detection via Historical Distribution Preserving.md",
-    "CV论文阅读笔记/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.md",
     "论文阅读笔记/A New Hybrid Forecasting Model Based on SW-LSTM and Wavelet Packet Decomposition—— A Case Study of Oil Futures Prices.md",
     "CV论文阅读笔记/C2P-CLIP njecting Category Common Prompt in CLIP to Enhance Generalization in Deepfake Detection.md",
     "CV论文阅读笔记/Forensics Adapter-Adapting CLIP for Generalizable Face Forgery Detection.md",
     "CV相关论文/C2P-CLIP njecting Category Common Prompt in CLIP to Enhance Generalization in Deepfake Detection.pdf",
-    "CV相关论文/D3QE.pdf",
     "CV相关论文/Cui_Forensics_Adapter_Adapting_CLIP_for_Generalizable_Face_Forgery_Detection_CVPR_2025_paper.pdf",
     "CV论文阅读笔记",
     "CV相关论文/精读",
