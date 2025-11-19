@@ -4,5 +4,8 @@
   "translate",
   "obsidian-latex-suite",
   "obsidian-file-color",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-image-toolkit",
+  "obsidian-admonition",
+  "obsidian-extract-pdf-highlights"
 ]

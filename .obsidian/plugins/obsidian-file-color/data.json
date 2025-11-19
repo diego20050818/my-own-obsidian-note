@@ -4,7 +4,7 @@
   "palette": [
     {
       "id": "DMvzsLB5AIJK-CBwRFOHW",
-      "name": "垃圾论文",
+      "name": "现在没啥用的论文",
       "value": "#8785a2"
     },
     {
@@ -15,7 +15,7 @@
     {
       "id": "hW1i3E5THMwitqBqmkQy5",
       "name": "没看完",
-      "value": "#ffe2e2"
+      "value": "#73f299"
     },
     {
       "id": "lcqtbDx_HHdLZ_LHGeVvi",
@@ -46,7 +46,7 @@
     },
     {
       "path": "CV相关论文/C2P-CLIP njecting Category Common Prompt in CLIP to Enhance Generalization in Deepfake Detection.pdf",
-      "color": "DMvzsLB5AIJK-CBwRFOHW"
+      "color": "lcqtbDx_HHdLZ_LHGeVvi"
     },
     {
       "path": "CV相关论文/FakeBench_Probing_Explainable_Fake_Image_Detection_via_Large_Multimodal_Models.pdf",
@@ -66,6 +66,30 @@
     },
     {
       "path": "CV相关论文/D3QE.pdf",
+      "color": "DMvzsLB5AIJK-CBwRFOHW"
+    },
+    {
+      "path": "CV相关论文/DETRs Beat YOLOs on Real-time Object Detection.pdf",
+      "color": "DMvzsLB5AIJK-CBwRFOHW"
+    },
+    {
+      "path": "CV相关论文/CORE_Consistent_Representation_Learning_for_Face_Forgery_Detection.pdf",
+      "color": "lcqtbDx_HHdLZ_LHGeVvi"
+    },
+    {
+      "path": "CV相关论文/MH-FFNet- Leveraging mid-high frequency information for robust fine-grained face forgery detection.pdf",
+      "color": "hW1i3E5THMwitqBqmkQy5"
+    },
+    {
+      "path": "CV相关论文/NIPS2025-VITA-1.5_ Towards GPT-4o Level Real-Time.pdf",
+      "color": "DMvzsLB5AIJK-CBwRFOHW"
+    },
+    {
+      "path": "CV相关论文/ODDN Addressing Unpaired Data Challenges in Open-World Deepf.pdf",
+      "color": "lcqtbDx_HHdLZ_LHGeVvi"
+    },
+    {
+      "path": "CV相关论文/rine.pdf",
       "color": "hW1i3E5THMwitqBqmkQy5"
     }
   ]
