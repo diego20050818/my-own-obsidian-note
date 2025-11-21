@@ -1,0 +1,46 @@
+{
+  "id": "7ee5153e-8426-49e2-bdc1-300e4de3ad65",
+  "title": "你能帮我看看这篇文章在讲什么吗",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [],
+              "direction": null,
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": null,
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n你能帮我看看这篇文章在讲什么吗\n\n"
+        }
+      ],
+      "id": "aac45493-b464-4dc0-be06-05af62264fd7",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "CV研究思考.md"
+        }
+      ]
+    }
+  ],
+  "createdAt": 1763708207292,
+  "updatedAt": 1763708446321,
+  "schemaVersion": 1
+}

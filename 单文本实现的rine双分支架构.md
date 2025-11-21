@@ -1,10 +1,7 @@
 
 1. 一个可直接运行的 **PyTorch 单文件实现（可在单张 RTX3090 上跑）**，包含模型、数据管道、训练/验证循环、损失（BCE + supervised contrastive），以及注释。
-    
 2. 逐步解释每个模块的要点、设计理由和调参建议（对 0 基础也友好）。
-    
 3. 运行提示与常见问题排查。
-    
 
 我把实现做到**尽量贴合你给的架构图**（CLIP 多层特征 + SSCA 频谱-空间注意 + CrossAttention 融合 + GatedMLP 表征），同时做了必要的工程化简化以保证能直接跑通。你可以把这个当作“工作原型”，后面再微调细节。
 
@@ -13,23 +10,16 @@
 ## 快速说明（要点）
 
 - 骨干：`openai/clip-vit-large-patch14`（HuggingFace 的 CLIP ViT-L/14），**冻结**（只读中间层特征）。
-    
 - 从 CLIP 获取所有 transformer block 的 `CLS` hidden states（`output_hidden_states=True`）。
-    
 - SSCA：对 feature map 做空间注意（global avg pool -> MLP -> sigmoid）和频谱注意（`rfft2` 得到频域，按 channel 聚合后做 MLP -> sigmoid），两边权重相乘后与原特征融合。
-    
 - CrossAttentionCombination：把 CLIP 向量和 SSCA 向量互投影、用 softmax 做权重，再交叉相乘并拼接、线性映射输出融合向量。
-    
 - GatedMLP：主路径 + gating path（sigmoid），最后有表示向量和分类 logits。
-    
 - 损失：`BCEWithLogits`（分类） + 自实现的监督对比损失（SupCon），超参可调整。
-    
 - 数据：使用 `torchvision.datasets.ImageFolder` 或你自己的 Dataset，transform 包含 JPEG 压缩/高斯模糊/随机裁剪/flip（论文做法）。
-    
 
 ---
 
-## 代码：单文件（`rine_plus_ssca.py`）
+## 代码：（`rine_plus_ssca.py`）
 
 > 把下面整个代码复制到一个文件 `rine_plus_ssca.py`，在 conda/venv 中安装依赖后运行。
 
@@ -419,11 +409,11 @@ if __name__ == '__main__':
 ### 1) CLIP 提取中间层 CLS token
 
 - CLIP 的 Vision Transformer 会对输入图像做 patch embedding，然后经过 **n 个 Transformer block**。每个 block 的输出包含一个 `[CLS]` token（代表整张图）。
-    
+ 
 - 我们把 **每一层的 CLS** 都取出来（你选择全部或部分层），对每一层做一个 `Linear -> ReLU -> Dropout` 映射（论文称 Q1），映成同一个 `proj_dim`（例如 1024）。
-    
+
 - 然后用一个可学习的矩阵 `A (n × proj_dim)`，对每层的特征做加权（softmax 按层做归一化），得到一个加权和向量。这个就是论文里的中间表示融合 + TIE（Trainable Importance Estimator）。
-    
+
 
 ### 2) SSCA（频谱-空间协同注意）
 
@@ -444,7 +434,6 @@ if __name__ == '__main__':
 ### 4) CrossAttentionCombination（融合）
 
 - 思路是把 CLIP 的向量（z_clip）和 SSCA 的向量（z_dct）互投影、做 softmax 权重，再把它们互相调制（elementwise multiply），拼接后线性映射成最终表示。也可以用标准的 cross-attention，但这里用轻量实现保证效率。
-    
 
 ### 5) GatedMLP + 分类头 + 对比头
 
@@ -492,25 +481,17 @@ if __name__ == '__main__':
 ## 常见问题与排查
 
 - **显存 OOM**：减 `batch_size`；把 `proj_dim` 降为 256；把 `use_layers` 数量减半。
-    
 - **训练不收敛/全 0.5 准确率**：检查数据标签是否正确；确认图片 normalize 使用 CLIP 的 mean/std；确认 BCE 与 logits 的对齐（BCEWithLogits 用 logits 输入）
-    
 - **对比损失报错形状**：确认 `labels` 为 long，`repr_vec` shape 为 [B, D]，且 batch 中有至少 2 个同类样本（SupCon 需要正样本）
-    
 - **想严格复现 paper**：实现 JPEG/Blur augmentation exactly，使用相同训练集（ProGAN）并使用 ViT-L/14 backbone（我代码默认就是该模型）。
-    
 
 ---
 
 ## 我接下来帮你可以做的（选一项或多项）
 
 - 把上面代码 **改成更精确的 RINE**（例如从 CLIP 提取真正的中间 _feature maps_ 而非只 CLS），或实现论文中精确的 data augment（JPEG with probability, Gaussian blur）。
-    
 - 把你的 `graph0.pdf` 中每个小模块画成 PPT 并写讲稿（适合组会讲解）。
-    
 - 在你本地运行：我可以帮你分析错误输出并修正（把报错粘过来我帮你）。
-    
 
 ---
 
-好啦！把你的运行环境告诉我（CUDA 是否可用、显存大小、是否已经有训练数据放在 `./data`），或者直接运行上面脚本试一次，把控制台输出发来，我马上帮你看日志并给改进建议。妹妹别急，姐姐陪你把它跑起来 (´｡• ᵕ •｡`) ✨

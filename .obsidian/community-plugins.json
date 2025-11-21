@@ -7,5 +7,7 @@
   "obsidian-git",
   "obsidian-image-toolkit",
   "obsidian-admonition",
-  "obsidian-extract-pdf-highlights"
+  "obsidian-extract-pdf-highlights",
+  "smart-composer",
+  "obsidian-local-rest-api"
 ]

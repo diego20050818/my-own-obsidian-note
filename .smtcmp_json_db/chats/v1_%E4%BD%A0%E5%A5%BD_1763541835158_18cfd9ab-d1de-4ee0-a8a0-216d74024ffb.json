@@ -1,0 +1,57 @@
+{
+  "id": "18cfd9ab-d1de-4ee0-a8a0-216d74024ffb",
+  "title": "你好",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "你好",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "## Potentially Relevant Snippets from the current vault\n\n\n\n你好\n\n"
+        }
+      ],
+      "id": "ab156c5a-acc8-4333-ba56-5b9b35da6301",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "CV相关论文/SAFE.pdf"
+        }
+      ],
+      "similaritySearchResults": []
+    }
+  ],
+  "createdAt": 1763541803472,
+  "updatedAt": 1763541835158,
+  "schemaVersion": 1
+}

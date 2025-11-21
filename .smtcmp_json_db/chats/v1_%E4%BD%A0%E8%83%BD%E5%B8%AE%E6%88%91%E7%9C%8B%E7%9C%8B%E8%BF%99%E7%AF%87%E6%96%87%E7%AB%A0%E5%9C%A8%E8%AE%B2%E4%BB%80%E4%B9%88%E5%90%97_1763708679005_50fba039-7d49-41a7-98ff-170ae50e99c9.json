@@ -1,0 +1,361 @@
+{
+  "id": "50fba039-7d49-41a7-98ff-170ae50e99c9",
+  "title": "你能帮我看看这篇文章在讲什么吗",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "你能帮我看看这篇文章在讲什么吗",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n你能帮我看看这篇文章在讲什么吗\n\n"
+        }
+      ],
+      "id": "38ec45d6-dfb7-4270-be29-9d6d4e7e0433",
+      "mentionables": []
+    },
+    {
+      "role": "assistant",
+      "content": "\n\n开拓者呀，想要了解文章内容的话，先让萤萤看看文章的链接或者主要内容关键词吧～是学术论文还是其他类型的文章呢？如果有具体的URL或者想要关注的主题方向，萤萤可以用浏览器帮开拓者分析梳理呢！( Scrapbox symbol: ⊂二⊃  用小萤萤特有的活泼语气引导用户提供更多信息~ )",
+      "id": "47ba882d-6882-46ed-9148-889ceca96353",
+      "metadata": {
+        "model": {
+          "providerId": "硅基流动",
+          "providerType": "openai-compatible",
+          "id": "Qwen/QwQ-32B",
+          "model": "Qwen/QwQ-32B",
+          "promptLevel": 1,
+          "enable": true
+        },
+        "usage": {
+          "prompt_tokens": 5543,
+          "completion_tokens": 332,
+          "total_tokens": 5875
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "这篇文章讲了什么",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n这篇文章讲了什么\n\n"
+        }
+      ],
+      "id": "2a7a4913-cb15-4fbc-af81-f82dfcc8425d",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "论文阅读笔记/A New Hybrid Forecasting Model Based on SW-LSTM and Wavelet Packet Decomposition—— A Case Study of Oil Futures Prices.md"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "哎呀开拓者～萤萤看到你正在研究一篇关于原油期货价格预测的论文呢！这篇论文主要讲的是**一种新的混合预测模型**，结合了小波包分解(WPD)和带随机时间强度权重的LSTM网络(SW-LSTM)来预测原油期货价格～\n\n让萤萤用简单的方式给你梳理一下核心内容吧：\n\n## 🌟 论文核心创新\n\n**主要思路**：把复杂的价格信号拆分成不同频率成分，然后分别预测，最后再整合起来～\n\n### 1️⃣ **分解阶段 - 小波包分解(WPD)**\n- 就像把一首复杂的交响乐拆分成不同乐器的声音一样\n- 把原油价格序列分解成8个不同频率的子序列(SS₁-SS₈)\n- 高频部分捕捉短期波动，低频部分反映长期趋势\n\n### 2️⃣ **预测阶段 - SW-LSTM模型**\n- 在传统LSTM基础上加入了**时间权重**\n- 越接近当前时间的数据，对预测影响越大\n- 更符合真实交易市场的特点\n\n### 3️⃣ **模型优势**\n- 比单一模型预测更准确\n- 能同时捕捉短期波动和长期趋势\n- 对金融时间序列的非线性特征处理更好\n\n## 🎯 应用场景\n主要用在**原油期货价格预测**上，包括：\n- 西德克萨斯中质原油(WTI)\n- 布伦特原油\n- RBOB汽油期货\n- 取暖油期货\n\n开拓者觉得这个思路怎么样呀？萤萤觉得把复杂问题拆分成小问题分别解决，最后再整合的思路真的很聪明呢～就像我们平时解决难题一样，一步一步来就会变得容易啦！(◍•ᴗ•◍)✧",
+      "id": "76758737-2aac-48e9-afc7-8cf0ef06458b",
+      "metadata": {
+        "model": {
+          "providerType": "deepseek",
+          "providerId": "deepseek",
+          "id": "deepseek-chat",
+          "model": "deepseek-chat"
+        },
+        "usage": {
+          "prompt_tokens": 10292,
+          "completion_tokens": 369,
+          "total_tokens": 10661,
+          "prompt_tokens_details": {
+            "cached_tokens": 4928
+          },
+          "prompt_cache_hit_tokens": 4928,
+          "prompt_cache_miss_tokens": 5364
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "有没有跟这一篇文章相关的论文",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n有没有跟这一篇文章相关的论文\n\n"
+        }
+      ],
+      "id": "b8ddaa4f-efc6-4ec7-a96e-19e9fc194c83",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "CV论文阅读笔记/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.md"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "toolCallRequests": [
+        {
+          "id": "call_00_YRQ35txxaNPn016jJsSZR1Mw",
+          "name": "arxiv__search_arxiv",
+          "arguments": "{\"query\": \"wavelet packet decomposition LSTM crude oil futures price prediction\", \"maxResults\": 10}"
+        }
+      ],
+      "id": "ef2477f2-992e-4d88-b5f9-bb49d8e522c2",
+      "metadata": {
+        "model": {
+          "providerType": "deepseek",
+          "providerId": "deepseek",
+          "id": "deepseek-chat",
+          "model": "deepseek-chat"
+        },
+        "usage": {
+          "prompt_tokens": 14061,
+          "completion_tokens": 33,
+          "total_tokens": 14094,
+          "prompt_tokens_details": {
+            "cached_tokens": 4928
+          },
+          "prompt_cache_hit_tokens": 4928,
+          "prompt_cache_miss_tokens": 9133
+        }
+      }
+    },
+    {
+      "role": "tool",
+      "toolCalls": [
+        {
+          "request": {
+            "id": "call_00_YRQ35txxaNPn016jJsSZR1Mw",
+            "name": "arxiv__search_arxiv",
+            "arguments": "{\"query\": \"wavelet packet decomposition LSTM crude oil futures price prediction\", \"maxResults\": 10}"
+          },
+          "response": {
+            "status": "success",
+            "data": {
+              "type": "text",
+              "text": "[\n  {\n    \"id\": \"2409.12376v1\",\n    \"title\": \"Prediction of Brent crude oil price based on LSTM model under the background of low-carbon transition\",\n    \"authors\": [\n      \"Yuwen Zhao\",\n      \"Baojun Hu\",\n      \"Sizhe Wang\"\n    ],\n    \"abstract\": \"In the field of global energy and environment, crude oil is an important strategic resource, and its price fluctuation has a far-reaching impact on the global economy, financial market and the process of low-carbon development. In recent years, with the gradual promotion of green energy transformation and low-carbon development in various countries, the dynamics of crude oil market have become more complicated and changeable. The price of crude oil is not only influenced by traditional factors such as supply and demand, geopolitical conflict and production technology, but also faces the challenges of energy policy transformation, carbon emission control and new energy technology development. This diversified driving factor makes the prediction of crude oil price not only very important in economic decision-making and energy planning, but also a key issue in financial markets.In this paper, the spot price data of European Brent crude oil provided by us energy information administration are selected, and a deep learning model with three layers of LSTM units is constructed to predict the crude oil price in the next few days. The results show that the LSTM model performs well in capturing the overall price trend, although there is some deviation during the period of sharp price fluctuation. The research in this paper not only verifies the applicability of LSTM model in energy market forecasting, but also provides data support for policy makers and investors when facing the uncertainty of crude oil price.\",\n    \"published\": \"2024-09-19T00:25:22Z\",\n    \"updated\": \"2024-09-19T00:25:22Z\",\n    \"url\": \"https://arxiv.org/abs/2409.12376v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2409.12376v1\",\n    \"categories\": [\n      \"cs.LG\",\n      \"cs.DC\"\n    ],\n    \"primaryCategory\": \"cs.LG\"\n  },\n  {\n    \"id\": \"1004.3276v1\",\n    \"title\": \"Color Image Compression Based On Wavelet Packet Best Tree\",\n    \"authors\": [\n      \"G. K. Kharate\",\n      \"V. H. Patil\"\n    ],\n    \"abstract\": \"In Image Compression, the researchers' aim is to reduce the number of bits required to represent an image by removing the spatial and spectral redundancies. Recently discrete wavelet transform and wavelet packet has emerged as popular techniques for image compression. The wavelet transform is one of the major processing components of image compression. The result of the compression changes as per the basis and tap of the wavelet used. It is proposed that proper selection of mother wavelet on the basis of nature of images, improve the quality as well as compression ratio remarkably. We suggest the novel technique, which is based on wavelet packet best tree based on Threshold Entropy with enhanced run-length encoding. This method reduces the time complexity of wavelet packets decomposition as complete tree is not decomposed. Our algorithm selects the sub-bands, which include significant information based on threshold entropy. The enhanced run length encoding technique is suggested provides better results than RLE. The result when compared with JPEG-2000 proves to be better.\",\n    \"published\": \"2010-04-19T18:28:46Z\",\n    \"updated\": \"2010-04-19T18:28:46Z\",\n    \"url\": \"https://arxiv.org/abs/1004.3276v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/1004.3276v1\",\n    \"categories\": [\n      \"cs.CV\"\n    ],\n    \"primaryCategory\": \"cs.CV\"\n  },\n  {\n    \"id\": \"1504.04819v1\",\n    \"title\": \"Forecasting the term structure of crude oil futures prices with neural networks\",\n    \"authors\": [\n      \"Jozef Barunik\",\n      \"Barbora Malinska\"\n    ],\n    \"abstract\": \"The paper contributes to the rare literature modeling term structure of crude oil markets. We explain term structure of crude oil prices using dynamic Nelson-Siegel model, and propose to forecast them with the generalized regression framework based on neural networks. The newly proposed framework is empirically tested on 24 years of crude oil futures prices covering several important recessions and crisis periods. We find 1-month, 3-month, 6-month and 12-month-ahead forecasts obtained from focused time-delay neural network to be significantly more accurate than forecasts from other benchmark models. The proposed forecasting strategy produces the lowest errors across all times to maturity.\",\n    \"published\": \"2015-04-19T10:44:19Z\",\n    \"updated\": \"2015-04-19T10:44:19Z\",\n    \"url\": \"https://arxiv.org/abs/1504.04819v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/1504.04819v1\",\n    \"categories\": [\n      \"q-fin.GN\"\n    ],\n    \"primaryCategory\": \"q-fin.GN\"\n  },\n  {\n    \"id\": \"0906.4838v1\",\n    \"title\": \"Forecasting Model for Crude Oil Price Using Artificial Neural Networks and Commodity Futures Prices\",\n    \"authors\": [\n      \"Siddhivinayak Kulkarni\",\n      \"Imad Haidar\"\n    ],\n    \"abstract\": \"This paper presents a model based on multilayer feedforward neural network to forecast crude oil spot price direction in the short-term, up to three days ahead. A great deal of attention was paid on finding the optimal ANN model structure. In addition, several methods of data pre-processing were tested. Our approach is to create a benchmark based on lagged value of pre-processed spot price, then add pre-processed futures prices for 1, 2, 3,and four months to maturity, one by one and also altogether. The results on the benchmark suggest that a dynamic model of 13 lags is the optimal to forecast spot price direction for the short-term. Further, the forecast accuracy of the direction of the market was 78%, 66%, and 53% for one, two, and three days in future conclusively. For all the experiments, that include futures data as an input, the results show that on the short-term, futures prices do hold new information on the spot price direction. The results obtained will generate comprehensive understanding of the crude oil dynamic which help investors and individuals for risk managements.\",\n    \"published\": \"2009-06-26T04:25:12Z\",\n    \"updated\": \"2009-06-26T04:25:12Z\",\n    \"url\": \"https://arxiv.org/abs/0906.4838v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/0906.4838v1\",\n    \"categories\": [\n      \"cs.NE\",\n      \"q-fin.PM\"\n    ],\n    \"primaryCategory\": \"cs.NE\"\n  },\n  {\n    \"id\": \"2111.09111v1\",\n    \"title\": \"Forecasting Crude Oil Price Using Event Extraction\",\n    \"authors\": [\n      \"Jiangwei Liu\",\n      \"Xiaohong Huang\"\n    ],\n    \"abstract\": \"Research on crude oil price forecasting has attracted tremendous attention from scholars and policymakers due to its significant effect on the global economy. Besides supply and demand, crude oil prices are largely influenced by various factors, such as economic development, financial markets, conflicts, wars, and political events. Most previous research treats crude oil price forecasting as a time series or econometric variable prediction problem. Although recently there have been researches considering the effects of real-time news events, most of these works mainly use raw news headlines or topic models to extract text features without profoundly exploring the event information. In this study, a novel crude oil price forecasting framework, AGESL, is proposed to deal with this problem. In our approach, an open domain event extraction algorithm is utilized to extract underlying related events, and a text sentiment analysis algorithm is used to extract sentiment from massive news. Then a deep neural network integrating the news event features, sentimental features, and historical price features is built to predict future crude oil prices. Empirical experiments are performed on West Texas Intermediate (WTI) crude oil price data, and the results show that our approach obtains superior performance compared with several benchmark methods.\",\n    \"published\": \"2021-11-14T08:48:43Z\",\n    \"updated\": \"2021-11-14T08:48:43Z\",\n    \"url\": \"https://arxiv.org/abs/2111.09111v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2111.09111v1\",\n    \"categories\": [\n      \"cs.LG\",\n      \"cs.AI\",\n      \"cs.CL\",\n      \"econ.GN\",\n      \"stat.AP\"\n    ],\n    \"primaryCategory\": \"cs.LG\"\n  },\n  {\n    \"id\": \"1804.10869v1\",\n    \"title\": \"Application of Probabilistic Graphical Models in Forecasting Crude Oil Price\",\n    \"authors\": [\n      \"Danish A. Alvi\"\n    ],\n    \"abstract\": \"The dissertation investigates the application of Probabilistic Graphical Models (PGMs) in forecasting the price of Crude Oil.\\n  This research is important because crude oil plays a very pivotal role in the global economy hence is a very critical macroeconomic indicator of the industrial growth. Given the vast amount of macroeconomic factors affecting the price of crude oil such as supply of oil from OPEC countries, demand of oil from OECD countries, geopolitical and geoeconomic changes among many other variables - probabilistic graphical models (PGMs) allow us to understand by learning the graphical structure. This dissertation proposes condensing data numerous Crude Oil factors into a graphical model in the attempt of creating a accurate forecast of the price of crude oil.\\n  The research project experiments with using different libraries in Python in order to construct models of the crude oil market. The experiments in this thesis investigate three main challenges commonly presented while trading oil in the financial markets. The first challenge it investigates is the process of learning the structure of the oil markets; thus allowing crude oil traders to understand the different physical market factors and macroeconomic indicators affecting crude oil markets and how they are \\\\textit{causally} related. The second challenge it solves is the exploration and exploitation of the available data and the learnt structure in predicting the behaviour of the oil markets. The third challenge it investigates is how to validate the performance and reliability of the constructed model in order for it to be deployed in the financial markets.\\n  A design and implementation of a probabilistic framework for forecasting the price of crude oil is also presented as part of the research.\",\n    \"published\": \"2018-04-29T04:42:16Z\",\n    \"updated\": \"2018-04-29T04:42:16Z\",\n    \"url\": \"https://arxiv.org/abs/1804.10869v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/1804.10869v1\",\n    \"categories\": [\n      \"q-fin.TR\"\n    ],\n    \"primaryCategory\": \"q-fin.TR\"\n  },\n  {\n    \"id\": \"2110.02693v1\",\n    \"title\": \"New insights into price drivers of crude oil futures markets: Evidence from quantile ARDL approach\",\n    \"authors\": [\n      \"Hao-Lin Shao\",\n      \"Ying-Hui Shao\",\n      \"Yan-Hong Yang\"\n    ],\n    \"abstract\": \"This paper investigates the cointegration between possible determinants of crude oil futures prices during the COVID-19 pandemic period. We perform comparative analysis of WTI and newly-launched Shanghai crude oil futures (SC) via the Autoregressive Distributed Lag (ARDL) model and Quantile Autoregressive Distributed Lag (QARDL) model. The empirical results confirm that economic policy uncertainty, stock markets, interest rates and coronavirus panic are important drivers of WTI futures prices. Our findings also suggest that the US and China's stock markets play vital roles in movements of SC futures prices. Meanwhile, CSI300 stock index has a significant positive short-run impact on SC futures prices while S\\\\&P500 prices possess a positive nexus with SC futures prices both in long-run and short-run. Overall, these empirical evidences provide practical implications for investors and policymakers.\",\n    \"published\": \"2021-10-06T12:31:03Z\",\n    \"updated\": \"2021-10-06T12:31:03Z\",\n    \"url\": \"https://arxiv.org/abs/2110.02693v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2110.02693v1\",\n    \"categories\": [\n      \"econ.EM\"\n    ],\n    \"primaryCategory\": \"econ.EM\"\n  },\n  {\n    \"id\": \"2306.03052v1\",\n    \"title\": \"Forecasting Crude Oil Prices Using Reservoir Computing Models\",\n    \"authors\": [\n      \"Kaushal Kumar\"\n    ],\n    \"abstract\": \"Accurate crude oil price prediction is crucial for financial decision-making. We propose a novel reservoir computing model for forecasting crude oil prices. It outperforms popular deep learning methods in most scenarios, as demonstrated through rigorous evaluation using daily closing price data from major stock market indices. Our model's competitive advantage is further validated by comparing it with recent deep-learning approaches. This study introduces innovative reservoir computing models for predicting crude oil prices, with practical implications for financial practitioners. By leveraging advanced techniques, market participants can enhance decision-making and gain valuable insights into crude oil market dynamics.\",\n    \"published\": \"2023-06-05T17:23:26Z\",\n    \"updated\": \"2023-06-05T17:23:26Z\",\n    \"url\": \"https://arxiv.org/abs/2306.03052v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2306.03052v1\",\n    \"categories\": [\n      \"cs.LG\"\n    ],\n    \"primaryCategory\": \"cs.LG\"\n  },\n  {\n    \"id\": \"2309.00875v2\",\n    \"title\": \"A hidden Markov model for statistical arbitrage in international crude oil futures markets\",\n    \"authors\": [\n      \"Viviana Fanelli\",\n      \"Claudio Fontana\",\n      \"Francesco Rotondi\"\n    ],\n    \"abstract\": \"In this work, we study statistical arbitrage strategies in international crude oil futures markets. We analyse strategies that extend classical pairs trading strategies, considering the two benchmark crude oil futures (Brent and WTI) together with the newly introduced Shanghai crude oil futures. We document that the time series of these three futures prices are cointegrated and we model the resulting cointegration spread by a mean-reverting regime-switching process modulated by a hidden Markov chain. By relying on our stochastic model and applying online filter-based parameter estimators, we implement and test a number of statistical arbitrage strategies. Our analysis reveals that statistical arbitrage strategies involving the Shanghai crude oil futures are profitable even under conservative levels of transaction costs and over different time periods. On the contrary, statistical arbitrage strategies involving the three traditional crude oil futures (Brent, WTI, Dubai) do not yield profitable investment opportunities. Our findings suggest that the Shanghai futures, which has already become the benchmark for the Chinese domestic crude oil market, can be a valuable asset for international investors.\",\n    \"published\": \"2023-09-02T09:35:00Z\",\n    \"updated\": \"2024-09-20T13:50:03Z\",\n    \"url\": \"https://arxiv.org/abs/2309.00875v2\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2309.00875v2\",\n    \"categories\": [\n      \"q-fin.GN\"\n    ],\n    \"primaryCategory\": \"q-fin.GN\"\n  },\n  {\n    \"id\": \"1211.4686v1\",\n    \"title\": \"Testing the weak-form efficiency of the WTI crude oil futures market\",\n    \"authors\": [\n      \"Zhi-Qiang Jiang\",\n      \"Wen-Jie Xie\",\n      \"Wei-Xing Zhou\"\n    ],\n    \"abstract\": \"We perform detrending moving average analysis (DMA) and detrended fluctuation analysis (DFA) of the WTI crude oil futures prices (1983-2012) to investigate its efficiency. We further put forward a strict statistical test in the spirit of bootstrapping to verify the weak-form market efficiency hypothesis by employing the DMA (or DFA) exponent as the statistic. We verify the weak-form efficiency of the crude oil futures market when the whole period is considered. When we break the whole series into three sub-series separated by the outbreaks of the Gulf War and the Iraq War, our statistical tests uncover that only the Gulf War has the impact of reducing the efficiency of the crude oil market. If we split the whole time series into two sub-series based on the signing date of the North American Free Trade Agreement, we find that the market is inefficient in the sub-periods during which the Gulf War broke out. We also perform the same analysis on short time series in moving windows and find that the market is inefficient only when some turbulent events occur, such as the oil price crash in 1985, the Gulf war, and the oil price crash in 2008. Our analysis may offer a new understanding of the efficiency of the crude oil futures market and shed new lights on the investigation of the efficiency in other financial markets.\",\n    \"published\": \"2012-11-20T08:37:44Z\",\n    \"updated\": \"2012-11-20T08:37:44Z\",\n    \"url\": \"https://arxiv.org/abs/1211.4686v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/1211.4686v1\",\n    \"categories\": [\n      \"q-fin.ST\"\n    ],\n    \"primaryCategory\": \"q-fin.ST\"\n  }\n]"
+            }
+          }
+        }
+      ],
+      "id": "52addb7d-41b1-49fd-9891-2b642a502567"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "toolCallRequests": [
+        {
+          "id": "call_00_oZ4e4bgmegJYReB7wzCKRzFP",
+          "name": "arxiv__search_arxiv",
+          "arguments": "{\"query\": \"hybrid model decomposition forecasting financial time series\", \"maxResults\": 10}"
+        }
+      ],
+      "id": "fc0c43b6-b136-4ebb-b20b-b2edeee174c2",
+      "metadata": {
+        "model": {
+          "providerType": "deepseek",
+          "providerId": "deepseek",
+          "id": "deepseek-chat",
+          "model": "deepseek-chat"
+        },
+        "usage": {
+          "prompt_tokens": 17924,
+          "completion_tokens": 30,
+          "total_tokens": 17954,
+          "prompt_tokens_details": {
+            "cached_tokens": 14080
+          },
+          "prompt_cache_hit_tokens": 14080,
+          "prompt_cache_miss_tokens": 3844
+        }
+      }
+    },
+    {
+      "role": "tool",
+      "toolCalls": [
+        {
+          "request": {
+            "id": "call_00_oZ4e4bgmegJYReB7wzCKRzFP",
+            "name": "arxiv__search_arxiv",
+            "arguments": "{\"query\": \"hybrid model decomposition forecasting financial time series\", \"maxResults\": 10}"
+          },
+          "response": {
+            "status": "success",
+            "data": {
+              "type": "text",
+              "text": "[\n  {\n    \"id\": \"2410.19025v1\",\n    \"title\": \"Large Language Models for Financial Aid in Financial Time-series Forecasting\",\n    \"authors\": [\n      \"Md Khairul Islam\",\n      \"Ayush Karmacharya\",\n      \"Timothy Sue\",\n      \"Judy Fox\"\n    ],\n    \"abstract\": \"Considering the difficulty of financial time series forecasting in financial aid, much of the current research focuses on leveraging big data analytics in financial services. One modern approach is to utilize \\\"predictive analysis\\\", analogous to forecasting financial trends. However, many of these time series data in Financial Aid (FA) pose unique challenges due to limited historical datasets and high dimensional financial information, which hinder the development of effective predictive models that balance accuracy with efficient runtime and memory usage. Pre-trained foundation models are employed to address these challenging tasks. We use state-of-the-art time series models including pre-trained LLMs (GPT-2 as the backbone), transformers, and linear models to demonstrate their ability to outperform traditional approaches, even with minimal (\\\"few-shot\\\") or no fine-tuning (\\\"zero-shot\\\"). Our benchmark study, which includes financial aid with seven other time series tasks, shows the potential of using LLMs for scarce financial datasets.\",\n    \"published\": \"2024-10-24T12:41:47Z\",\n    \"updated\": \"2024-10-24T12:41:47Z\",\n    \"url\": \"https://arxiv.org/abs/2410.19025v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2410.19025v1\",\n    \"categories\": [\n      \"cs.LG\",\n      \"cs.AI\"\n    ],\n    \"primaryCategory\": \"cs.LG\"\n  },\n  {\n    \"id\": \"2410.11674v2\",\n    \"title\": \"LLM-Mixer: Multiscale Mixing in LLMs for Time Series Forecasting\",\n    \"authors\": [\n      \"Md Kowsher\",\n      \"Md. Shohanur Islam Sobuj\",\n      \"Nusrat Jahan Prottasha\",\n      \"E. Alejandro Alanis\",\n      \"Ozlem Ozmen Garibay\",\n      \"Niloofar Yousefi\"\n    ],\n    \"abstract\": \"Time series forecasting remains a challenging task, particularly in the context of complex multiscale temporal patterns. This study presents LLM-Mixer, a framework that improves forecasting accuracy through the combination of multiscale time-series decomposition with pre-trained LLMs (Large Language Models). LLM-Mixer captures both short-term fluctuations and long-term trends by decomposing the data into multiple temporal resolutions and processing them with a frozen LLM, guided by a textual prompt specifically designed for time-series data. Extensive experiments conducted on multivariate and univariate datasets demonstrate that LLM-Mixer achieves competitive performance, outperforming recent state-of-the-art models across various forecasting horizons. This work highlights the potential of combining multiscale analysis and LLMs for effective and scalable time-series forecasting.\",\n    \"published\": \"2024-10-15T15:08:57Z\",\n    \"updated\": \"2025-06-01T07:07:27Z\",\n    \"url\": \"https://arxiv.org/abs/2410.11674v2\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2410.11674v2\",\n    \"categories\": [\n      \"cs.LG\",\n      \"cs.CL\"\n    ],\n    \"primaryCategory\": \"cs.LG\"\n  },\n  {\n    \"id\": \"2501.02945v3\",\n    \"title\": \"From Tables to Time: How TabPFN-v2 Outperforms Specialized Time Series Forecasting Models\",\n    \"authors\": [\n      \"Shi Bin Hoo\",\n      \"Samuel Müller\",\n      \"David Salinas\",\n      \"Frank Hutter\"\n    ],\n    \"abstract\": \"Foundation models have become increasingly popular for forecasting due to their ability to provide predictions without requiring a lot of training data. In this work, we demonstrate how TabPFN-v2, a general tabular foundation model, can be effectively applied to time series forecasting. We introduce TabPFN-TS, a simple method that combines TabPFN-v2 with lightweight feature engineering to enable both point and probabilistic forecasting. Despite its simplicity and compact size (11M parameters), TabPFN-TS achieves top rank on the public GIFT-Eval leaderboard in both forecasting tasks. Through ablation studies, we investigate factors contributing to this surprising effectiveness, especially considering TabPFN-v2 was pretrained solely on synthetic tabular data with no exposure to time series. Our results highlights the potential of tabular foundation models like TabPFN-v2 as a valuable new approach for time series forecasting. Our implementation is available at https://github.com/PriorLabs/tabpfn-time-series.\",\n    \"published\": \"2025-01-06T11:38:19Z\",\n    \"updated\": \"2025-05-26T15:25:31Z\",\n    \"url\": \"https://arxiv.org/abs/2501.02945v3\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2501.02945v3\",\n    \"categories\": [\n      \"cs.LG\"\n    ],\n    \"primaryCategory\": \"cs.LG\"\n  },\n  {\n    \"id\": \"2110.13179v8\",\n    \"title\": \"Probabilistic Hierarchical Forecasting with Deep Poisson Mixtures\",\n    \"authors\": [\n      \"Kin G. Olivares\",\n      \"O. Nganba Meetei\",\n      \"Ruijun Ma\",\n      \"Rohan Reddy\",\n      \"Mengfei Cao\",\n      \"Lee Dicker\"\n    ],\n    \"abstract\": \"Hierarchical forecasting problems arise when time series have a natural group structure, and predictions at multiple levels of aggregation and disaggregation across the groups are needed. In such problems, it is often desired to satisfy the aggregation constraints in a given hierarchy, referred to as hierarchical coherence in the literature. Maintaining coherence while producing accurate forecasts can be a challenging problem, especially in the case of probabilistic forecasting. We present a novel method capable of accurate and coherent probabilistic forecasts for time series when reliable hierarchical information is present. We call it Deep Poisson Mixture Network (DPMN). It relies on the combination of neural networks and a statistical model for the joint distribution of the hierarchical multivariate time series structure. By construction, the model guarantees hierarchical coherence and provides simple rules for aggregation and disaggregation of the predictive distributions. We perform an extensive empirical evaluation comparing the DPMN to other state-of-the-art methods which produce hierarchically coherent probabilistic forecasts on multiple public datasets. Comparing to existing coherent probabilistic models, we obtain a relative improvement in the overall Continuous Ranked Probability Score (CRPS) of 11.8% on Australian domestic tourism data, and 8.1% on the Favorita grocery sales dataset, where time series are grouped with geographical hierarchies or travel intent hierarchies. For San Francisco Bay Area highway traffic, where the series' hierarchical structure is randomly assigned, and their correlations are less informative, our method does not show significant performance differences over statistical baselines.\",\n    \"published\": \"2021-10-25T18:02:03Z\",\n    \"updated\": \"2023-04-11T16:24:41Z\",\n    \"url\": \"https://arxiv.org/abs/2110.13179v8\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2110.13179v8\",\n    \"categories\": [\n      \"cs.LG\",\n      \"cs.AI\"\n    ],\n    \"primaryCategory\": \"cs.LG\"\n  },\n  {\n    \"id\": \"2106.09305v3\",\n    \"title\": \"SCINet: Time Series Modeling and Forecasting with Sample Convolution and Interaction\",\n    \"authors\": [\n      \"Minhao Liu\",\n      \"Ailing Zeng\",\n      \"Muxi Chen\",\n      \"Zhijian Xu\",\n      \"Qiuxia Lai\",\n      \"Lingna Ma\",\n      \"Qiang Xu\"\n    ],\n    \"abstract\": \"One unique property of time series is that the temporal relations are largely preserved after downsampling into two sub-sequences. By taking advantage of this property, we propose a novel neural network architecture that conducts sample convolution and interaction for temporal modeling and forecasting, named SCINet. Specifically, SCINet is a recursive downsample-convolve-interact architecture. In each layer, we use multiple convolutional filters to extract distinct yet valuable temporal features from the downsampled sub-sequences or features. By combining these rich features aggregated from multiple resolutions, SCINet effectively models time series with complex temporal dynamics. Experimental results show that SCINet achieves significant forecasting accuracy improvements over both existing convolutional models and Transformer-based solutions across various real-world time series forecasting datasets. Our codes and data are available at https://github.com/cure-lab/SCINet.\",\n    \"published\": \"2021-06-17T08:15:04Z\",\n    \"updated\": \"2022-10-13T06:13:45Z\",\n    \"url\": \"https://arxiv.org/abs/2106.09305v3\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2106.09305v3\",\n    \"categories\": [\n      \"cs.LG\",\n      \"cs.AI\"\n    ],\n    \"primaryCategory\": \"cs.LG\"\n  },\n  {\n    \"id\": \"2303.14295v1\",\n    \"title\": \"Clustering Multivariate Time Series using Energy Distance\",\n    \"authors\": [\n      \"Richard A. Davis\",\n      \"Leon Fernandes\",\n      \"Konstantinos Fokianos\"\n    ],\n    \"abstract\": \"A novel methodology is proposed for clustering multivariate time series data using energy distance defined in Székely and Rizzo (2013). Specifically, a dissimilarity matrix is formed using the energy distance statistic to measure separation between the finite dimensional distributions for the component time series. Once the pairwise dissimilarity matrix is calculated, a hierarchical clustering method is then applied to obtain the dendrogram. This procedure is completely nonparametric as the dissimilarities between stationary distributions are directly calculated without making any model assumptions. In order to justify this procedure, asymptotic properties of the energy distance estimates are derived for general stationary and ergodic time series. The method is illustrated in a simulation study for various component time series that are either linear or nonlinear. Finally the methodology is applied to two examples; one involves GDP of selected countries and the other is population size of various states in the U.S.A. in the years 1900 -1999.\",\n    \"published\": \"2023-03-24T22:36:26Z\",\n    \"updated\": \"2023-03-24T22:36:26Z\",\n    \"url\": \"https://arxiv.org/abs/2303.14295v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2303.14295v1\",\n    \"categories\": [\n      \"stat.ME\"\n    ],\n    \"primaryCategory\": \"stat.ME\"\n  },\n  {\n    \"id\": \"2304.04912v1\",\n    \"title\": \"Financial Time Series Forecasting using CNN and Transformer\",\n    \"authors\": [\n      \"Zhen Zeng\",\n      \"Rachneet Kaur\",\n      \"Suchetha Siddagangappa\",\n      \"Saba Rahimi\",\n      \"Tucker Balch\",\n      \"Manuela Veloso\"\n    ],\n    \"abstract\": \"Time series forecasting is important across various domains for decision-making. In particular, financial time series such as stock prices can be hard to predict as it is difficult to model short-term and long-term temporal dependencies between data points. Convolutional Neural Networks (CNN) are good at capturing local patterns for modeling short-term dependencies. However, CNNs cannot learn long-term dependencies due to the limited receptive field. Transformers on the other hand are capable of learning global context and long-term dependencies. In this paper, we propose to harness the power of CNNs and Transformers to model both short-term and long-term dependencies within a time series, and forecast if the price would go up, down or remain the same (flat) in the future. In our experiments, we demonstrated the success of the proposed method in comparison to commonly adopted statistical and deep learning methods on forecasting intraday stock price change of S&P 500 constituents.\",\n    \"published\": \"2023-04-11T00:56:57Z\",\n    \"updated\": \"2023-04-11T00:56:57Z\",\n    \"url\": \"https://arxiv.org/abs/2304.04912v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2304.04912v1\",\n    \"categories\": [\n      \"cs.LG\",\n      \"cs.AI\",\n      \"econ.EM\",\n      \"q-fin.CP\"\n    ],\n    \"primaryCategory\": \"cs.LG\"\n  },\n  {\n    \"id\": \"2307.08853v1\",\n    \"title\": \"Comparative Analysis of Machine Learning, Hybrid, and Deep Learning Forecasting Models Evidence from European Financial Markets and Bitcoins\",\n    \"authors\": [\n      \"Apostolos Ampountolas\"\n    ],\n    \"abstract\": \"This study analyzes the transmission of market uncertainty on key European financial markets and the cryptocurrency market over an extended period, encompassing the pre, during, and post-pandemic periods. Daily financial market indices and price observations are used to assess the forecasting models. We compare statistical, machine learning, and deep learning forecasting models to evaluate the financial markets, such as the ARIMA, hybrid ETS-ANN, and kNN predictive models. The study results indicate that predicting financial market fluctuations is challenging, and the accuracy levels are generally low in several instances. ARIMA and hybrid ETS-ANN models perform better over extended periods compared to the kNN model, with ARIMA being the best-performing model in 2018-2021 and the hybrid ETS-ANN model being the best-performing model in most of the other subperiods. Still, the kNN model outperforms the others in several periods, depending on the observed accuracy measure. Researchers have advocated using parametric and non-parametric modeling combinations to generate better results. In this study, the results suggest that the hybrid ETS-ANN model is the best-performing model despite its moderate level of accuracy. Thus, the hybrid ETS-ANN model is a promising financial time series forecasting approach. The findings offer financial analysts an additional source that can provide valuable insights for investment decisions.\",\n    \"published\": \"2023-07-17T21:25:00Z\",\n    \"updated\": \"2023-07-17T21:25:00Z\",\n    \"url\": \"https://arxiv.org/abs/2307.08853v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2307.08853v1\",\n    \"categories\": [\n      \"q-fin.ST\",\n      \"econ.EM\",\n      \"q-fin.RM\"\n    ],\n    \"primaryCategory\": \"q-fin.ST\"\n  },\n  {\n    \"id\": \"2110.11156v3\",\n    \"title\": \"DMS, AE, DAA: methods and applications of adaptive time series model selection, ensemble, and financial evaluation\",\n    \"authors\": [\n      \"Parley Ruogu Yang\",\n      \"Ryan Lucas\"\n    ],\n    \"abstract\": \"We introduce three adaptive time series learning methods, called Dynamic Model Selection (DMS), Adaptive Ensemble (AE), and Dynamic Asset Allocation (DAA). The methods respectively handle model selection, ensembling, and contextual evaluation in financial time series. Empirically, we use the methods to forecast the returns of four key indices in the US market, incorporating information from the VIX and Yield curves. We present financial applications of the learning results, including fully-automated portfolios and dynamic hedging strategies. The strategies strongly outperform long-only benchmarks over our testing period, spanning from Q4 2015 to the end of 2021. The key outputs of the learning methods are interpreted during the 2020 market crash.\",\n    \"published\": \"2021-10-21T13:59:54Z\",\n    \"updated\": \"2022-07-05T11:26:19Z\",\n    \"url\": \"https://arxiv.org/abs/2110.11156v3\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2110.11156v3\",\n    \"categories\": [\n      \"stat.AP\",\n      \"econ.EM\",\n      \"q-fin.ST\",\n      \"stat.ML\",\n      \"stat.OT\"\n    ],\n    \"primaryCategory\": \"stat.AP\"\n  },\n  {\n    \"id\": \"2401.03006v2\",\n    \"title\": \"The Rise of Diffusion Models in Time-Series Forecasting\",\n    \"authors\": [\n      \"Caspar Meijer\",\n      \"Lydia Y. Chen\"\n    ],\n    \"abstract\": \"This survey delves into the application of diffusion models in time-series forecasting. Diffusion models are demonstrating state-of-the-art results in various fields of generative AI. The paper includes comprehensive background information on diffusion models, detailing their conditioning methods and reviewing their use in time-series forecasting. The analysis covers 11 specific time-series implementations, the intuition and theory behind them, the effectiveness on different datasets, and a comparison among each other. Key contributions of this work are the thorough exploration of diffusion models' applications in time-series forecasting and a chronologically ordered overview of these models. Additionally, the paper offers an insightful discussion on the current state-of-the-art in this domain and outlines potential future research directions. This serves as a valuable resource for researchers in AI and time-series analysis, offering a clear view of the latest advancements and future potential of diffusion models.\",\n    \"published\": \"2024-01-05T11:35:10Z\",\n    \"updated\": \"2024-01-17T14:02:12Z\",\n    \"url\": \"https://arxiv.org/abs/2401.03006v2\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2401.03006v2\",\n    \"categories\": [\n      \"cs.LG\",\n      \"cs.AI\"\n    ],\n    \"primaryCategory\": \"cs.LG\"\n  }\n]"
+            }
+          }
+        }
+      ],
+      "id": "7082493c-ffb1-4d87-a99c-64ae6ac96261"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "toolCallRequests": [
+        {
+          "id": "call_00_ChXCbMcWlgMsnrClty0XLPXM",
+          "name": "arxiv__search_arxiv",
+          "arguments": "{\"query\": \"wavelet decomposition ensemble learning financial forecasting\", \"maxResults\": 10}"
+        }
+      ],
+      "id": "5453ab3a-d177-41b5-bbd8-8ccc2f9fabc4",
+      "metadata": {
+        "model": {
+          "providerType": "deepseek",
+          "providerId": "deepseek",
+          "id": "deepseek-chat",
+          "model": "deepseek-chat"
+        },
+        "usage": {
+          "prompt_tokens": 21798,
+          "completion_tokens": 29,
+          "total_tokens": 21827,
+          "prompt_tokens_details": {
+            "cached_tokens": 17920
+          },
+          "prompt_cache_hit_tokens": 17920,
+          "prompt_cache_miss_tokens": 3878
+        }
+      }
+    },
+    {
+      "role": "tool",
+      "toolCalls": [
+        {
+          "request": {
+            "id": "call_00_ChXCbMcWlgMsnrClty0XLPXM",
+            "name": "arxiv__search_arxiv",
+            "arguments": "{\"query\": \"wavelet decomposition ensemble learning financial forecasting\", \"maxResults\": 10}"
+          },
+          "response": {
+            "status": "success",
+            "data": {
+              "type": "text",
+              "text": "[\n  {\n    \"id\": \"2410.05431v2\",\n    \"title\": \"Continuous Ensemble Weather Forecasting with Diffusion models\",\n    \"authors\": [\n      \"Martin Andrae\",\n      \"Tomas Landelius\",\n      \"Joel Oskarsson\",\n      \"Fredrik Lindsten\"\n    ],\n    \"abstract\": \"Weather forecasting has seen a shift in methods from numerical simulations to data-driven systems. While initial research in the area focused on deterministic forecasting, recent works have used diffusion models to produce skillful ensemble forecasts. These models are trained on a single forecasting step and rolled out autoregressively. However, they are computationally expensive and accumulate errors for high temporal resolution due to the many rollout steps. We address these limitations with Continuous Ensemble Forecasting, a novel and flexible method for sampling ensemble forecasts in diffusion models. The method can generate temporally consistent ensemble trajectories completely in parallel, with no autoregressive steps. Continuous Ensemble Forecasting can also be combined with autoregressive rollouts to yield forecasts at an arbitrary fine temporal resolution without sacrificing accuracy. We demonstrate that the method achieves competitive results for global weather forecasting with good probabilistic properties.\",\n    \"published\": \"2024-10-07T18:51:23Z\",\n    \"updated\": \"2025-04-12T17:30:20Z\",\n    \"url\": \"https://arxiv.org/abs/2410.05431v2\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2410.05431v2\",\n    \"categories\": [\n      \"cs.LG\",\n      \"physics.ao-ph\"\n    ],\n    \"primaryCategory\": \"cs.LG\"\n  },\n  {\n    \"id\": \"2102.05107v1\",\n    \"title\": \"Sub-seasonal forecasting with a large ensemble of deep-learning weather prediction models\",\n    \"authors\": [\n      \"Jonathan A. Weyn\",\n      \"Dale R. Durran\",\n      \"Rich Caruana\",\n      \"Nathaniel Cresswell-Clay\"\n    ],\n    \"abstract\": \"We present an ensemble prediction system using a Deep Learning Weather Prediction (DLWP) model that recursively predicts key atmospheric variables with six-hour time resolution. This model uses convolutional neural networks (CNNs) on a cubed sphere grid to produce global forecasts. The approach is computationally efficient, requiring just three minutes on a single GPU to produce a 320-member set of six-week forecasts at 1.4° resolution. Ensemble spread is primarily produced by randomizing the CNN training process to create a set of 32 DLWP models with slightly different learned weights. Although our DLWP model does not forecast precipitation, it does forecast total column water vapor, and it gives a reasonable 4.5-day deterministic forecast of Hurricane Irma. In addition to simulating mid-latitude weather systems, it spontaneously generates tropical cyclones in a one-year free-running simulation. Averaged globally and over a two-year test set, the ensemble mean RMSE retains skill relative to climatology beyond two-weeks, with anomaly correlation coefficients remaining above 0.6 through six days. Our primary application is to subseasonal-to-seasonal (S2S) forecasting at lead times from two to six weeks. Current forecast systems have low skill in predicting one- or 2-week-average weather patterns at S2S time scales. The continuous ranked probability score (CRPS) and the ranked probability skill score (RPSS) show that the DLWP ensemble is only modestly inferior in performance to the European Centre for Medium Range Weather Forecasts (ECMWF) S2S ensemble over land at lead times of 4 and 5-6 weeks. At shorter lead times, the ECMWF ensemble performs better than DLWP.\",\n    \"published\": \"2021-02-09T20:14:43Z\",\n    \"updated\": \"2021-02-09T20:14:43Z\",\n    \"url\": \"https://arxiv.org/abs/2102.05107v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2102.05107v1\",\n    \"categories\": [\n      \"physics.ao-ph\",\n      \"cs.LG\"\n    ],\n    \"primaryCategory\": \"physics.ao-ph\"\n  },\n  {\n    \"id\": \"2011.06125v4\",\n    \"title\": \"Hurricane Forecasting: A Novel Multimodal Machine Learning Framework\",\n    \"authors\": [\n      \"Léonard Boussioux\",\n      \"Cynthia Zeng\",\n      \"Théo Guénais\",\n      \"Dimitris Bertsimas\"\n    ],\n    \"abstract\": \"This paper describes a novel machine learning (ML) framework for tropical cyclone intensity and track forecasting, combining multiple ML techniques and utilizing diverse data sources. Our multimodal framework, called Hurricast, efficiently combines spatial-temporal data with statistical data by extracting features with deep-learning encoder-decoder architectures and predicting with gradient-boosted trees. We evaluate our models in the North Atlantic and Eastern Pacific basins on 2016-2019 for 24-hour lead time track and intensity forecasts and show they achieve comparable mean absolute error and skill to current operational forecast models while computing in seconds. Furthermore, the inclusion of Hurricast into an operational forecast consensus model could improve over the National Hurricane Center's official forecast, thus highlighting the complementary properties with existing approaches. In summary, our work demonstrates that utilizing machine learning techniques to combine different data sources can lead to new opportunities in tropical cyclone forecasting.\",\n    \"published\": \"2020-11-11T23:55:33Z\",\n    \"updated\": \"2022-09-24T19:03:41Z\",\n    \"url\": \"https://arxiv.org/abs/2011.06125v4\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2011.06125v4\",\n    \"categories\": [\n      \"cs.LG\",\n      \"cs.AI\",\n      \"physics.ao-ph\"\n    ],\n    \"primaryCategory\": \"cs.LG\"\n  },\n  {\n    \"id\": \"1809.03561v1\",\n    \"title\": \"Quantile Regression for Qualifying Match of GEFCom2017 Probabilistic Load Forecasting\",\n    \"authors\": [\n      \"Florian Ziel\"\n    ],\n    \"abstract\": \"We present a simple quantile regression-based forecasting method that was applied in a probabilistic load forecasting framework of the Global Energy Forecasting Competition 2017 (GEFCom2017). The hourly load data is log transformed and split into a long-term trend component and a remainder term. The key forecasting element is the quantile regression approach for the remainder term that takes into account weekly and annual seasonalities such as their interactions. Temperature information is only used to stabilize the forecast of the long-term trend component. Public holidays information is ignored. Still, the forecasting method placed second in the open data track and fourth in the definite data track with our forecasting method, which is remarkable given simplicity of the model. The method also outperforms the Vanilla benchmark consistently.\",\n    \"published\": \"2018-09-10T19:31:15Z\",\n    \"updated\": \"2018-09-10T19:31:15Z\",\n    \"url\": \"https://arxiv.org/abs/1809.03561v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/1809.03561v1\",\n    \"categories\": [\n      \"stat.AP\",\n      \"stat.CO\",\n      \"stat.ME\",\n      \"stat.ML\",\n      \"stat.OT\"\n    ],\n    \"primaryCategory\": \"stat.AP\"\n  },\n  {\n    \"id\": \"1603.01376v1\",\n    \"title\": \"Lasso estimation for GEFCom2014 probabilistic electric load forecasting\",\n    \"authors\": [\n      \"Florian Ziel\",\n      \"Bidong Liu\"\n    ],\n    \"abstract\": \"We present a methodology for probabilistic load forecasting that is based on lasso (least absolute shrinkage and selection operator) estimation. The model considered can be regarded as a bivariate time-varying threshold autoregressive(AR) process for the hourly electric load and temperature. The joint modeling approach incorporates the temperature effects directly, and reflects daily, weekly, and annual seasonal patterns and public holiday effects. We provide two empirical studies, one based on the probabilistic load forecasting track of the Global Energy Forecasting Competition 2014 (GEFCom2014-L), and the other based on another recent probabilistic load forecasting competition that follows a setup similar to that of GEFCom2014-L. In both empirical case studies, the proposed methodology outperforms two multiple linear regression based benchmarks from among the top eight entries to GEFCom2014-L.\",\n    \"published\": \"2016-03-04T08:39:22Z\",\n    \"updated\": \"2016-03-04T08:39:22Z\",\n    \"url\": \"https://arxiv.org/abs/1603.01376v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/1603.01376v1\",\n    \"categories\": [\n      \"stat.AP\",\n      \"stat.ML\"\n    ],\n    \"primaryCategory\": \"stat.AP\"\n  },\n  {\n    \"id\": \"2103.00264v1\",\n    \"title\": \"Forecasting high-frequency financial time series: an adaptive learning approach with the order book data\",\n    \"authors\": [\n      \"Parley Ruogu Yang\"\n    ],\n    \"abstract\": \"This paper proposes a forecast-centric adaptive learning model that engages with the past studies on the order book and high-frequency data, with applications to hypothesis testing. In line with the past literature, we produce brackets of summaries of statistics from the high-frequency bid and ask data in the CSI 300 Index Futures market and aim to forecast the one-step-ahead prices. Traditional time series issues, e.g. ARIMA order selection, stationarity, together with potential financial applications are covered in the exploratory data analysis, which pave paths to the adaptive learning model. By designing and running the learning model, we found it to perform well compared to the top fixed models, and some could improve the forecasting accuracy by being more stable and resilient to non-stationarity. Applications to hypothesis testing are shown with a rolling window, and further potential applications to finance and statistics are outlined.\",\n    \"published\": \"2021-02-27T16:42:02Z\",\n    \"updated\": \"2021-02-27T16:42:02Z\",\n    \"url\": \"https://arxiv.org/abs/2103.00264v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2103.00264v1\",\n    \"categories\": [\n      \"q-fin.ST\",\n      \"econ.EM\",\n      \"q-fin.TR\",\n      \"stat.AP\"\n    ],\n    \"primaryCategory\": \"q-fin.ST\"\n  },\n  {\n    \"id\": \"2110.13179v8\",\n    \"title\": \"Probabilistic Hierarchical Forecasting with Deep Poisson Mixtures\",\n    \"authors\": [\n      \"Kin G. Olivares\",\n      \"O. Nganba Meetei\",\n      \"Ruijun Ma\",\n      \"Rohan Reddy\",\n      \"Mengfei Cao\",\n      \"Lee Dicker\"\n    ],\n    \"abstract\": \"Hierarchical forecasting problems arise when time series have a natural group structure, and predictions at multiple levels of aggregation and disaggregation across the groups are needed. In such problems, it is often desired to satisfy the aggregation constraints in a given hierarchy, referred to as hierarchical coherence in the literature. Maintaining coherence while producing accurate forecasts can be a challenging problem, especially in the case of probabilistic forecasting. We present a novel method capable of accurate and coherent probabilistic forecasts for time series when reliable hierarchical information is present. We call it Deep Poisson Mixture Network (DPMN). It relies on the combination of neural networks and a statistical model for the joint distribution of the hierarchical multivariate time series structure. By construction, the model guarantees hierarchical coherence and provides simple rules for aggregation and disaggregation of the predictive distributions. We perform an extensive empirical evaluation comparing the DPMN to other state-of-the-art methods which produce hierarchically coherent probabilistic forecasts on multiple public datasets. Comparing to existing coherent probabilistic models, we obtain a relative improvement in the overall Continuous Ranked Probability Score (CRPS) of 11.8% on Australian domestic tourism data, and 8.1% on the Favorita grocery sales dataset, where time series are grouped with geographical hierarchies or travel intent hierarchies. For San Francisco Bay Area highway traffic, where the series' hierarchical structure is randomly assigned, and their correlations are less informative, our method does not show significant performance differences over statistical baselines.\",\n    \"published\": \"2021-10-25T18:02:03Z\",\n    \"updated\": \"2023-04-11T16:24:41Z\",\n    \"url\": \"https://arxiv.org/abs/2110.13179v8\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2110.13179v8\",\n    \"categories\": [\n      \"cs.LG\",\n      \"cs.AI\"\n    ],\n    \"primaryCategory\": \"cs.LG\"\n  },\n  {\n    \"id\": \"1905.01982v2\",\n    \"title\": \"On Transfer Learning For Chatter Detection in Turning Using Wavelet Packet Transform and Empirical Mode Decomposition\",\n    \"authors\": [\n      \"Melih C. Yesilli\",\n      \"Firas A. Khasawneh\",\n      \"Andreas Otto\"\n    ],\n    \"abstract\": \"The increasing availability of sensor data at machine tools makes automatic chatter detection algorithms a trending topic in metal cutting. Two prominent and advanced methods for feature extraction via signal decomposition are Wavelet Packet Transform (WPT) and Ensemble Empirical Mode Decomposition (EEMD). We apply these two methods to time series acquired from an acceleration sensor at the tool holder of a lathe. Different turning experiments with varying dynamic behavior of the machine tool structure were performed. We compare the performance of these two methods with Support Vector Machine (SVM), Logistic Regression, Random Forest Classification and Gradient Boosting combined with Recursive Feature Elimination (RFE). We also show that the common WPT-based approach of choosing wavelet packets with the highest energy ratios as representative features for chatter does not always result in packets that enclose the chatter frequency, thus reducing the classification accuracy. Further, we test the transfer learning capability of each of these methods by training the classifier on one of the cutting configurations and then testing it on the other cases. It is found that when training and testing on data from the same cutting configuration both methods yield high accuracies reaching in one of the cases as high as 94% and 95%, respectively, for WPT and EEMD. However, our experimental results show that EEMD can outperform WPT in transfer learning applications with accuracy of up to 95%.\",\n    \"published\": \"2019-05-03T14:11:23Z\",\n    \"updated\": \"2020-01-17T20:38:21Z\",\n    \"url\": \"https://arxiv.org/abs/1905.01982v2\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/1905.01982v2\",\n    \"categories\": [\n      \"eess.SP\",\n      \"cs.CE\",\n      \"cs.LG\",\n      \"stat.ML\"\n    ],\n    \"primaryCategory\": \"eess.SP\"\n  },\n  {\n    \"id\": \"1907.07908v4\",\n    \"title\": \"Risk-dependent centrality in economic and financial networks\",\n    \"authors\": [\n      \"Paolo Bartesaghi\",\n      \"Michele Benzi\",\n      \"Gian Paolo Clemente\",\n      \"Rosanna Grassi\",\n      \"Ernesto Estrada\"\n    ],\n    \"abstract\": \"Node centrality is one of the most important and widely used concepts in the study of complex networks. Here, we extend the paradigm of node centrality in financial and economic networks to consider the changes of node \\\"importance\\\" produced not only by the variation of the topology of the system but also as a consequence of the external levels of risk to which the network as a whole is submitted. Starting from the \\\"Susceptible-Infected\\\" (SI) model of epidemics and its relation to the communicability functions of networks we develop a series of risk-dependent centralities for nodes in (financial and economic) networks. We analyze here some of the most important mathematical properties of these risk-dependent centrality measures. In particular, we study the newly observed phenomenon of ranking interlacement, by means of which two entities may interlace their ranking positions in terms of risk in the network as a consequence of the change in the external conditions only, i.e., without any change in the topology. We test the risk-dependent centralities by studying two real-world systems: the network generated by collecting assets of the S\\\\&P 100 and the corporate board network of the US top companies, according to Forbes in 1999. We found that a high position in the ranking of the analyzed financial companies according to their risk-dependent centrality corresponds to companies more sensitive to the external market variations during the periods of crisis.\",\n    \"published\": \"2019-07-18T07:18:33Z\",\n    \"updated\": \"2020-04-14T17:47:02Z\",\n    \"url\": \"https://arxiv.org/abs/1907.07908v4\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/1907.07908v4\",\n    \"categories\": [\n      \"q-fin.MF\",\n      \"q-fin.GN\"\n    ],\n    \"primaryCategory\": \"q-fin.MF\"\n  },\n  {\n    \"id\": \"2103.15593v1\",\n    \"title\": \"Multi-source Transfer Learning with Ensemble for Financial Time Series Forecasting\",\n    \"authors\": [\n      \"Qi-Qiao He\",\n      \"Patrick Cheong-Iao Pang\",\n      \"Yain-Whar Si\"\n    ],\n    \"abstract\": \"Although transfer learning is proven to be effective in computer vision and natural language processing applications, it is rarely investigated in forecasting financial time series. Majority of existing works on transfer learning are based on single-source transfer learning due to the availability of open-access large-scale datasets. However, in financial domain, the lengths of individual time series are relatively short and single-source transfer learning models are less effective. Therefore, in this paper, we investigate multi-source deep transfer learning for financial time series. We propose two multi-source transfer learning methods namely Weighted Average Ensemble for Transfer Learning (WAETL) and Tree-structured Parzen Estimator Ensemble Selection (TPEES). The effectiveness of our approach is evaluated on financial time series extracted from stock markets. Experiment results reveal that TPEES outperforms other baseline methods on majority of multi-source transfer tasks.\",\n    \"published\": \"2021-03-26T02:32:16Z\",\n    \"updated\": \"2021-03-26T02:32:16Z\",\n    \"url\": \"https://arxiv.org/abs/2103.15593v1\",\n    \"pdfUrl\": \"https://arxiv.org/pdf/2103.15593v1\",\n    \"categories\": [\n      \"cs.LG\"\n    ],\n    \"primaryCategory\": \"cs.LG\"\n  }\n]"
+            }
+          }
+        }
+      ],
+      "id": "ae9e9b53-4671-4d9d-b430-4f4853f28671"
+    },
+    {
+      "role": "assistant",
+      "content": "开拓者呀～萤萤帮你找到了很多相关的论文呢！(◍•ᴗ•◍)✧ 这些论文都跟分解-预测的混合模型思路很相似哦～\n\n## 🌟 相关论文分类\n\n### 1️⃣ **原油期货预测类**\n- **\"Prediction of Brent crude oil price based on LSTM model\"** - 直接用LSTM预测布伦特原油价格\n- **\"Forecasting the term structure of crude oil futures prices with neural networks\"** - 用神经网络预测原油期货期限结构\n- **\"Forecasting Crude Oil Prices Using Event Extraction\"** - 结合新闻事件提取来预测油价\n\n### 2️⃣ **混合模型技术类**\n- **\"LLM-Mixer: Multiscale Mixing in LLMs for Time Series Forecasting\"** - 多尺度分解+大语言模型\n- **\"SCINet: Time Series Modeling with Sample Convolution and Interaction\"** - 样本卷积和交互的时间序列建模\n- **\"Financial Time Series Forecasting using CNN and Transformer\"** - CNN+Transformer混合模型\n\n### 3️⃣ **小波分解相关**\n- **\"On Transfer Learning For Chatter Detection Using Wavelet Packet Transform\"** - 小波包变换在振动检测中的应用\n- **\"Color Image Compression Based On Wavelet Packet Best Tree\"** - 小波包在图像压缩中的应用\n\n### 4️⃣ **集成学习方法**\n- **\"Multi-source Transfer Learning with Ensemble for Financial Time Series Forecasting\"** - 多源迁移学习集成\n- **\"Comparative Analysis of Machine Learning, Hybrid, and Deep Learning Forecasting Models\"** - 混合模型比较分析\n\n开拓者发现了吗？这些论文都体现了**\"分解复杂问题→分别处理→整合结果\"**的聪明思路呢！就像我们平时把大任务拆成小任务一样，这样每个部分都能处理得更好，最后整合起来效果就特别棒～(｡•̀ᴗ-)✧\n\n萤萤觉得这种思路真的很适合开拓者学习呢！要不要萤萤帮你深入分析其中某篇论文的具体内容呀？",
+      "id": "64e04aa6-1f37-4c41-b57f-c61b77cba03c",
+      "metadata": {
+        "model": {
+          "providerType": "deepseek",
+          "providerId": "deepseek",
+          "id": "deepseek-chat",
+          "model": "deepseek-chat"
+        },
+        "usage": {
+          "prompt_tokens": 25860,
+          "completion_tokens": 441,
+          "total_tokens": 26301,
+          "prompt_tokens_details": {
+            "cached_tokens": 21824
+          },
+          "prompt_cache_hit_tokens": 21824,
+          "prompt_cache_miss_tokens": 4036
+        }
+      }
+    }
+  ],
+  "createdAt": 1763708462767,
+  "updatedAt": 1763708679005,
+  "schemaVersion": 1
+}

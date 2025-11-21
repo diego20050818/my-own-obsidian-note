@@ -1,0 +1,103 @@
+{
+  "id": "29ff987f-e1d6-43b7-a4b0-e515cdbbd6aa",
+  "title": "水岸东方",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "水岸东方",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n水岸东方\n\n"
+        }
+      ],
+      "id": "a3e1731d-d35a-4fca-bb1e-4357909a0ecd",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "CV相关论文/SAFE.pdf"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "你好",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n你好\n\n"
+        }
+      ],
+      "id": "2fdb895f-c169-4e30-9d5e-2667a8c6e16a",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "CV相关论文/SAFE.pdf"
+        }
+      ]
+    }
+  ],
+  "createdAt": 1763540118511,
+  "updatedAt": 1763541586917,
+  "schemaVersion": 1
+}

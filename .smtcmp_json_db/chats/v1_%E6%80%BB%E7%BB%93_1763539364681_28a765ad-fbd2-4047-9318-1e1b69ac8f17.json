@@ -1,0 +1,56 @@
+{
+  "id": "28a765ad-fbd2-4047-9318-1e1b69ac8f17",
+  "title": "总结",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "总结",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n总结\n\n"
+        }
+      ],
+      "id": "ba8f7256-8b0f-4948-9377-6948f3e0c326",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "CV相关论文/SAFE.pdf"
+        }
+      ]
+    }
+  ],
+  "createdAt": 1763539364681,
+  "updatedAt": 1763539364681,
+  "schemaVersion": 1
+}

@@ -1,0 +1,56 @@
+{
+  "id": "63d441f0-5b28-48e3-b482-f46bb2c8a1a1",
+  "title": "帮我整理一下这篇文章",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "你好",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n你好\n\n"
+        }
+      ],
+      "id": "292ea4e7-bc66-4c9f-8142-1e1f3f3010fd",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "CV相关论文/SAFE.pdf"
+        }
+      ]
+    }
+  ],
+  "createdAt": 1763541924131,
+  "updatedAt": 1763543120836,
+  "schemaVersion": 1
+}

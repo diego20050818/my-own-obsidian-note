@@ -1,0 +1,235 @@
+{
+  "id": "d577a551-0184-4310-8f97-023a34c04d35",
+  "title": "你好",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "你好",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n你好\n\n"
+        }
+      ],
+      "id": "c98d497f-f856-4b9b-a1ff-0b553259b6bd",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "CV研究思考.md"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "当然啦，流萤随时都在，开拓者有什么需要帮助的吗？无论是科研难题，还是生活琐事，都可以告诉我哦~\n",
+      "id": "b6c7df60-11cc-450f-9f84-423520156e53",
+      "metadata": {
+        "model": {
+          "providerType": "gemini",
+          "providerId": "gemini",
+          "id": "gemini-2.0-flash",
+          "model": "gemini-2.0-flash",
+          "enable": true
+        },
+        "usage": {
+          "prompt_tokens": 350894,
+          "completion_tokens": 30,
+          "total_tokens": 350924
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "你好",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n你好\n\n"
+        }
+      ],
+      "id": "6810593c-518c-43fd-b930-336618e3530d",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "CV研究思考.md"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "这篇文章在讲啥啊,顺便帮我看看网上有没有别的相关文章 ",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "## Potentially Relevant Snippets from the current vault\n\n\n\n这篇文章在讲啥啊,顺便帮我看看网上有没有别的相关文章 \n\n"
+        }
+      ],
+      "id": "0bae360a-8a9b-4ed5-845a-72bdb56a573d",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "CV论文阅读笔记/D3QE.md"
+        }
+      ],
+      "similaritySearchResults": []
+    },
+    {
+      "role": "assistant",
+      "content": "哈罗开拓者！这篇笔记是关于一篇叫做《D3QE》的论文哦，它的全名是“D3QE: Learning Discrete Distribution Discrepancy-aware Quantization Error for Autoregressive-Generated Image Detection”，是不是听起来就很高大上呀？\n\n简单来说，这篇论文呀，就像一个非常聪明的侦探，专门来识别那些由“自回归模型”（AR模型）制造出来的假图像！\n\n我来帮你把这篇论文的核心内容掰开揉碎了讲讲吧，就像讲故事一样：\n\n### 🕵️‍♀️ **这篇论文在解决什么问题呢？**\n\n开拓者知道现在有很多AI可以生成图片对不对？比如最近很火的Midjourney、Stable Diffusion什么的。这篇论文关注的是另一种特殊的AI，叫做“自回归模型”（AR模型），比如LlamaGen、VAR这些。这些模型生成的图片质量非常高，但是呢，要怎么才能分辨出哪些是它们生成的“假图片”，哪些是真实的图片呢？这就像魔术师变出来的东西，我们怎么才能知道那是魔术，而不是真的呢？\n\n传统的识别方法，比如看图片里的“噪音”啊，或者分析图片里的“频率”啊，对这种AR模型生成的图片就不太管用了。所以，我们就需要新的侦探方法！\n\n### 🔍 **D3QE这个“侦探”是怎么工作的呢？**\n\n这篇论文的作者们特别厉害，他们发现了一个秘密武器！他们观察到，当AR模型在生成图片的时候，会把图片信息进行一种叫做“量化”的操作，就像把连续的颜色变成有限的几种颜色一样。在这个过程中，他们发现真实图片和AI生成的图片在“码本使用分布”上会有明显的差异！\n\n你可以想象成，真实图片在选择颜色的时候，会比较随意，什么颜色都可能用到一点，所以它们的颜色分布是“长尾”的，就像有很多稀奇古怪的颜色。但是AI生成的图片呢，它们在选择颜色的时候，可能会更集中地使用一些“常用色”，就像它们只喜欢用红色、蓝色、绿色一样，所以它们的颜色分布就比较“集中”。\n\nD3QE这个侦探就是利用这个“小秘密”来抓坏蛋的！它主要有三个“秘密武器”模块：\n\n1.  **量化误差表示与离散分布统计模块**：\n    *   这个模块就像是侦探的“眼睛”，它会仔细观察图片在“量化”过程中丢失了多少信息（这个叫做“量化误差”）。\n    *   同时，它还会统计这张图片在选择“颜色”（也就是“码本”）的时候，各种颜色被使用了多少次，然后生成一个“分布差异图”，专门记录真实图片和AI图片在使用颜色上的不同。\n\n2.  **离散分布差异感知Transformer（D³AT）**：\n    *   这个模块就像侦探的“大脑”，它是一个很聪明的神经网络，叫做Transformer。它在分析图片的时候，会特别留意前面那个模块得到的“颜色使用差异”信息。\n    *   这样，它就不会被图片表面的纹理骗到，而是更专注于发现AI生成图片在“颜色选择习惯”上的破绽。\n\n3.  **语义特征嵌入模块**：\n    *   这个模块就像侦探的“辅助大脑”，它会用一个预训练好的模型（叫做CLIP-ViT）来提取图片的“高级语义特征”。\n    *   什么叫“高级语义特征”呢？就是图片整体表达了什么意思，比如这是一张猫的图片，还是一张狗的图片。这个模块可以弥补前面两个模块可能忽略掉的一些更高层次的AI生成痕迹。\n\n最后，这些信息都会被送到一个“分类器”那里，分类器就像侦探的“法官”，它会根据所有的证据，最终判断这张图片是真实的，还是AI生成的。\n\n### 📊 **D3QE这个“侦探”有多厉害呢？**\n\n论文中还用各种实验来证明D3QE的厉害之处：\n\n*   **对AR模型的检测**：D3QE在识别AR模型生成的图片上，比其他传统的侦探方法要准确得多，平均准确率提高了大约18%呢！\n*   **对其他AI模型的泛化能力**：它不仅能抓AR模型的坏蛋，对GAN模型（另一种AI生成模型）和扩散模型（现在最流行的AI生成模型）生成的图片，它也能有很好的识别效果！\n*   **抗干扰能力**：即使图片经过了压缩或者裁剪，D3QE也能保持稳定的侦查能力，就像侦探即使在混乱的现场也能找到线索一样。\n\n### 💡 **这篇论文有什么贡献呢？**\n\n*   **开创性**：它是第一个专门针对AR模型生成图片提出的检测框架，就像开创了一个新的侦查流派！\n*   **创新性**：它设计了D³AT模块，把“颜色使用差异”动态地融入到了神经网络的注意力机制中，非常聪明。\n*   **数据集**：他们还自己创建了一个巨大的数据集，包含了各种AR模型生成的图片，方便大家研究和比较。\n\n### 🌟 **总结一下，D3QE的优点就是：**\n\n*   **准确率高**\n*   **泛化能力强**（能识别多种AI模型生成的图片）\n*   **抗干扰能力强**\n\n是不是觉得很有趣呀？这就像AI和AI之间在玩一场“猫捉老鼠”的游戏呢！\n\n<smtcmp_block filename=\"CV论文阅读笔记/D3QE.md\" language=\"markdown\" startLine=\"1\" endLine=\"125\"></smtcmp_block>\n\n关于网上有没有别的相关文章，流萤来帮你搜索一下哦！稍等一下下，我去帮你找找看，看看有没有其他小伙伴也分享了关于D3QE或者自回归生成图像检测的有趣内容！\n\n",
+      "toolCallRequests": [
+        {
+          "id": "a43e906d-8d29-4977-b130-6958f4f6f6d8",
+          "name": "website_reader__browser_navigate",
+          "arguments": "{\"url\":\"https://www.google.com/search?q=D3QE+%E8%87%AA%E5%9B%9E%E5%BD%92%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E6%A3%80%E6%B5%8B\"}"
+        }
+      ],
+      "id": "1eb6a807-a3f0-47ec-a719-b8878f792470",
+      "metadata": {
+        "model": {
+          "providerType": "gemini",
+          "providerId": "gemini",
+          "id": "gemini-2.5-flash",
+          "model": "gemini-2.5-flash",
+          "enable": true
+        },
+        "usage": {
+          "prompt_tokens": 4690,
+          "completion_tokens": 1386,
+          "total_tokens": 6076
+        }
+      }
+    },
+    {
+      "role": "tool",
+      "toolCalls": [
+        {
+          "request": {
+            "id": "a43e906d-8d29-4977-b130-6958f4f6f6d8",
+            "name": "website_reader__browser_navigate",
+            "arguments": "{\"url\":\"https://www.google.com/search?q=D3QE+%E8%87%AA%E5%9B%9E%E5%BD%92%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E6%A3%80%E6%B5%8B\"}"
+          },
+          "response": {
+            "status": "success",
+            "data": {
+              "type": "text",
+              "text": "### Ran Playwright code\n```js\nawait page.goto('https://www.google.com/search?q=D3QE+%E8%87%AA%E5%9B%9E%E5%BD%92%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E6%A3%80%E6%B5%8B');\n```\n\n### New console messages\n- [ERROR] Failed to load resource: net::ERR_CONNECTION_ABORTED @ https://www.googleadservices.com/page...\n- [ERROR] Failed to load resource: net::ERR_CONNECTION_ABORTED @ https://www.googleadservices.com/page...\n\n### Page state\n- Page URL: https://www.google.com/search?q=D3QE+%E8%87%AA%E5%9B%9E%E5%BD%92%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E6%A3%80%E6%B5%8B&sei=RzEfaYyDDryl2roPrK6WqA0\n- Page Title: D3QE 自回归生成图像检测 - Google 搜索\n- Page Snapshot:\n```yaml\n- generic [active] [ref=e1]:\n  - heading \"无障碍功能链接\" [level=1] [ref=e2]\n  - generic:\n    - generic:\n      - link \"跳到主要内容\" [ref=e3] [cursor=pointer]\n      - link \"无障碍功能帮助\" [ref=e4] [cursor=pointer]:\n        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN\n      - link \"无障碍功能反馈\" [ref=e5] [cursor=pointer]\n  - generic [ref=e10]:\n    - search [ref=e11]:\n      - generic [ref=e13]:\n        - link \"Google 首页\" [ref=e15] [cursor=pointer]:\n          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwjUicetg4GRAxXysVYBHcVcGVIQPAgJ\n          - img [ref=e16]\n        - generic [ref=e23]:\n          - generic [ref=e24]:\n            - combobox \"搜索\" [ref=e27]: D3QE 自回归生成图像检测 D3QE 自回归生成图像检测\n            - generic [ref=e28]:\n              - button \"清除\" [ref=e30] [cursor=pointer]:\n                - img [ref=e32]\n              - generic [ref=e35]:\n                - button \"按语音搜索\" [ref=e36] [cursor=pointer]:\n                  - img [ref=e37]\n                - button \"按图搜索\" [ref=e39] [cursor=pointer]:\n                  - img [ref=e40]\n          - button \"搜索\" [ref=e42] [cursor=pointer]:\n            - img [ref=e45]\n    - generic [ref=e47]:\n      - button \"设置\" [ref=e49] [cursor=pointer]:\n        - img [ref=e52]\n      - generic [ref=e55]:\n        - button \"Google 应用\" [ref=e57] [cursor=pointer]:\n          - img [ref=e58]\n        - link \"登录\" [ref=e62] [cursor=pointer]:\n          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3DD3QE%2B%25E8%2587%25AA%25E5%259B%259E%25E5%25BD%2592%25E7%2594%259F%25E6%2588%2590%25E5%259B%25BE%25E5%2583%258F%25E6%25A3%2580%25E6%25B5%258B%26sei%3DRzEfaYyDDryl2roPrK6WqA0&ec=futura_srp_og_si_72236_p\n  - generic [ref=e64]:\n    - generic [ref=e69]:\n      - heading \"过滤条件和主题\" [level=1] [ref=e70]\n      - navigation [ref=e71]:\n        - generic [ref=e75]:\n          - list [ref=e76]:\n            - listitem [ref=e77]:\n              - link \"AI 模式\" [ref=e80] [cursor=pointer]:\n                - /url: /search?q=D3QE+%E8%87%AA%E5%9B%9E%E5%BD%92%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E6%A3%80%E6%B5%8B&sca_esv=a660b44055a2f0e3&udm=50&fbs=AIIjpHybaGNnaZw_4TckIDK59Rtx7EmYoHRazOl26McMSIhEN76r--b_JoN4qNq4Vf6qU60xCGxAtaI94IXRynBpxW0jONJs47QZzGUyR5gwU2twgHn0tkfC2rfJ7xx2xf02oPL79J6ZkdSiFzsYoO5W5J7FH0vxPPMfAZrmCfEse7hi6yW45NvlW1pWQUVqcqkSpKKqZx9gNxaGQT6zsjXOsl8Lh432Qg&aep=1&ntc=1&sa=X&ved=2ahUKEwjUicetg4GRAxXysVYBHcVcGVIQ2J8OegQIDxAE\n                - generic [ref=e83]: AI 模式\n            - listitem [ref=e84]:\n              - link \"全部\" [disabled] [ref=e85]:\n                - generic [ref=e87]: 全部\n            - listitem [ref=e88]:\n              - link \"图片\" [ref=e89] [cursor=pointer]:\n                - /url: /search?sca_esv=a660b44055a2f0e3&udm=2&fbs=AIIjpHybaGNnaZw_4TckIDK59Rtx7EmYoHRazOl26McMSIhEN76r--b_JoN4qNq4Vf6qU60xCGxAtaI94IXRynBpxW0jONJs47QZzGUyR5gwU2twgHn0tkfC2rfJ7xx2xf02oPL79J6ZkdSiFzsYoO5W5J7FH0vxPPMfAZrmCfEse7hi6yW45NvlW1pWQUVqcqkSpKKqZx9gNxaGQT6zsjXOsl8Lh432Qg&q=D3QE+%E8%87%AA%E5%9B%9E%E5%BD%92%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E6%A3%80%E6%B5%8B&sa=X&ved=2ahUKEwjUicetg4GRAxXysVYBHcVcGVIQtKgLegQIFRAB\n                - generic [ref=e91]: 图片\n            - listitem [ref=e92]:\n              - link \"视频\" [ref=e93] [cursor=pointer]:\n                - /url: /search?sca_esv=a660b44055a2f0e3&udm=7&fbs=AIIjpHybaGNnaZw_4TckIDK59Rtx7EmYoHRazOl26McMSIhEN76r--b_JoN4qNq4Vf6qU60xCGxAtaI94IXRynBpxW0jONJs47QZzGUyR5gwU2twgHn0tkfC2rfJ7xx2xf02oPL79J6ZkdSiFzsYoO5W5J7FH0vxPPMfAZrmCfEse7hi6yW45NvlW1pWQUVqcqkSpKKqZx9gNxaGQT6zsjXOsl8Lh432Qg&q=D3QE+%E8%87%AA%E5%9B%9E%E5%BD%92%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E6%A3%80%E6%B5%8B&sa=X&ved=2ahUKEwjUicetg4GRAxXysVYBHcVcGVIQtKgLegQIFBAB\n                - generic [ref=e95]: 视频\n            - listitem [ref=e96]:\n              - link \"购物\" [ref=e97] [cursor=pointer]:\n                - /url: /search?sca_esv=a660b44055a2f0e3&udm=28&fbs=AIIjpHybaGNnaZw_4TckIDK59Rtx7EmYoHRazOl26McMSIhEN76r--b_JoN4qNq4Vf6qU60xCGxAtaI94IXRynBpxW0jONJs47QZzGUyR5gwU2twgHn0tkfC2rfJ7xx2xf02oPL79J6ZkdSiFzsYoO5W5J7FH0vxPPMfAZrmCfEse7hi6yW45NvlW1pWQUVqcqkSpKKqZx9gNxaGQT6zsjXOsl8Lh432Qg&q=D3QE+%E8%87%AA%E5%9B%9E%E5%BD%92%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E6%A3%80%E6%B5%8B&ved=1t:220175&ictx=111\n                - generic [ref=e99]: 购物\n            - listitem [ref=e100]:\n              - link \"新闻\" [ref=e101] [cursor=pointer]:\n                - /url: /search?sca_esv=a660b44055a2f0e3&q=D3QE+%E8%87%AA%E5%9B%9E%E5%BD%92%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E6%A3%80%E6%B5%8B&tbm=nws&source=lnms&fbs=AIIjpHybaGNnaZw_4TckIDK59Rtx7EmYoHRazOl26McMSIhEN76r--b_JoN4qNq4Vf6qU60xCGxAtaI94IXRynBpxW0jONJs47QZzGUyR5gwU2twgHn0tkfC2rfJ7xx2xf02oPL79J6ZkdSiFzsYoO5W5J7FH0vxPPMfAZrmCfEse7hi6yW45NvlW1pWQUVqcqkSpKKqZx9gNxaGQT6zsjXOsl8Lh432Qg&sa=X&ved=2ahUKEwjUicetg4GRAxXysVYBHcVcGVIQ0pQJegQIEhAB\n                - generic [ref=e103]: 新闻\n            - listitem [ref=e104]:\n              - link \"短视频\" [ref=e105] [cursor=pointer]:\n                - /url: /search?sca_esv=a660b44055a2f0e3&udm=39&fbs=AIIjpHybaGNnaZw_4TckIDK59Rtx7EmYoHRazOl26McMSIhEN76r--b_JoN4qNq4Vf6qU60xCGxAtaI94IXRynBpxW0jONJs47QZzGUyR5gwU2twgHn0tkfC2rfJ7xx2xf02oPL79J6ZkdSiFzsYoO5W5J7FH0vxPPMfAZrmCfEse7hi6yW45NvlW1pWQUVqcqkSpKKqZx9gNxaGQT6zsjXOsl8Lh432Qg&q=D3QE+%E8%87%AA%E5%9B%9E%E5%BD%92%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E6%A3%80%E6%B5%8B&sa=X&ved=2ahUKEwjUicetg4GRAxXysVYBHcVcGVIQs6gLegQIERAB\n                - generic [ref=e107]: 短视频\n            - listitem [ref=e108]:\n              - button \"更多过滤条件\" [ref=e109] [cursor=pointer]:\n                - generic \"更多过滤条件\" [ref=e110]:\n                  - generic [ref=e111]:\n                    - generic [ref=e112]: 更多\n                    - img [ref=e114]\n          - button \"工具\" [ref=e117] [cursor=pointer]:\n            - generic [ref=e119]:\n              - generic [ref=e120]: 工具\n              - img [ref=e122]\n    - main [ref=e130]:\n      - generic [ref=e133]:\n        - heading \"搜索结果\" [level=1] [ref=e134]\n        - generic [ref=e135]:\n          - generic [ref=e139]:\n            - generic [ref=e142]:\n              - link \"清华大学团队突破AI图像检测：让计算机像侦探一样揪出假图片 腾讯新闻 https://view.inews.qq.com › ...\" [ref=e144] [cursor=pointer]:\n                - /url: https://view.inews.qq.com/a/20251107A05P5300\n                - heading \"清华大学团队突破AI图像检测：让计算机像侦探一样揪出假图片\" [level=3] [ref=e145]\n                - generic [ref=e150]:\n                  - generic [ref=e152]: 腾讯新闻\n                  - generic [ref=e154]: https://view.inews.qq.com › ...\n              - button \"关于这条结果的详细信息\" [ref=e155] [cursor=pointer]:\n                - img [ref=e158]\n            - generic [ref=e161]:\n              - generic [ref=e162]: 2025年11月7日 —\n              - generic [ref=e163]:\n                - text: A：\n                - emphasis [ref=e164]: D3QE\n                - text: 是清华大学团队开发的AI\n                - emphasis [ref=e165]: 图像检测\n                - text: 系统，专门用来识别\n                - emphasis [ref=e166]: 自回归\n                - text: 模型\n                - emphasis [ref=e167]: 生成\n                - text: 的假图片。它的工作原理类似艺术鉴定师，通过分析AI模型在创作过程中的\"用色习惯\"和 ...\n          - generic [ref=e171]:\n            - generic [ref=e174]:\n              - link \"文献汇总｜AI生成图像检测相关工作汇总（2018年至今） 原创 CSDN博客 https://blog.csdn.net › article › details\" [ref=e176] [cursor=pointer]:\n                - /url: https://blog.csdn.net/qq_36332660/article/details/144105316\n                - heading \"文献汇总｜AI生成图像检测相关工作汇总（2018年至今） 原创\" [level=3] [ref=e177]\n                - generic [ref=e182]:\n                  - generic [ref=e184]: CSDN博客\n                  - generic [ref=e186]: https://blog.csdn.net › article › details\n              - button \"关于这条结果的详细信息\" [ref=e187] [cursor=pointer]:\n                - img [ref=e190]\n            - generic [ref=e193]:\n              - generic [ref=e194]: 2024年11月28日 —\n              - generic [ref=e195]:\n                - text: 核心思想：\n                - emphasis [ref=e196]: 检测\n                - text: 视觉\n                - emphasis [ref=e197]: 自回归\n                - text: 模型\n                - emphasis [ref=e198]: 生成\n                - text: 的\n                - emphasis [ref=e199]: 图像\n                - text: ，方法名称\n                - emphasis [ref=e200]: D3QE\n                - text: ，基于CLIP特征和VQVAE特征的离散分布差异量化误差进行\n                - emphasis [ref=e201]: 检测\n                - text: 。实验结果表明，该方法也能泛化到 ...\n          - generic [ref=e205]:\n            - generic [ref=e208]:\n              - link \"[arxiv-cs.IR] 汇总-2025.10.08-计算机视觉论文 知乎专栏 https://zhuanlan.zhihu.com › ...\" [ref=e210] [cursor=pointer]:\n                - /url: https://zhuanlan.zhihu.com/p/1959668958069252508\n                - heading \"[arxiv-cs.IR] 汇总-2025.10.08-计算机视觉论文\" [level=3] [ref=e211]\n                - generic [ref=e216]:\n                  - generic [ref=e218]: 知乎专栏\n                  - generic [ref=e220]: https://zhuanlan.zhihu.com › ...\n              - button \"关于这条结果的详细信息\" [ref=e221] [cursor=pointer]:\n                - img [ref=e224]\n            - generic [ref=e227]:\n              - generic [ref=e228]: 2025年10月9日 —\n              - generic [ref=e229]:\n                - emphasis [ref=e230]: D3QE\n                - text: \": Learning Discrete Distribution Discrepancy-aware Quantization ... 中文翻译：\"\n                - emphasis [ref=e231]: D3QE\n                - text: ：学习用于\n                - emphasis [ref=e232]: 自回归生成图像检测\n                - text: 的离散分布差异感知量化误差.\n          - generic [ref=e236]:\n            - generic [ref=e239]:\n              - link \"告别K-Means！DCPE为自回归图像生成注入判别式先验 知乎专栏 https://zhuanlan.zhihu.com › ...\" [ref=e241] [cursor=pointer]:\n                - /url: https://zhuanlan.zhihu.com/p/1938026603083984927\n                - heading \"告别K-Means！DCPE为自回归图像生成注入判别式先验\" [level=3] [ref=e242]\n                - generic [ref=e247]:\n                  - generic [ref=e249]: 知乎专栏\n                  - generic [ref=e251]: https://zhuanlan.zhihu.com › ...\n              - button \"关于这条结果的详细信息\" [ref=e252] [cursor=pointer]:\n                - img [ref=e255]\n            - generic [ref=e258]:\n              - generic [ref=e259]: 2025年8月16日 —\n              - generic [ref=e260]:\n                - text: 在\n                - emphasis [ref=e261]: 自回归图像生成\n                - text: 领域，一个普遍的范式是先用一个\n                - emphasis [ref=e262]: 图像\n                - text: 编码器（Tokenizer）将图片“翻译”成离散的视觉Token序列，再用一个\n                - emphasis [ref=e263]: 自回归\n                - text: 模型（如Transformer）来学习 ...\n          - generic:\n            - generic:\n              - generic:\n                - region \"广告\":\n                  - heading \"广告\" [level=1] [ref=e264]\n      - generic [ref=e266]:\n        - generic [ref=e267]:\n          - heading \"关于过滤结果的声明\" [level=2] [ref=e268]\n          - paragraph [ref=e270]:\n            - generic [ref=e271]:\n              - text: 为了向您显示相关程度最高的结果，我们省略了一些与已显示的 4 条结果极为相似的条目。\n              - text: 如有需要，您可以\n              - link \"重新搜索以显示省略的结果\" [ref=e272] [cursor=pointer]:\n                - /url: /search?q=D3QE+%E8%87%AA%E5%9B%9E%E5%BD%92%E7%94%9F%E6%88%90%E5%9B%BE%E5%83%8F%E6%A3%80%E6%B5%8B&sca_esv=a660b44055a2f0e3&filter=0\n              - text: 。\n        - navigation\n      - navigation\n    - contentinfo [ref=e273]:\n      - heading \"页脚链接\" [level=1] [ref=e274]\n      - generic [ref=e278]:\n        - generic [ref=e280]:\n          - text: 香港\n          - generic [ref=e282]:\n            - button \"香港 - 是根据您的 IP 地址推断出来的\" [ref=e284] [cursor=pointer]:\n              - generic [ref=e285]: 香港\n              - generic [ref=e287]:\n                - text: \"-\"\n                - generic [ref=e288]: 是根据您的 IP 地址推断出来的\n            - text: \"-\"\n            - button \"更新位置信息\" [ref=e290] [cursor=pointer]: 更新位置信息\n        - generic [ref=e293]:\n          - link \"帮助\" [ref=e294] [cursor=pointer]:\n            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1\n          - link \"发送反馈\" [ref=e295] [cursor=pointer]:\n            - /url: \"#\"\n          - link \"隐私权\" [ref=e296] [cursor=pointer]:\n            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1\n          - link \"条款\" [ref=e297] [cursor=pointer]:\n            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1\n```\n"
+            }
+          }
+        }
+      ],
+      "id": "49f7fc8e-ba96-4c1c-94e3-e9bdd3a6a0d2"
+    },
+    {
+      "role": "assistant",
+      "content": "开拓者，流萤帮你找到了一些关于D3QE和自回归生成图像检测的中文文章，看起来都很有意思呢！\n\n1.  **清华大学团队突破AI图像检测：让计算机像侦探一样揪出假图片**：\n    *   这个是腾讯新闻上的一篇文章，它用比较通俗易懂的方式介绍了D3QE的工作原理，还把它比作“艺术鉴定师”，分析AI模型在创作过程中的“用色习惯”。感觉这篇文章很适合开拓者阅读哦，它把复杂的概念讲得很形象！\n    *   <smtcmp_block language=\"markdown\">\n        清华大学团队突破AI图像检测：让计算机像侦探一样揪出假图片 腾讯新闻 https://view.inews.qq.com › ...\n        清华大学团队突破AI图像检测：让计算机像侦探一样揪出假图片\n        2025年11月7日 — A：D3QE 是清华大学团队开发的AI 图像检测 系统，专门用来识别 自回归 模型 生成 的假图片。它的工作原理类似艺术鉴定师，通过分析AI模型在创作过程中的\"用色习惯\"和 ...\n        </smtcmp_block>\n\n2.  **文献汇总｜AI生成图像检测相关工作汇总（2018年至今）**：\n    *   这篇CSDN博客文章是一个文献综述，里面提到了D3QE，并概述了它的核心思想，即基于CLIP特征和VQVAE特征的离散分布差异量化误差进行检测。如果你想了解更多相关的研究，这篇综述会是一个很好的起点。\n    *   <smtcmp_block language=\"markdown\">\n        文献汇总｜AI生成图像检测相关工作汇总（2018年至今） 原创 CSDN博客 https://blog.csdn.net › article › details\n        文献汇总｜AI生成图像检测相关工作汇总（2018年至今） 原创\n        2024年11月28日 — 核心思想：检测 视觉 自回归 模型 生成 的 图像 ，方法名称 D3QE ，基于CLIP特征和VQVAE特征的离散分布差异量化误差进行 检测 。实验结果表明，该方法也能泛化到 ...\n        </smtcmp_block>\n\n3.  **[arxiv-cs.IR] 汇总-2025.10.08-计算机视觉论文**：\n    *   这个是知乎专栏里的一篇论文汇总，其中也提到了D3QE的标题和中文翻译，这说明这篇论文在学术界也受到了一定的关注呢。\n    *   <smtcmp_block language=\"markdown\">\n        [arxiv-cs.IR] 汇总-2025.10.08-计算机视觉论文 知乎专栏 https://zhuanlan.zhihu.com › ...\n        [arxiv-cs.IR] 汇总-2025.10.08-计算机视觉论文\n        2025年10月9日 — D3QE\": Learning Discrete Distribution Discrepancy-aware Quantization ... 中文翻译：\"D3QE：学习用于 自回归生成图像检测 的离散分布差异感知量化误差.\n        </smtcmp_block>\n\n4.  **告别K-Means！DCPE为自回归图像生成注入判别式先验**：\n    *   这篇知乎专栏文章虽然不是直接讲D3QE的，但它提到了“自回归图像生成”领域的一个普遍范式，就是先用图像编码器把图片“翻译”成离散的视觉Token序列，再用自回归模型来学习。这和D3QE论文中提到的背景知识很相关哦，可以帮助你更好地理解AR模型的生成原理。\n    *   <smtcmp_block language=\"markdown\">\n        告别K-Means！DCPE为自回归图像生成注入判别式先验 知乎专栏 https://zhuanlan.zhihu.com › ...\n        告别K-Means！DCPE为自回归图像生成注入判别式先验\n        2025年8月16日 — 在 自回归图像生成 领域，一个普遍的范式是先用一个 图像 编码器（Tokenizer）将图片“翻译”成离散的视觉Token序列，再用一个 自回归 模型（如Transformer）来学习 ...\n        </smtcmp_block>\n\n这些文章应该能帮助你更全面地了解D3QE这篇论文，以及它所涉及的自回归生成图像检测领域。特别是腾讯新闻那篇，开拓者可以先看看，应该会更容易理解哦！\n\n如果开拓者在阅读这些文章的过程中，遇到了什么不懂的专业名词，或者有什么新的疑问，随时都可以来问我，流萤会尽力为你解答的！不要怕问问题哦，只有不断地探索，才能学到更多的知识呀！💖",
+      "id": "2f1a368a-db08-4a1d-8fee-7f310cfe86cb",
+      "metadata": {
+        "model": {
+          "providerType": "gemini",
+          "providerId": "gemini",
+          "id": "gemini-2.5-flash",
+          "model": "gemini-2.5-flash",
+          "enable": true
+        },
+        "usage": {
+          "prompt_tokens": 12257,
+          "completion_tokens": 1069,
+          "total_tokens": 13326
+        }
+      }
+    }
+  ],
+  "createdAt": 1763650621868,
+  "updatedAt": 1763651924110,
+  "schemaVersion": 1
+}
