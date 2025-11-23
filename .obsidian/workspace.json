@@ -6,6 +6,7 @@
       {
         "id": "90abd448f5134e01",
         "type": "tabs",
+        "dimension": 69.0721649484536,
         "children": [
           {
             "id": "877d334bcfa4ac0b",
@@ -20,12 +21,56 @@
               "icon": "lucide-file",
               "title": "实验记录"
             }
+          },
+          {
+            "id": "2f313f508e794103",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.bilibili.com/",
+                "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili"
+            }
+          },
+          {
+            "id": "dc5542308cb7855c",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.bilibili.com/video/BV1GPymBwEu1?spm_id_from=333.788.player.switch&vd_source=00eb8e176c9f9ce3b2af6eda78c6e8fd&p=23",
+                "title": "4-获取各窗口输入特征_哔哩哔哩_bilibili",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "4-获取各窗口输入特征_哔哩哔哩_bilibili"
+            }
+          },
+          {
+            "id": "29fb345f3be33bc6",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.bilibili.com/video/BV13L4y1475U/?t=4.6&vd_source=00eb8e176c9f9ce3b2af6eda78c6e8fd",
+                "title": "Swin Transformer论文精读【论文精读】_哔哩哔哩_bilibili",
+                "mode": "blank"
+              },
+              "icon": "globe-2",
+              "title": "Swin Transformer论文精读【论文精读】_哔哩哔哩_bilibili"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "6de1fa6bee492007",
         "type": "tabs",
+        "dimension": 30.927835051546392,
         "children": [
           {
             "id": "e6761b0f634fbb3a",
@@ -61,36 +106,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CV_src_code/face anti-spoofing VIT架构图.md",
+                "file": "人脸鉴伪技术研究/zero-shot分类检测适配器方案.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "face anti-spoofing VIT架构图"
-            }
-          },
-          {
-            "id": "4b8051d514668633",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "img/Pasted image 20251022161909.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251022161909"
-            }
-          },
-          {
-            "id": "39b0d9539b4baaf2",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "img/Pasted image 20251122230541.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251122230541"
+              "title": "zero-shot分类检测适配器方案"
             }
           },
           {
@@ -111,16 +132,14 @@
             "id": "c73f63523286b8b9",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CV相关论文/rine.pdf",
-                "page": 2,
-                "left": -15,
-                "top": 368,
-                "zoom": 1.0110294117647058
+                "file": "TODO.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "rine"
+              "icon": "lucide-file",
+              "title": "TODO"
             }
           },
           {
@@ -138,7 +157,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -170,7 +189,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rine",
+                "query": "zero",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -369,43 +388,44 @@
   },
   "active": "9c5ca07991602ea7",
   "lastOpenFiles": [
+    "单文本实现的rine双分支架构.md",
+    "人脸鉴伪技术研究/zero-shot分类检测适配器方案.md",
+    "zero-shot分类检测适配器方案",
+    "CV研究思考2.md",
+    "人脸鉴伪技术研究/zero-shot分类检测适配器方案",
+    "人脸鉴伪技术研究",
+    "CV_src_code/face anti-spoofing VIT架构图.md",
+    "CV_src_code/deepfake_adapter.md",
+    "img/Pasted image 20251022161909.png",
+    "TODO.md",
+    "未命名.base",
+    "CV_src_code/Swan-T.md",
+    "CV相关论文/rine.pdf",
     "CV相关论文/Swin-T.pdf",
     "实验记录.md",
     "CV研究思考.md",
     "CV_src_code/Vision Transformer (ViT) 模型详解.md",
     "CV_src_code/MANO模块.md",
     "CV_src_code/face anti-spoofing ViT full model code.md",
-    "CV_src_code/deepfake_adapter.md",
     "CV_src_code/DCT离散余弦变换笔记.md",
     "CV_src_code/注意力机制数学原理与实现.md",
     "CV_src_code/双分支写法.md",
     "CV_src_code/神经网络升维降维数学原理.md",
     "CV_src_code/门控网络.md",
-    "单文本实现的rine双分支架构.md",
-    "CV_src_code/face anti-spoofing VIT架构图.md",
     "金融研究思考.md",
-    "TODO.md",
     "img/Pasted image 20251122230541.png",
-    "img/Pasted image 20251022161909.png",
     "未命名",
-    "CV研究思考2.md",
     "CV相关论文/Linear Attention with Global Context A Multipole Attention Mechanism for.pdf",
     "CV相关论文/2507.02748v1.pdf",
     "CV_src_code/graph0.pdf",
-    "CV相关论文/Continual Face Forgery Detection via Historical Distribution Preserving.pdf",
     "CV论文阅读笔记/深度学习卷积知识笔记.md",
     "copilot/copilot-conversations/帮我查找一下使用双分支的人脸篡改检测模型@20251119_141441.md",
     "copilot/copilot-conversations/简要概括一下这篇文章@20251119_154218.md",
-    "主课/机器学习/Test.pdf",
     "media-lib/url-jdwqzr82.md",
-    "CV相关论文/deepfake generation and detection——A benchmark and survey综述.pdf",
-    "CV相关论文/C2P-CLIP njecting Category Common Prompt in CLIP to Enhance Generalization in Deepfake Detection.pdf",
-    "CV_src_code",
     "技术/C++/C++课程里hhy记不住的东西.md",
     "欢迎.md",
     "CV论文阅读笔记/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.md",
     "CV论文阅读笔记/C2P-CLIP njecting Category Common Prompt in CLIP to Enhance Generalization in Deepfake Detection.md",
-    "论文阅读笔记/A New Hybrid Forecasting Model Based on SW-LSTM and Wavelet Packet Decomposition—— A Case Study of Oil Futures Prices.md",
     "Pasted image 20251110203949.png",
     "img/Pasted image 20250915174902.png"
   ]

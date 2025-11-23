@@ -19,7 +19,15 @@
     - [x] 或者尝试**交替使用**这两种注意力模块。
 - [ ] **研究并考虑实现窗口间交互机制**：
     - [ ] 了解Swin Transformer的`shifted window attention`原理。
+    - [ ] [教程](https://www.bilibili.com/video/BV1GPymBwEu1?t=462.7&p=21)
+    - [ ] [另外一个教程](https://www.bilibili.com/video/BV13L4y1475U?t=4.6)
     - [ ] 尝试在`LocalAttention2D`的基础上，实现简单的窗口偏移来增强信息交流。
-- [ ] **调整训练策略**：
-    - [ ] 如果新的模型效果不佳，尝试增加训练`epochs`。
-    - [ ] 检查学习率调度器是否合适。cosine
+- [x] **调整训练策略**：
+    - [x] 如果新的模型效果不佳，尝试增加训练`epochs`。
+    - [x] 检查学习率调度器是否合适。cosine
+
+# 2025年11月24日
+- [ ] 将现有的ViT特征提取改成swan-T
+- [ ] 给现有的Rine双分支进行消融实验
+- [ ] 将rine相关的模块都进行可视化实验
+- [ ] 思考是否能将SSCA相关的注意力使用SwinTransformer进行优化
