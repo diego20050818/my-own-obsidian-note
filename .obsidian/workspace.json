@@ -4,97 +4,141 @@
     "type": "split",
     "children": [
       {
+        "id": "90abd448f5134e01",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "877d334bcfa4ac0b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "实验记录.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "实验记录"
+            }
+          }
+        ]
+      },
+      {
         "id": "6de1fa6bee492007",
         "type": "tabs",
         "children": [
           {
-            "id": "76739fa1f3878d40",
+            "id": "e6761b0f634fbb3a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CV_src_code/deepfake_adapter.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "deepfake_adapter"
+            }
+          },
+          {
+            "id": "9a0d657518d292c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CV_src_code/神经网络升维降维数学原理.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "神经网络升维降维数学原理"
+            }
+          },
+          {
+            "id": "864c8f6d69355e05",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CV_src_code/face anti-spoofing VIT架构图.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "face anti-spoofing VIT架构图"
+            }
+          },
+          {
+            "id": "4b8051d514668633",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "img/Pasted image 20251022161909.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20251022161909"
+            }
+          },
+          {
+            "id": "39b0d9539b4baaf2",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "img/Pasted image 20251122230541.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20251122230541"
+            }
+          },
+          {
+            "id": "d8f6a04c165e6ad7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CV_src_code/deepfake_adapter.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "deepfake_adapter"
+            }
+          },
+          {
+            "id": "c73f63523286b8b9",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "主课/机器学习/Test.pdf",
-                "page": 1,
-                "left": -10,
-                "top": 796,
-                "zoom": 1.5049019607843137
+                "file": "CV相关论文/rine.pdf",
+                "page": 2,
+                "left": -15,
+                "top": 368,
+                "zoom": 1.0110294117647058
               },
               "icon": "lucide-file-text",
-              "title": "Test"
+              "title": "rine"
             }
           },
           {
-            "id": "0344362feae86cc8",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "CV论文阅读笔记/graph0.pdf",
-                "page": 1,
-                "zoom": 1
-              },
-              "icon": "lucide-file-text",
-              "title": "graph0"
-            }
-          },
-          {
-            "id": "8a0e545d3bad05ed",
+            "id": "fbf078b9d3f63d12",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CV研究思考.md",
+                "file": "单文本实现的rine双分支架构.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CV研究思考"
-            }
-          },
-          {
-            "id": "128e8f5ca98a056e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CV研究思考.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CV研究思考"
-            }
-          },
-          {
-            "id": "b9d7d77cb3592195",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://arxiv.org/abs/2412.20833v2",
-                "title": "[2412.20833v2] Inclusion 2024 Global Multimedia Deepfake Detection Challenge: Towards Multi-dimensional Face Forgery Detection",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "[2412.20833v2] Inclusion 2024 Global Multimedia Deepfake Detection Challenge: Towards Multi-dimensional Face Forgery Detection"
-            }
-          },
-          {
-            "id": "f620f5f7b280ef41",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CV论文阅读笔记/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning"
+              "title": "单文本实现的rine双分支架构"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -126,7 +170,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#copilot-conversation",
+                "query": "rine",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -176,12 +220,11 @@
                   "copy"
                 ]
               },
-              "icon": "lucide-ghost",
-              "title": "translator-view"
+              "icon": "fanyi_baidu",
+              "title": "Fanyi Baidu"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -216,13 +259,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CV相关论文/Wang_DIRE_for_Diffusion-Generated_Image_Detection_ICCV_2023_paper.pdf",
+                "file": "实验记录.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Wang_DIRE_for_Diffusion-Generated_Image_Detection_ICCV_2023_paper 的大纲"
+              "title": "实验记录 的大纲"
             }
           },
           {
@@ -251,17 +294,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CV研究思考.md",
+                "file": "实验记录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "CV研究思考 的反向链接列表"
+              "title": "实验记录 的反向链接列表"
             }
           },
           {
@@ -270,12 +313,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CV论文阅读笔记/D3QE.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "file": "实验记录.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "D3QE 的出链列表"
+              "title": "实验记录 的出链列表"
             }
           },
           {
@@ -303,7 +346,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 472
+    "width": 460.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -320,48 +363,49 @@
       "translate:Open translation view": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-extract-pdf-highlights:PDF Highlights": false,
-      "smart-composer:Open smart composer": false
+      "smart-composer:Open smart composer": false,
+      "media-extended:Open external media": false
     }
   },
   "active": "9c5ca07991602ea7",
   "lastOpenFiles": [
+    "CV相关论文/Swin-T.pdf",
+    "实验记录.md",
+    "CV研究思考.md",
+    "CV_src_code/Vision Transformer (ViT) 模型详解.md",
+    "CV_src_code/MANO模块.md",
+    "CV_src_code/face anti-spoofing ViT full model code.md",
+    "CV_src_code/deepfake_adapter.md",
+    "CV_src_code/DCT离散余弦变换笔记.md",
+    "CV_src_code/注意力机制数学原理与实现.md",
+    "CV_src_code/双分支写法.md",
+    "CV_src_code/神经网络升维降维数学原理.md",
+    "CV_src_code/门控网络.md",
+    "单文本实现的rine双分支架构.md",
+    "CV_src_code/face anti-spoofing VIT架构图.md",
+    "金融研究思考.md",
+    "TODO.md",
+    "img/Pasted image 20251122230541.png",
+    "img/Pasted image 20251022161909.png",
+    "未命名",
+    "CV研究思考2.md",
+    "CV相关论文/Linear Attention with Global Context A Multipole Attention Mechanism for.pdf",
+    "CV相关论文/2507.02748v1.pdf",
+    "CV_src_code/graph0.pdf",
+    "CV相关论文/Continual Face Forgery Detection via Historical Distribution Preserving.pdf",
+    "CV论文阅读笔记/深度学习卷积知识笔记.md",
+    "copilot/copilot-conversations/帮我查找一下使用双分支的人脸篡改检测模型@20251119_141441.md",
+    "copilot/copilot-conversations/简要概括一下这篇文章@20251119_154218.md",
+    "主课/机器学习/Test.pdf",
+    "media-lib/url-jdwqzr82.md",
+    "CV相关论文/deepfake generation and detection——A benchmark and survey综述.pdf",
+    "CV相关论文/C2P-CLIP njecting Category Common Prompt in CLIP to Enhance Generalization in Deepfake Detection.pdf",
+    "CV_src_code",
+    "技术/C++/C++课程里hhy记不住的东西.md",
+    "欢迎.md",
+    "CV论文阅读笔记/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.md",
     "CV论文阅读笔记/C2P-CLIP njecting Category Common Prompt in CLIP to Enhance Generalization in Deepfake Detection.md",
     "论文阅读笔记/A New Hybrid Forecasting Model Based on SW-LSTM and Wavelet Packet Decomposition—— A Case Study of Oil Futures Prices.md",
-    "主课/机器学习/Test.pdf",
-    "主课/机器学习/test.md",
-    "copilot/copilot-conversations/帮我查找一下使用双分支的人脸篡改检测模型@20251119_141441.md",
-    "CV研究思考.md",
-    "TODO.md",
-    "欢迎.md",
-    "访谈.md",
-    "金融研究思考.md",
-    "Pasted image 20251022161909.png",
-    "CV论文阅读笔记/Forensics Adapter-Adapting CLIP for Generalizable Face Forgery Detection.md",
-    "CV相关论文/deepfake generation and detection——A benchmark and survey综述.pdf",
-    "CV相关论文/inclusion 2024 clobal multimedia deepfake detection challenge综述.pdf",
-    "CV论文阅读笔记/D3QE.md",
-    "CV相关论文/D3QE.pdf",
-    "CV相关论文/Cui_Forensics_Adapter_Adapting_CLIP_for_Generalizable_Face_Forgery_Detection_CVPR_2025_paper.pdf",
-    "单文本实现的rine双分支架构.md",
-    "CV论文阅读笔记/graph0.pdf",
-    "CV相关论文/SAFE.pdf",
-    "copilot/copilot-conversations/简要概括一下这篇文章@20251119_154218.md",
-    "copilot/copilot-conversations",
-    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
-    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
-    "copilot/copilot-custom-prompts/Remove URLs.md",
-    "copilot/copilot-custom-prompts/Generate glossary.md",
-    "copilot/copilot-custom-prompts/Generate table of contents.md",
-    "copilot/copilot-custom-prompts/Make longer.md",
-    "copilot/copilot-custom-prompts/Make shorter.md",
-    "copilot/copilot-custom-prompts/Emojify.md",
-    "copilot/copilot-custom-prompts/Explain like I am 5.md",
-    "copilot/copilot-custom-prompts/Simplify.md",
-    "copilot/copilot-custom-prompts/Summarize.md",
-    "copilot/copilot-custom-prompts/Translate to Chinese.md",
-    "copilot/copilot-custom-prompts/Fix grammar and spelling.md",
-    "copilot/copilot-custom-prompts",
-    "copilot",
     "Pasted image 20251110203949.png",
     "img/Pasted image 20250915174902.png"
   ]

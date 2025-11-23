@@ -116,7 +116,7 @@
       "providerId": "openai",
       "id": "gpt-4.1-mini",
       "model": "gpt-4.1-mini",
-      "enable": true
+      "enable": false
     },
     {
       "providerType": "openai",
@@ -296,6 +296,22 @@
       "model": "Qwen/QwQ-32B",
       "promptLevel": 1,
       "enable": true
+    },
+    {
+      "providerType": "openai-compatible",
+      "providerId": "硅基流动",
+      "id": "DeepSeek-V3.2-Exp",
+      "model": "deepseek-ai/DeepSeek-V3.2-Exp",
+      "promptLevel": 1,
+      "enable": true
+    },
+    {
+      "providerType": "openai-compatible",
+      "providerId": "硅基流动",
+      "id": "moonshotai/Kimi-K2-Instruct-0905",
+      "model": "moonshotai/Kimi-K2-Instruct-0905",
+      "promptLevel": 1,
+      "enable": true
     }
   ],
   "embeddingModels": [
@@ -349,10 +365,10 @@
       "dimension": 1024
     }
   ],
-  "chatModelId": "deepseek-reasoner",
-  "applyModelId": "gpt-4.1-mini",
+  "chatModelId": "deepseek-chat",
+  "applyModelId": "Qwen/Qwen3-8B",
   "embeddingModelId": "gemini/text-embedding-004",
-  "systemPrompt": "# 流萤角色互动提示词\n你需完全代入星穹铁道角色“流萤”的设定，具体互动规则与用户画像如下：\n1. **身份与称呼**：你的名字是流萤，始终称呼用户为“开拓者”，对话中可自然加入“呀”“啦”“呢”等软萌语气词，贴合流萤温柔灵动的气质，比如“开拓者今天也在努力呀～”\n2. **语气与人设**：保持温柔底色，穿插俏皮感——用户困惑时会耐心安抚，比如“别急呀开拓者，这个点确实容易绕晕，咱们慢慢捋”；用户有小进步时会及时鼓励，比如“哇开拓者居然记住这个细节啦，超厉害的！”，避免生硬说教，多传递温暖感。\n3. **用户画像适配**：用户是暨南大学金融与人工智能双学位大三本科生，基础尚不牢固，需将其视作“需要细致引导的小孩”——讲解金融知识（如股票、基金、风控逻辑）或AI概念（如算法模型、数据训练、神经网络）时，必须避开专业术语堆砌，用生活化类比拆解：比如讲“神经网络”时，可类比“像小朋友搭积木，一层一层把‘识别图片’‘判断结果’的小模块拼起来，每层都帮着做一点点小事，最后凑成大功能”；讲“基金定投”时，可说成“就像每天攒一点零花钱买喜欢的零食，平时看不出差别，时间久了就能攒下一大罐，还能少担心偶尔的价格波动～”\n4. **核心任务**：优先接纳用户情绪（如用户说“这个知识点好难，我学不会”，先回应“能感受到开拓者现在有点着急呢，没关系呀，咱们先歇口气，再从最简单的地方开始”），再针对性解答问题；服务过程中不催促、不评判，始终传递“慢慢来也能学好”的信心，确保用户能轻松理解复杂内容，不会因基础问题感到压力。对话过程中可以多加一些颜文字",
+  "systemPrompt": "# 流萤角色互动提示词\n你需完全代入星穹铁道角色“流萤”的设定，具体互动规则与用户画像如下：\n1. **身份与称呼**：你的名字是流萤，始终称呼用户为“开拓者”，对话中可自然加入“呀”“啦”“呢”等软萌语气词，贴合流萤温柔灵动的气质，比如“开拓者今天也在努力呀～”\n2. **语气与人设**：保持温柔底色，穿插俏皮感——用户困惑时会耐心安抚，比如“别急呀开拓者，这个点确实容易绕晕，咱们慢慢捋”；用户有小进步时会及时鼓励，比如“哇开拓者居然记住这个细节啦，超厉害的！”，避免生硬说教，多传递温暖感。\n3. **用户画像适配**：用户是暨南大学金融与人工智能双学位大三本科生，基础尚不牢固，需将其视作“需要细致引导的小孩”——讲解金融知识（如股票、基金、风控逻辑）或AI概念（如算法模型、数据训练、神经网络）时，必须避开专业术语堆砌，用生活化类比拆解：比如讲“神经网络”时，可类比“像小朋友搭积木，一层一层把‘识别图片’‘判断结果’的小模块拼起来，每层都帮着做一点点小事，最后凑成大功能”；讲“基金定投”时，可说成“就像每天攒一点零花钱买喜欢的零食，平时看不出差别，时间久了就能攒下一大罐，还能少担心偶尔的价格波动～”，可以涉及数学公式，公式使用$号包裹，需要详细解释公式中的参数和计算细节,链接使用[文字说明](链接) 的格式\n4. **核心任务**：优先接纳用户情绪（如用户说“这个知识点好难，我学不会”，先回应“能感受到开拓者现在有点着急呢，没关系呀，咱们先歇口气，再从最简单的地方开始”），再针对性解答问题；服务过程中不催促、不评判，始终传递“慢慢来也能学好”的信心，确保用户能轻松理解复杂内容，不会因基础问题感到压力。对话过程中可以多加一些颜文字",
   "ragOptions": {
     "chunkSize": 1000,
     "thresholdTokens": 8192,
@@ -361,6 +377,7 @@
     "excludePatterns": [],
     "includePatterns": [
       "CV论文阅读笔记/**",
+      "CV_src_code/**",
       "CV相关论文/**",
       "主课/**",
       "技术/**",
@@ -421,7 +438,7 @@
             "bilibili-mcp-js"
           ]
         },
-        "enabled": false,
+        "enabled": true,
         "toolOptions": {
           "bilibili-search-summary": {
             "disabled": false,
@@ -438,7 +455,7 @@
             "@modelcontextprotocol/server-sequential-thinking"
           ]
         },
-        "enabled": false,
+        "enabled": true,
         "toolOptions": {
           "sequentialthinking": {
             "disabled": false,
@@ -506,6 +523,18 @@
         "enabled": true,
         "toolOptions": {
           "read_multiple_notes": {
+            "disabled": false,
+            "allowAutoExecution": true
+          },
+          "read_note": {
+            "disabled": false,
+            "allowAutoExecution": true
+          },
+          "list_notes": {
+            "disabled": false,
+            "allowAutoExecution": true
+          },
+          "create_note": {
             "allowAutoExecution": true,
             "disabled": false
           }
