@@ -2,6 +2,7 @@
   "cssTheme": "Underwater",
   "theme": "system",
   "monospaceFontFamily": "CodeNewRoman Nerd Font Mono",
-  "textFontFamily": "Microsoft YaHei",
-  "baseFontSize": 15
+  "textFontFamily": "CodeNewRoman Nerd Font Mono",
+  "baseFontSize": 15,
+  "nativeMenus": false
 }

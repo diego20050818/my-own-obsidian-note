@@ -10,5 +10,7 @@
   "obsidian-extract-pdf-highlights",
   "smart-composer",
   "obsidian-local-rest-api",
-  "media-extended"
+  "media-extended",
+  "calendar",
+  "obsidian-link-embed"
 ]

@@ -4,160 +4,90 @@
     "type": "split",
     "children": [
       {
-        "id": "90abd448f5134e01",
+        "id": "7ce7cb6b0656140d",
         "type": "tabs",
-        "dimension": 69.0721649484536,
         "children": [
           {
-            "id": "877d334bcfa4ac0b",
+            "id": "206080954644ab6b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "实验记录.md",
+                "file": "CV_src_code/索菲尔算子笔记.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
-              "title": "实验记录"
+              "title": "索菲尔算子笔记"
             }
           },
           {
-            "id": "2f313f508e794103",
+            "id": "c06c87a1c6244044",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.bilibili.com/",
-                "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+                "url": "https://www.nature.com/articles/s41598-024-79379-y",
+                "title": "Edge-guided multi-scale adaptive feature fusion network for liver tumor segmentation | Scientific Reports",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili"
+              "title": "Edge-guided multi-scale adaptive feature fusion network for liver tumor segmentation | Scientific Reports"
             }
           },
           {
-            "id": "dc5542308cb7855c",
+            "id": "39bb4698e4237e68",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.bilibili.com/video/BV1GPymBwEu1?spm_id_from=333.788.player.switch&vd_source=00eb8e176c9f9ce3b2af6eda78c6e8fd&p=23",
-                "title": "4-获取各窗口输入特征_哔哩哔哩_bilibili",
+                "url": "https://openaccess.thecvf.com/content/CVPR2022W/NTIRE/html/Wang_Edge-Enhanced_Feature_Distillation_Network_for_Efficient_Super-Resolution_CVPRW_2022_paper.html",
+                "title": "CVPR 2022 Open Access Repository",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "4-获取各窗口输入特征_哔哩哔哩_bilibili"
+              "title": "CVPR 2022 Open Access Repository"
             }
           },
           {
-            "id": "29fb345f3be33bc6",
+            "id": "f0c61bb64c3721ac",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.bilibili.com/video/BV13L4y1475U/?t=4.6&vd_source=00eb8e176c9f9ce3b2af6eda78c6e8fd",
-                "title": "Swin Transformer论文精读【论文精读】_哔哩哔哩_bilibili",
-                "mode": "blank"
+                "url": "https://link.springer.com/article/10.1007/s11263-022-01671-z",
+                "title": "Edge-Aware Graph Matching Network for Part-Based Semantic Segmentation | International Journal of Computer Vision",
+                "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Swin Transformer论文精读【论文精读】_哔哩哔哩_bilibili"
+              "title": "Edge-Aware Graph Matching Network for Part-Based Semantic Segmentation | International Journal of Computer Vision"
+            }
+          },
+          {
+            "id": "0225d858fc0bc7c6",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://github.com/pytorch/vision/blob/main/torchvision/transforms/functional.py",
+                "title": "vision/torchvision/transforms/functional.py at main · pytorch/vision · GitHub",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "vision/torchvision/transforms/functional.py at main · pytorch/vision · GitHub"
             }
           }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "6de1fa6bee492007",
-        "type": "tabs",
-        "dimension": 30.927835051546392,
-        "children": [
-          {
-            "id": "e6761b0f634fbb3a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CV_src_code/deepfake_adapter.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "deepfake_adapter"
-            }
-          },
-          {
-            "id": "9a0d657518d292c2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CV_src_code/神经网络升维降维数学原理.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "神经网络升维降维数学原理"
-            }
-          },
-          {
-            "id": "864c8f6d69355e05",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "人脸鉴伪技术研究/zero-shot分类检测适配器方案.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "zero-shot分类检测适配器方案"
-            }
-          },
-          {
-            "id": "d8f6a04c165e6ad7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CV_src_code/deepfake_adapter.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "deepfake_adapter"
-            }
-          },
-          {
-            "id": "c73f63523286b8b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TODO.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "TODO"
-            }
-          },
-          {
-            "id": "fbf078b9d3f63d12",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "单文本实现的rine双分支架构.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "单文本实现的rine双分支架构"
-            }
-          }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -278,13 +208,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "实验记录.md",
-                "followCursor": false,
+                "file": "TODO.md",
+                "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "实验记录 的大纲"
+              "title": "TODO 的大纲"
             }
           },
           {
@@ -308,39 +238,6 @@
             }
           },
           {
-            "id": "cbe2987cdd71f582",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "实验记录.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
-              },
-              "icon": "links-coming-in",
-              "title": "实验记录 的反向链接列表"
-            }
-          },
-          {
-            "id": "05f66fe11bca3975",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "实验记录.md",
-                "linksCollapsed": true,
-                "unlinkedCollapsed": false
-              },
-              "icon": "links-going-out",
-              "title": "实验记录 的出链列表"
-            }
-          },
-          {
             "id": "dd846b45002c48b0",
             "type": "leaf",
             "state": {
@@ -351,13 +248,46 @@
             }
           },
           {
-            "id": "6587a426bb9843ef",
+            "id": "0d7747a72c602344",
             "type": "leaf",
             "state": {
-              "type": "online.larslockefeer.obsidian-plugin-todo",
+              "type": "calendar",
               "state": {},
-              "icon": "checkmark",
-              "title": "Todo"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "05f66fe11bca3975",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CV论文阅读笔记/rine.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "rine 的出链列表"
+            }
+          },
+          {
+            "id": "cbe2987cdd71f582",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CV论文阅读笔记/rine.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "rine 的反向链接列表"
             }
           }
         ],
@@ -365,7 +295,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 460.5
+    "width": 524.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -388,45 +318,50 @@
   },
   "active": "9c5ca07991602ea7",
   "lastOpenFiles": [
-    "单文本实现的rine双分支架构.md",
-    "人脸鉴伪技术研究/zero-shot分类检测适配器方案.md",
-    "zero-shot分类检测适配器方案",
-    "CV研究思考2.md",
-    "人脸鉴伪技术研究/zero-shot分类检测适配器方案",
-    "人脸鉴伪技术研究",
-    "CV_src_code/face anti-spoofing VIT架构图.md",
-    "CV_src_code/deepfake_adapter.md",
-    "img/Pasted image 20251022161909.png",
-    "TODO.md",
-    "未命名.base",
-    "CV_src_code/Swan-T.md",
-    "CV相关论文/rine.pdf",
-    "CV相关论文/Swin-T.pdf",
-    "实验记录.md",
-    "CV研究思考.md",
-    "CV_src_code/Vision Transformer (ViT) 模型详解.md",
-    "CV_src_code/MANO模块.md",
-    "CV_src_code/face anti-spoofing ViT full model code.md",
-    "CV_src_code/DCT离散余弦变换笔记.md",
-    "CV_src_code/注意力机制数学原理与实现.md",
-    "CV_src_code/双分支写法.md",
-    "CV_src_code/神经网络升维降维数学原理.md",
-    "CV_src_code/门控网络.md",
-    "金融研究思考.md",
-    "img/Pasted image 20251122230541.png",
-    "未命名",
-    "CV相关论文/Linear Attention with Global Context A Multipole Attention Mechanism for.pdf",
-    "CV相关论文/2507.02748v1.pdf",
-    "CV_src_code/graph0.pdf",
-    "CV论文阅读笔记/深度学习卷积知识笔记.md",
-    "copilot/copilot-conversations/帮我查找一下使用双分支的人脸篡改检测模型@20251119_141441.md",
-    "copilot/copilot-conversations/简要概括一下这篇文章@20251119_154218.md",
-    "media-lib/url-jdwqzr82.md",
+    "人脸篡改检测白板.canvas",
+    "CV_src_code/索菲尔算子笔记.md",
+    "边缘检测算法比较.md",
     "技术/C++/C++课程里hhy记不住的东西.md",
-    "欢迎.md",
+    "技术/深度学习",
+    "技术/机器学习/Test.pdf",
+    "技术/机器学习/test.md",
+    "CV_src_code/改进版RINEPlusSSCA.md",
+    "洪浩洋汇报2025年11月26日.md",
+    "Pasted image 20251127135455.png",
+    "单文本实现的rine双分支架构.md",
+    "CV研究思考2.md",
+    "[sherpa-onnx-sense-voice-small.md",
+    "嵌入.md",
+    "ieeexplore.ieee.org.md",
+    "CV_src_code/zero-shot分类检测适配器方案.md",
+    "CV相关论文/ferretNet.pdf",
+    "技术可行性方案.md",
+    "技术/C++/C++期末速成学习计划.md",
+    "img/Pasted image 20251125132627.png",
+    "技术/JAVA/Java期末速成学习计划.md",
+    "技术/oracle/oracle期末速成学习计划.md",
+    "Java",
+    "C++",
+    "img/Pasted image 20251124172128.png",
+    "oracle",
+    "技术/oracle",
+    "CV相关论文/rine.pdf",
+    "CV论文阅读笔记/rine.md",
+    "CV_src_code/池化操作详解.md",
+    "img/实验记录.md",
+    "CV_src_code/RINEPlusSSCA source code.md",
+    "CV_src_code/face anti-spoofing VIT架构图.md",
+    "CV_src_code/门控网络.md",
     "CV论文阅读笔记/Continual face forgery detection based on relation-aware spatial-frequency interaction aggregation and contrastive learning.md",
-    "CV论文阅读笔记/C2P-CLIP njecting Category Common Prompt in CLIP to Enhance Generalization in Deepfake Detection.md",
-    "Pasted image 20251110203949.png",
-    "img/Pasted image 20250915174902.png"
+    "CV论文阅读笔记/Continual Face Forgery Detection via Historical Distribution Preserving.md",
+    "CV论文阅读笔记/D3QE.md",
+    "金字塔和特征金字塔笔记",
+    "未命名.base",
+    "img/Pasted image 20251122230541.png",
+    "img/Pasted image 20251022161909.png",
+    "img/Pasted image 20250915174902.png",
+    "img/d4770cfddb49bb8672d1c871eb0924dd.png",
+    "img/Pasted image 20251123231337.png",
+    "Pasted image 20251110203949.png"
   ]
 }
