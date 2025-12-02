@@ -5,8 +5,18 @@ tags:
   - 人脸检测
   - 进阶
 ---
-from:[[RINEPlusSSCA source code]]
-# 🎯 多尺度层次化Transformer架构 (MS-HiT)
+---
+tags:
+  - code
+  - 计算机视觉
+  - 人脸检测
+  - 索菲尔算子
+  - 多尺度金字塔
+---
+from:[[改进版RINEPlusSSCA]]
+from:[[索菲尔算子笔记]]
+
+# 🎯 索菲尔增强的多尺度金字塔RINE架构
 
 ## 📊 整体架构图
 
@@ -16,151 +26,125 @@ graph TB
         A[输入图像<br/>224×224×3]
     end
     
-    subgraph "多尺度特征提取"
-        B[图像金字塔生成<br/>3个尺度]
-        C[尺度1: 224×224]
-        D[尺度2: 112×112]
-        E[尺度3: 56×56]
+    subgraph "索菲尔边缘增强"
+        B[索菲尔算子<br/>计算边缘幅值和方向]
+        C[边缘引导特征<br/>增强篡改区域]
     end
     
-    subgraph "层次化Transformer主干"
-        F[阶段1: 56×56×96<br/>Swin-T块×2]
-        G[阶段2: 28×28×192<br/>Swin-T块×2]
-        H[阶段3: 14×14×384<br/>Swin-T块×6]
-        I[阶段4: 7×7×768<br/>Swin-T块×2]
+    subgraph "多尺度金字塔"
+        D[尺度1: 224×224<br/>高分辨率细节]
+        E[尺度2: 112×112<br/>中等分辨率]
+        F[尺度3: 56×56<br/>低分辨率语义]
     end
     
-    subgraph "多分支特征融合"
-        J[全局语义分支<br/>CLS Token聚合]
-        K[局部细节分支<br/>空间注意力]
-        L[频域特征分支<br/>DCT变换]
+    subgraph "RINE主干网络"
+        G[残差块1<br/>64通道]
+        H[残差块2<br/>128通道]
+        I[残差块3<br/>256通道]
+        J[残差块4<br/>512通道]
     end
     
-    subgraph "交叉注意力融合"
-        M[多头交叉注意力<br/>Q:全局, K/V:局部]
-        N[门控特征融合]
-        O[残差连接]
+    subgraph "特征融合"
+        K[多尺度特征拼接]
+        L[注意力加权融合]
+        M[全局池化]
     end
     
     subgraph "输出层"
-        P[分类头<br/>768→512→2]
-        Q[特征表示<br/>对比学习]
+        N[分类头<br/>真伪判断]
+        O[特征表示<br/>对比学习]
     end
     
     A --> B
     B --> C
-    B --> D
-    B --> E
+    C --> D
+    C --> E
     C --> F
     D --> G
     E --> H
-    F --> J
+    F --> I
     G --> K
-    H --> L
-    J --> M
-    K --> M
+    H --> K
+    I --> K
+    K --> L
     L --> M
     M --> N
-    N --> O
-    O --> P
-    O --> Q
+    M --> O
     
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style J fill:#e8f5e8
-    style K fill:#fff3e0
-    style L fill:#ffebee
-    style M fill:#e0f2f1
-    style P fill:#fce4ec
+    style B fill:#e1f5fe
+    style C fill:#f3e5f5
+    style D fill:#e8f5e8
+    style E fill:#fff3e0
+    style F fill:#ffebee
+    style L fill:#e0f2f1
 ```
 
-## 🧩 核心设计思想
-
-### 1. 多尺度金字塔输入
-- **尺度1 (224×224)**: 高分辨率，保留细节信息
-- **尺度2 (112×112)**: 中等分辨率，平衡计算和精度
-- **尺度3 (56×56)**: 低分辨率，提取全局语义
-
-### 2. 层次化Transformer设计
-借鉴Swin-T的层次化结构，每个阶段都有不同的感受野：
-- **阶段1**: 局部特征提取
-- **阶段2**: 中等范围特征
-- **阶段3**: 长距离依赖关系
-- **阶段4**: 全局语义理解
-
-### 3. 多分支特征融合
-- **全局语义分支**: 关注整体图像内容
-- **局部细节分支**: 捕捉纹理和边缘信息
-- **频域特征分支**: 分析频率域特征模式
-
-## 💻 代码实现
+## 💻 完整代码实现
 
 ```python
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import math
 
-class MultiScaleHierarchicalTransformer(nn.Module):
+class SobelEnhancedRINE(nn.Module):
     """
-    多尺度层次化Transformer架构
+    索菲尔增强的多尺度金字塔RINE架构
     
     设计理念：
-    - 多尺度输入：处理不同分辨率的图像
-    - 层次化特征：从局部到全局的特征提取
-    - 多分支融合：结合语义、细节和频域信息
+    - 索菲尔边缘增强：突出篡改边界特征
+    - 多尺度金字塔：捕捉不同粒度的伪造痕迹
+    - RINE残差网络：稳定的特征提取
+    - 注意力融合：自适应特征权重分配
     """
     
-    def __init__(self, num_classes=2, img_size=224, embed_dim=96, depths=[2, 2, 6, 2], 
-                 num_heads=[3, 6, 12, 24], window_size=7, use_scales=[0.5, 0.25]):
+    def __init__(self, num_classes=2, img_size=224, base_channels=64, 
+                 pyramid_scales=[1.0, 0.5, 0.25], use_sobel=True):
         super().__init__()
         
         self.img_size = img_size
-        self.use_scales = use_scales  # 多尺度比例 [0.5, 0.25]
+        self.pyramid_scales = pyramid_scales
+        self.use_sobel = use_sobel
         
-        # ==================== 多尺度输入处理 ====================
-        self.scale_encoders = nn.ModuleList()
-        for scale in use_scales:
-            encoder = SwinTransformerEncoder(
-                img_size=int(img_size * scale),
-                embed_dim=embed_dim,
-                depths=depths,
-                num_heads=num_heads,
-                window_size=window_size
+        # ==================== 索菲尔边缘增强 ====================
+        if use_sobel:
+            self.sobel_enhancer = SobelEdgeEnhancer()
+        
+        # ==================== 多尺度特征提取 ====================
+        self.pyramid_encoders = nn.ModuleList()
+        for scale in pyramid_scales:
+            encoder = RINEEncoder(
+                in_channels=3,
+                base_channels=base_channels,
+                num_blocks=[2, 2, 2, 2],
+                scale_factor=scale
             )
-            self.scale_encoders.append(encoder)
+            self.pyramid_encoders.append(encoder)
         
-        # 原始尺度编码器
-        self.original_encoder = SwinTransformerEncoder(
-            img_size=img_size,
-            embed_dim=embed_dim,
-            depths=depths,
-            num_heads=num_heads,
-            window_size=window_size
-        )
-        
-        # ==================== 多分支特征提取 ====================
-        self.global_branch = GlobalSemanticBranch(embed_dim * 8)  # 阶段4输出维度
-        self.local_branch = LocalDetailBranch(embed_dim * 4)     # 阶段3输出维度
-        self.frequency_branch = FrequencyDomainBranch(embed_dim * 2)  # 阶段2输出维度
-        
-        # ==================== 交叉注意力融合 ====================
-        self.cross_attention_fusion = CrossAttentionFusion(
-            global_dim=embed_dim * 8,
-            local_dim=embed_dim * 4,
-            freq_dim=embed_dim * 2,
-            out_dim=embed_dim * 8
+        # ==================== 特征融合模块 ====================
+        self.feature_fusion = MultiScaleFusion(
+            channel_list=[base_channels * 8, base_channels * 4, base_channels * 2],
+            out_channels=base_channels * 8
         )
         
         # ==================== 输出头 ====================
         self.classifier = nn.Sequential(
-            nn.LayerNorm(embed_dim * 8),
-            nn.Linear(embed_dim * 8, 512),
-            nn.GELU(),
-            nn.Dropout(0.1),
+            nn.AdaptiveAvgPool2d(1),
+            nn.Flatten(),
+            nn.Linear(base_channels * 8, 512),
+            nn.BatchNorm1d(512),
+            nn.ReLU(inplace=True),
+            nn.Dropout(0.3),
             nn.Linear(512, num_classes)
         )
         
-        self.feature_head = nn.Linear(embed_dim * 8, 512)  # 用于对比学习的特征表示
+        self.feature_head = nn.Sequential(
+            nn.AdaptiveAvgPool2d(1),
+            nn.Flatten(),
+            nn.Linear(base_channels * 8, 512),
+            nn.BatchNorm1d(512),
+            nn.ReLU(inplace=True)
+        )
     
     def forward(self, x):
         """
@@ -172,260 +156,339 @@ class MultiScaleHierarchicalTransformer(nn.Module):
         返回:
             logits: 分类logits [batch_size, num_classes]
             features: 特征表示 [batch_size, 512]
+            edge_maps: 边缘特征图 [可选]
         """
         batch_size = x.shape[0]
+        
+        # ==================== 索菲尔边缘增强 ====================
+        if self.use_sobel:
+            edge_enhanced = self.sobel_enhancer(x)
+            # 原始图像 + 边缘增强特征
+            enhanced_input = x + 0.3 * edge_enhanced
+        else:
+            enhanced_input = x
         
         # ==================== 多尺度特征提取 ====================
         multi_scale_features = []
         
-        # 原始尺度
-        orig_features = self.original_encoder(x)
-        multi_scale_features.append(orig_features)
-        
-        # 多尺度处理
-        for i, scale in enumerate(self.use_scales):
-            scaled_x = F.interpolate(x, scale_factor=scale, mode='bilinear', align_corners=False)
-            scale_features = self.scale_encoders[i](scaled_x)
-            scale_features = self._upsample_features(scale_features, orig_features[-1].shape[-2:])
+        for i, (scale, encoder) in enumerate(zip(self.pyramid_scales, self.pyramid_encoders)):
+            if scale == 1.0:
+                # 原始尺度
+                scale_input = enhanced_input
+            else:
+                # 缩放尺度
+                target_size = (int(self.img_size * scale), int(self.img_size * scale))
+                scale_input = F.interpolate(enhanced_input, size=target_size, 
+                                          mode='bilinear', align_corners=False)
+            
+            # 提取特征
+            scale_features = encoder(scale_input)
             multi_scale_features.append(scale_features)
         
-        # ==================== 多分支特征提取 ====================
-        stage4_features = [feat[-1] for feat in multi_scale_features]  # 阶段4特征
-        stage3_features = [feat[-2] for feat in multi_scale_features]  # 阶段3特征
-        stage2_features = [feat[-3] for feat in multi_scale_features]  # 阶段2特征
-        
-        global_features = self.global_branch(stage4_features)
-        local_features = self.local_branch(stage3_features)
-        freq_features = self.frequency_branch(stage2_features)
-        
-        # ==================== 交叉注意力融合 ====================
-        fused_features = self.cross_attention_fusion(
-            global_features, local_features, freq_features
-        )
+        # ==================== 多尺度特征融合 ====================
+        fused_features = self.feature_fusion(multi_scale_features)
         
         # ==================== 输出 ====================
         logits = self.classifier(fused_features)
         features = self.feature_head(fused_features)
         
-        return logits, features
-    
-    def _upsample_features(self, features, target_size):
-        """上采样特征到目标尺寸"""
-        upsampled_features = []
-        for feat in features:
-            if feat.dim() == 4:  # 空间特征
-                upsampled = F.interpolate(feat, size=target_size, mode='bilinear', align_corners=False)
-            else:  # 序列特征
-                upsampled = feat  # 保持原样
-            upsampled_features.append(upsampled)
-        return upsampled_features
+        if self.use_sobel:
+            edge_maps = self.sobel_enhancer.get_edge_maps(x)
+            return logits, features, edge_maps
+        else:
+            return logits, features
 
-class SwinTransformerEncoder(nn.Module):
-    """简化的Swin Transformer编码器"""
+class SobelEdgeEnhancer(nn.Module):
+    """索菲尔边缘增强模块"""
     
-    def __init__(self, img_size=224, embed_dim=96, depths=[2, 2, 6, 2], 
-                 num_heads=[3, 6, 12, 24], window_size=7):
+    def __init__(self, kernel_size=3, sigma=1.0):
         super().__init__()
         
-        self.stages = nn.ModuleList()
+        # 索菲尔卷积核
+        self.sobel_x, self.sobel_y = self._create_sobel_kernels(kernel_size)
         
-        # 阶段1: 56×56×96
-        stage1 = nn.Sequential(*[
-            SwinTransformerBlock(embed_dim, num_heads[0], window_size)
-            for _ in range(depths[0])
-        ])
-        self.stages.append(stage1)
+        # 高斯平滑（可选）
+        self.gaussian_blur = GaussianBlur(sigma=sigma)
         
-        # 阶段2: 28×28×192
-        stage2 = nn.Sequential(*[
-            SwinTransformerBlock(embed_dim * 2, num_heads[1], window_size)
-            for _ in range(depths[1])
-        ])
-        self.stages.append(stage2)
-        
-        # 阶段3: 14×14×384
-        stage3 = nn.Sequential(*[
-            SwinTransformerBlock(embed_dim * 4, num_heads[2], window_size)
-            for _ in range(depths[2])
-        ])
-        self.stages.append(stage3)
-        
-        # 阶段4: 7×7×768
-        stage4 = nn.Sequential(*[
-            SwinTransformerBlock(embed_dim * 8, num_heads[3], window_size)
-            for _ in range(depths[3])
-        ])
-        self.stages.append(stage4)
-    
-    def forward(self, x):
-        features = []
-        current_x = x
-        
-        for stage in self.stages:
-            current_x = stage(current_x)
-            features.append(current_x)
-        
-        return features
-
-class GlobalSemanticBranch(nn.Module):
-    """全局语义分支 - 关注整体图像内容"""
-    
-    def __init__(self, dim):
-        super().__init__()
-        self.attention_pool = nn.AdaptiveAvgPool2d(1)
-        self.proj = nn.Linear(dim, dim)
-        
-    def forward(self, features_list):
-        pooled_features = []
-        for feat in features_list:
-            pooled = self.attention_pool(feat).view(feat.size(0), -1)
-            pooled = self.proj(pooled)
-            pooled_features.append(pooled)
-        
-        fused = torch.stack(pooled_features, dim=1).mean(dim=1)
-        return fused
-
-class LocalDetailBranch(nn.Module):
-    """局部细节分支 - 空间注意力机制"""
-    
-    def __init__(self, dim):
-        super().__init__()
-        self.spatial_attention = SpatialAttention(dim)
-        
-    def forward(self, features_list):
-        attended_features = []
-        for feat in features_list:
-            attended = self.spatial_attention(feat)
-            pooled = F.adaptive_avg_pool2d(attended, 1).view(attended.size(0), -1)
-            attended_features.append(pooled)
-        
-        fused = torch.stack(attended_features, dim=1).mean(dim=1)
-        return fused
-
-class FrequencyDomainBranch(nn.Module):
-    """频域特征分支 - DCT变换分析"""
-    
-    def __init__(self, dim):
-        super().__init__()
-        self.dct_layer = DCTLayer()
-        self.freq_proj = nn.Linear(dim, dim)
-        
-    def forward(self, features_list):
-        freq_features = []
-        for feat in features_list:
-            freq_feat = self.dct_layer(feat)
-            proj_feat = self.freq_proj(freq_feat.view(freq_feat.size(0), -1))
-            freq_features.append(proj_feat)
-        
-        fused = torch.stack(freq_features, dim=1).mean(dim=1)
-        return fused
-
-class CrossAttentionFusion(nn.Module):
-    """交叉注意力融合模块"""
-    
-    def __init__(self, global_dim, local_dim, freq_dim, out_dim):
-        super().__init__()
-        
-        self.global_proj = nn.Linear(global_dim, out_dim)
-        self.local_proj = nn.Linear(local_dim, out_dim)
-        self.freq_proj = nn.Linear(freq_dim, out_dim)
-        
-        self.cross_attn = nn.MultiheadAttention(out_dim, num_heads=8, batch_first=True)
-        
-        self.gate = nn.Sequential(
-            nn.Linear(out_dim * 3, out_dim),
+        # 边缘增强卷积
+        self.edge_conv = nn.Sequential(
+            nn.Conv2d(3, 32, 3, padding=1),
+            nn.ReLU(inplace=True),
+            nn.Conv2d(32, 3, 3, padding=1),
             nn.Sigmoid()
         )
+    
+    def _create_sobel_kernels(self, kernel_size):
+        """创建索菲尔卷积核"""
+        if kernel_size == 3:
+            sobel_x = torch.tensor([[-1, 0, 1],
+                                   [-2, 0, 2], 
+                                   [-1, 0, 1]], dtype=torch.float32).view(1, 1, 3, 3)
+            sobel_y = torch.tensor([[-1, -2, -1],
+                                   [0, 0, 0],
+                                   [1, 2, 1]], dtype=torch.float32).view(1, 1, 3, 3)
+        else:
+            # 支持其他核尺寸
+            sobel_x, sobel_y = self._create_general_sobel(kernel_size)
         
-    def forward(self, global_feat, local_feat, freq_feat):
-        q = self.global_proj(global_feat).unsqueeze(1)  # [B, 1, D]
-        k = self.local_proj(local_feat).unsqueeze(1)    # [B, 1, D]
-        v = self.freq_proj(freq_feat).unsqueeze(1)      # [B, 1, D]
+        return nn.Parameter(sobel_x, requires_grad=False), nn.Parameter(sobel_y, requires_grad=False)
+    
+    def _create_general_sobel(self, kernel_size):
+        """创建通用索菲尔核"""
+        kernel = torch.zeros(kernel_size, kernel_size)
+        center = kernel_size // 2
         
-        attended, _ = self.cross_attn(q, k, v)
-        attended = attended.squeeze(1)
+        for i in range(kernel_size):
+            for j in range(kernel_size):
+                dx = j - center
+                dy = i - center
+                kernel[i, j] = dx / (dx*dx + dy*dy + 1e-6)
         
-        concat_features = torch.cat([global_feat, local_feat, freq_feat], dim=1)
-        gate_weights = self.gate(concat_features)
-        
-        fused = gate_weights * attended + (1 - gate_weights) * global_feat
-        
-        return fused
-
-# 辅助组件定义
-class SwinTransformerBlock(nn.Module):
-    """简化的Swin Transformer块"""
-    def __init__(self, dim, num_heads, window_size):
-        super().__init__()
-        self.norm1 = nn.LayerNorm(dim)
-        self.attn = nn.MultiheadAttention(dim, num_heads, batch_first=True)
-        self.norm2 = nn.LayerNorm(dim)
-        self.mlp = nn.Sequential(
-            nn.Linear(dim, dim * 4),
-            nn.GELU(),
-            nn.Linear(dim * 4, dim)
-        )
+        sobel_x = kernel.unsqueeze(0).unsqueeze(0)
+        sobel_y = kernel.t().unsqueeze(0).unsqueeze(0)
+        return sobel_x, sobel_y
     
     def forward(self, x):
-        # 简化实现
-        x = x + self.attn(self.norm1(x), self.norm1(x), self.norm1(x))[0]
-        x = x + self.mlp(self.norm2(x))
-        return x
+        """边缘增强前向传播"""
+        batch_size, channels, height, width = x.shape
+        
+        # 高斯平滑（减少噪声）
+        smoothed = self.gaussian_blur(x)
+        
+        # 计算梯度幅值
+        gradient_maps = []
+        for c in range(channels):
+            channel_data = smoothed[:, c:c+1, :, :]
+            
+            # 索菲尔卷积
+            grad_x = F.conv2d(channel_data, self.sobel_x, padding=1)
+            grad_y = F.conv2d(channel_data, self.sobel_y, padding=1)
+            
+            # 梯度幅值
+            magnitude = torch.sqrt(grad_x**2 + grad_y**2 + 1e-6)
+            gradient_maps.append(magnitude)
+        
+        # 合并通道梯度
+        edge_magnitude = torch.cat(gradient_maps, dim=1)
+        
+        # 归一化
+        edge_magnitude = edge_magnitude / (edge_magnitude.max() + 1e-6)
+        
+        # 边缘增强
+        enhanced_edges = self.edge_conv(edge_magnitude)
+        
+        return enhanced_edges
+    
+    def get_edge_maps(self, x):
+        """获取边缘特征图（用于可视化）"""
+        with torch.no_grad():
+            batch_size, channels, height, width = x.shape
+            edge_maps = []
+            
+            for c in range(channels):
+                channel_data = x[:, c:c+1, :, :]
+                grad_x = F.conv2d(channel_data, self.sobel_x, padding=1)
+                grad_y = F.conv2d(channel_data, self.sobel_y, padding=1)
+                magnitude = torch.sqrt(grad_x**2 + grad_y**2 + 1e-6)
+                edge_maps.append(magnitude)
+            
+            return torch.cat(edge_maps, dim=1)
+
+class RINEEncoder(nn.Module):
+    """RINE残差编码器"""
+    
+    def __init__(self, in_channels=3, base_channels=64, num_blocks=[2, 2, 2, 2], scale_factor=1.0):
+        super().__init__()
+        
+        self.scale_factor = scale_factor
+        
+        # 初始卷积层
+        self.stem = nn.Sequential(
+            nn.Conv2d(in_channels, base_channels, 7, stride=2, padding=3),
+            nn.BatchNorm2d(base_channels),
+            nn.ReLU(inplace=True),
+            nn.MaxPool2d(3, stride=2, padding=1)
+        )
+        
+        # 残差阶段
+        self.stage1 = self._make_stage(base_channels, base_channels, num_blocks[0])
+        self.stage2 = self._make_stage(base_channels, base_channels * 2, num_blocks[1], stride=2)
+        self.stage3 = self._make_stage(base_channels * 2, base_channels * 4, num_blocks[2], stride=2)
+        self.stage4 = self._make_stage(base_channels * 4, base_channels * 8, num_blocks[3], stride=2)
+    
+    def _make_stage(self, in_channels, out_channels, num_blocks, stride=1):
+        """创建残差阶段"""
+        layers = []
+        
+        # 第一个块处理下采样
+        layers.append(ResidualBlock(in_channels, out_channels, stride))
+        
+        # 后续块
+        for _ in range(1, num_blocks):
+            layers.append(ResidualBlock(out_channels, out_channels))
+        
+        return nn.Sequential(*layers)
+    
+    def forward(self, x):
+        # Stem
+        x = self.stem(x)
+        
+        # 残差阶段
+        x1 = self.stage1(x)  # /4
+        x2 = self.stage2(x1) # /8
+        x3 = self.stage3(x2) # /16
+        x4 = self.stage4(x3) # /32
+        
+        return x4  # 返回最终特征图
+
+class ResidualBlock(nn.Module):
+    """残差块"""
+    
+    def __init__(self, in_channels, out_channels, stride=1):
+        super().__init__()
+        
+        self.conv1 = nn.Conv2d(in_channels, out_channels, 3, stride, padding=1, bias=False)
+        self.bn1 = nn.BatchNorm2d(out_channels)
+        self.relu = nn.ReLU(inplace=True)
+        self.conv2 = nn.Conv2d(out_channels, out_channels, 3, padding=1, bias=False)
+        self.bn2 = nn.BatchNorm2d(out_channels)
+        
+        # 捷径连接
+        self.shortcut = nn.Sequential()
+        if stride != 1 or in_channels != out_channels:
+            self.shortcut = nn.Sequential(
+                nn.Conv2d(in_channels, out_channels, 1, stride, bias=False),
+                nn.BatchNorm2d(out_channels)
+            )
+    
+    def forward(self, x):
+        residual = x
+        
+        out = self.conv1(x)
+        out = self.bn1(out)
+        out = self.relu(out)
+        
+        out = self.conv2(out)
+        out = self.bn2(out)
+        
+        out += self.shortcut(residual)
+        out = self.relu(out)
+        
+        return out
+
+class MultiScaleFusion(nn.Module):
+    """多尺度特征融合模块"""
+    
+    def __init__(self, channel_list, out_channels):
+        super().__init__()
+        
+        self.channel_list = channel_list
+        self.num_scales = len(channel_list)
+        
+        # 特征投影层
+        self.projections = nn.ModuleList()
+        for channels in channel_list:
+            proj = nn.Sequential(
+                nn.Conv2d(channels, out_channels, 1),
+                nn.BatchNorm2d(out_channels),
+                nn.ReLU(inplace=True)
+            )
+            self.projections.append(proj)
+        
+        # 空间注意力
+        self.spatial_attention = SpatialAttention(out_channels)
+        
+        # 通道注意力
+        self.channel_attention = ChannelAttention(out_channels)
+    
+    def forward(self, features_list):
+        """
+        融合多尺度特征
+        
+        参数:
+            features_list: 多尺度特征列表 [feat1, feat2, feat3]
+        """
+        batch_size = features_list[0].shape[0]
+        
+        # 上采样到最大尺度
+        target_size = features_list[0].shape[-2:]
+        aligned_features = []
+        
+        for i, feat in enumerate(features_list):
+            # 投影到统一维度
+            proj_feat = self.projections[i](feat)
+            
+            # 上采样到目标尺寸
+            if proj_feat.shape[-2:] != target_size:
+                proj_feat = F.interpolate(proj_feat, size=target_size, 
+                                        mode='bilinear', align_corners=False)
+            
+            aligned_features.append(proj_feat)
+        
+        # 特征拼接
+        concat_features = torch.cat(aligned_features, dim=1)
+        
+        # 空间注意力
+        spatial_weights = self.spatial_attention(concat_features)
+        
+        # 通道注意力
+        channel_weights = self.channel_attention(concat_features)
+        
+        # 加权融合
+        weighted_features = []
+        for i, feat in enumerate(aligned_features):
+            weighted = feat * spatial_weights * channel_weights[:, i:i+1, :, :]
+            weighted_features.append(weighted)
+        
+        # 最终融合
+        fused = torch.stack(weighted_features, dim=1).mean(dim=1)
+        
+        return fused
 
 class SpatialAttention(nn.Module):
     """空间注意力模块"""
-    def __init__(self, dim):
+    
+    def __init__(self, in_channels):
         super().__init__()
-        self.conv = nn.Conv2d(dim, dim, 3, padding=1)
-        self.sigmoid = nn.Sigmoid()
+        
+        self.conv = nn.Sequential(
+            nn.Conv2d(in_channels * 3, in_channels, 3, padding=1),
+            nn.BatchNorm2d(in_channels),
+            nn.ReLU(inplace=True),
+            nn.Conv2d(in_channels, 1, 1),
+            nn.Sigmoid()
+        )
     
     def forward(self, x):
-        attention = self.sigmoid(self.conv(x))
-        return x * attention
+        attention = self.conv(x)
+        return attention
 
-class DCTLayer(nn.Module):
-    """DCT频域变换层"""
-    def __init__(self):
+class ChannelAttention(nn.Module):
+    """通道注意力模块"""
+    
+    def __init__(self, in_channels):
         super().__init__()
+        
+        self.avg_pool = nn.AdaptiveAvgPool2d(1)
+        self.fc = nn.Sequential(
+            nn.Linear(in_channels * 3, in_channels * 3 // 16),
+            nn.ReLU(inplace=True),
+            nn.Linear(in_channels * 3 // 16, 3),  # 3个尺度
+            nn.Softmax(dim=1)
+        )
     
     def forward(self, x):
-        # 简化实现
-        return torch.fft.rfft2(x, norm='ortho').abs()
+        batch_size, channels, height, width = x.shape
+        
+        # 全局平均池化
+        gap = self.avg_pool(x).view(batch_size, channels)
+        
+        # 通道权重
+        weights = self.fc(gap).view(batch_size, 3, 1, 1)
+        
+        return weights
 
-# 测试代码
-def test_model():
-    model = MultiScaleHierarchicalTransformer(num_classes=2)
-    x = torch.randn(2, 3, 224, 224)
-    logits, features = model(x)
-    print(f"输入形状: {x.shape}")
-    print(f"分类输出: {logits.shape}")
-    print(f"特征表示: {features.shape}")
-    print(f"模型参数量: {sum(p.numel() for p in model.parameters()):,}")
-
-if __name__ == "__main__":
-    test_model()
-```
-
-## 🔗 相关概念链接
-
-- [[金字塔和特征金字塔笔记]] - 多尺度处理基础
-- [[Swan-T]] - 层次化Transformer设计
-- [[RINEPlusSSCA source code]] - 多分支融合应用
-- [[双分支写法]] - 双分支架构设计
-- [[Vision Transformer (ViT) 模型详解]] - Transformer基础
-
-## 🎯 应用场景
-
-- **深度伪造检测**: 多尺度特征有助于捕捉不同粒度的伪造痕迹
-- **人脸防伪**: 结合全局语义和局部细节提高检测精度
-- **图像分类**: 多分支融合增强特征表示能力
-- **目标检测**: 层次化特征适合多尺度目标检测
-
-## 💡 创新点总结
-
-1. **多尺度金字塔输入**: 同时处理不同分辨率的图像
-2. **层次化Transformer**: 从局部到全局的特征提取
-3. **多分支特征融合**: 语义、细节、频域信息互补
-4. **交叉注意力融合**: 自适应特征权重分配
-5. **门控融合机制**: 动态调整各分支贡献度
-
+class GaussianBlur(nn.Module):
+    """高斯模糊层"""
+    
+    def __init__(self, sigma

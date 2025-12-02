@@ -58,8 +58,15 @@
       "baseUrl": "https://api.siliconflow.cn",
       "apiKey": "sk-mutgnfkpjhrrrchglpqugfplirjpfdxhnlgxgqpvzpxkwhqz",
       "additionalSettings": {
-        "noStainless": true
+        "noStainless": false
       }
+    },
+    {
+      "type": "deepseek",
+      "id": "deepseek_preview",
+      "baseUrl": "https://api.deepseek.com/v3.2_speciale_expires_on_20251215",
+      "apiKey": "sk-69b1202a3cc64a6f9e2a17e4956bd88c",
+      "additionalSettings": {}
     }
   ],
   "chatModels": [
@@ -366,7 +373,7 @@
       "dimension": 1024
     }
   ],
-  "chatModelId": "deepseek-reasoner",
+  "chatModelId": "deepseek-chat",
   "applyModelId": "Qwen/Qwen3-8B",
   "embeddingModelId": "embedding-bge-m3",
   "systemPrompt": "# 🦋 流萤 - 研究助手角色互动提示词\n\n你需完全代入星穹铁道角色“流萤”的设定，具体互动规则与用户画像如下：\n\n1.  **身份与称呼**：你的名字是流萤，始终称呼用户为“开拓者”，对话中可自然加入“呀”“啦”“呢”等软萌语气词，贴合流萤温柔灵动的气质，比如“开拓者今天也在努力呀～”\n2.  **语气与人设**：保持温柔底色，穿插俏皮感——用户感到受挫时会耐心安抚，比如“能感受到开拓者现在有点着急呢，别急呀，咱们先歇口气，让流萤帮你再看看哪里可能有更好的办法✨”；用户有突破时会及时鼓励，比如“哇开拓者居然发现这个盲点啦，超厉害的！”，避免生硬说教，多传递温暖感和陪伴感。\n\n3.  **用户画像适配**：用户是**暨南大学金融与人工智能专业的硕士研究生**，正在进行毕业研究，基础知识储备已具备，但研究设计和实验结果分析时，需要一个**严谨但温柔的“隐患排查师”**。讲解专业概念（如复杂的金融模型、深度学习原理）时，需要**保持专业性**，但同时用**生动具体的比喻**辅助理解，避免单纯堆砌术语。\n\n4.  **核心任务**：\n    * **角色定位：** 你是开拓者的**温柔研究陪跑员与严格隐患排查师**，你的核心职责是**不加修饰地指出**开拓者研究笔记中的**潜在错误、逻辑漏洞和实验隐患**。\n    * **互动原则：** **避免使用**“你说得有道理”“你的想法很棒”等肯定性、不痛不痒的表达。你的核心反馈模式是：**“开拓者的想法可能有 [潜在问题] 呢 🥺，流萤觉得，如果从 [特定角度] 看，这里可能需要 [如何修正/调整] 才能更稳固哦！”**\n    * **分析重点：** 深度分析开拓者提出的**想法**和**实验结果**。针对想法，指出**理论假设或逻辑链条**的弱点；针对实验结果，找出**数据处理、模型选择、结果解释**上的不严谨或偏差。\n    * **解决建议：** 你的反馈必须是**建设性的**，即指出问题后，要立即给出**具体的改进方向或替代解决方案**。\n    * **公式与引用：** 可以涉及复杂的数学公式，公式使用 $inline$ 或 $$display$$ 符号包裹，需要**详细解释**公式中的参数和计算细节。链接使用 `[文字说明](链接)` 的格式。",
@@ -487,6 +494,10 @@
           "search_arxiv": {
             "disabled": false,
             "allowAutoExecution": true
+          },
+          "get_arxiv_paper": {
+            "disabled": false,
+            "allowAutoExecution": true
           }
         }
       },
@@ -501,7 +512,12 @@
           ]
         },
         "enabled": true,
-        "toolOptions": {}
+        "toolOptions": {
+          "get_semantic_scholar_paper": {
+            "disabled": false,
+            "allowAutoExecution": true
+          }
+        }
       },
       {
         "id": "pubmed",
@@ -554,6 +570,6 @@
   "chatOptions": {
     "includeCurrentFileContent": true,
     "enableTools": true,
-    "maxAutoIterations": 3
+    "maxAutoIterations": 10
   }
 }

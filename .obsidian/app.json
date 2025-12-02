@@ -1,11 +1,12 @@
 {
   "pdfExportSettings": {
-    "pageSize": "Letter",
+    "includeName": true,
+    "pageSize": "A5",
     "landscape": false,
     "margin": "0",
     "downscalePercent": 100
   },
   "alwaysUpdateLinks": true,
   "showLineNumber": false,
-  "readableLineLength": true
+  "readableLineLength": false
 }
