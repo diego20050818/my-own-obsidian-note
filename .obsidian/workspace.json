@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CV_src_code/金字塔和特征金字塔笔记.md",
+                "file": "CV_src_code/face anti-spoofing ViT full model code.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "金字塔和特征金字塔笔记"
+              "title": "face anti-spoofing ViT full model code"
             }
           },
           {
@@ -67,17 +67,16 @@
               "state": {
                 "file": "人脸篡改检测白板.canvas",
                 "viewState": {
-                  "x": 1993.3777324675186,
-                  "y": 2210.748018896682,
-                  "zoom": -1
+                  "x": 2233.0373616705447,
+                  "y": 847.9313377960948,
+                  "zoom": -1.9999999999999998
                 }
               },
               "icon": "lucide-layout-dashboard",
               "title": "人脸篡改检测白板"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -281,7 +280,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -306,59 +305,12 @@
       "media-extended:Open external media": false
     }
   },
-  "floating": {
-    "id": "54b2b9997cfdd161",
-    "type": "floating",
-    "children": [
-      {
-        "id": "83f0916144141902",
-        "type": "window",
-        "children": [
-          {
-            "id": "7a47b1446767b7fc",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "9afa96c4ea2c1ff4",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "CV_src_code/深度伪造检测-图像对对比学习研究方案.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "深度伪造检测-图像对对比学习研究方案"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 768,
-        "y": 332,
-        "width": 1024,
-        "height": 800,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "57486d4e34aa9b44",
+  "active": "ee3b0a862ca3bfa7",
   "lastOpenFiles": [
-    "人脸篡改检测白板.canvas",
+    "技术可行性方案.md",
     "CV_src_code/金字塔和特征金字塔笔记.md",
+    "人脸篡改检测白板.canvas",
+    "CV_src_code/深度伪造检测-图像对对比学习研究方案.md",
     "CV_src_code/改进版RINEPlusSSCA.md",
     "CV_src_code/deepfake_adapter.md",
     "金融研究思考.md",
@@ -368,7 +320,6 @@
     "CV相关论文/undercover deepfakes detecting fake segments in videos.pdf",
     "CV_src_code/对比实验算法.md",
     "技术/未命名",
-    "CV_src_code/深度伪造检测-图像对对比学习研究方案.md",
     "CV_src_code/实验方案与代码实现：R-INE 残差与双模式检测.md",
     "CV_src_code/memory bank 实现方案.md",
     "CV相关论文/resnet.pdf",
