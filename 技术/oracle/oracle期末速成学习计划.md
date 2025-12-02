@@ -21,6 +21,8 @@
    - 时长：22分55秒
    - 链接：[BV14z4y1i7qR](https://www.bilibili.com/video/BV14z4y1i7qR/)
    - 重点：PLSQL核心概念
+1. **oracle数据库教程**
+	- https://www.bilibili.com/video/BV1zY4y1874D?t=5.4&p=3
 
 #### 系统学习系列
 4. **三小时搞定Oracle试题实战**

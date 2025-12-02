@@ -1,8 +1,9 @@
 {
   "cssTheme": "Underwater",
-  "theme": "system",
+  "theme": "moonstone",
   "monospaceFontFamily": "CodeNewRoman Nerd Font Mono",
   "textFontFamily": "CodeNewRoman Nerd Font Mono",
   "baseFontSize": 15,
-  "nativeMenus": false
+  "nativeMenus": false,
+  "interfaceFontFamily": "CodeNewRoman Nerd Font Propo"
 }

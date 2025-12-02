@@ -4,33 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7ce7cb6b0656140d",
+        "id": "722145e7cec5687c",
         "type": "tabs",
         "children": [
           {
-            "id": "206080954644ab6b",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "人脸篡改检测白板.canvas",
-                "viewState": {
-                  "x": 2224.5033355000423,
-                  "y": 2148.1492708554993,
-                  "zoom": -0.3845444070063057
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "人脸篡改检测白板"
-            }
-          },
-          {
-            "id": "1f7387c9d217abb6",
+            "id": "ee3b0a862ca3bfa7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CV_src_code/对比实验算法.md",
+                "file": "CV_src_code/金字塔和特征金字塔笔记.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -45,164 +28,56 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "对比实验算法"
+              "title": "金字塔和特征金字塔笔记"
             }
           },
           {
-            "id": "f5962e6ea42c368d",
+            "id": "194ffca9c4fb22d2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "webviewer",
               "state": {
-                "file": "CV_src_code/对比实验算法.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "url": "https://www.bilibili.com/video/BV1zY4y1874D?spm_id_from=333.788.player.switch&vd_source=00eb8e176c9f9ce3b2af6eda78c6e8fd&p=3",
+                "title": "0003oracle介绍_哔哩哔哩_bilibili",
+                "mode": "blank"
               },
-              "icon": "lucide-file",
-              "title": "对比实验算法"
+              "icon": "globe-2",
+              "title": "0003oracle介绍_哔哩哔哩_bilibili"
             }
           },
           {
-            "id": "0f001325a708fddd",
+            "id": "fdce15101f8ae70f",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "webviewer",
               "state": {
-                "file": "CV相关论文/undercover deepfakes detecting fake segments in videos.pdf",
-                "page": 1,
-                "left": -8,
-                "top": 496,
-                "zoom": 2.0232843137254903
+                "url": "https://www.bilibili.com/video/BV14z4y1i7qR/?vd_source=00eb8e176c9f9ce3b2af6eda78c6e8fd",
+                "title": "高度总结，20分钟完成Oracle PLSQL学习_哔哩哔哩_bilibili",
+                "mode": "webview"
               },
-              "icon": "lucide-file-text",
-              "title": "undercover deepfakes detecting fake segments in videos"
+              "icon": "globe-2",
+              "title": "高度总结，20分钟完成Oracle PLSQL学习_哔哩哔哩_bilibili"
             }
           },
           {
-            "id": "2290115d27dcfd67",
+            "id": "57486d4e34aa9b44",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "人脸篡改检测白板.canvas",
                 "viewState": {
-                  "x": 2344.353930631408,
-                  "y": 2221.398079040968,
-                  "zoom": -0.6666666666666665
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "人脸篡改检测白板"
-            }
-          },
-          {
-            "id": "6f9f8b9fa9a33288",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "人脸篡改检测白板.canvas",
-                "viewState": {
-                  "x": 2601.1608750427113,
-                  "y": 2183.61393212281,
-                  "zoom": 0.09036930207537797
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "人脸篡改检测白板"
-            }
-          },
-          {
-            "id": "9797ee36e6aa4e86",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CV_src_code/深度伪造检测-图像对对比学习研究方案.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "深度伪造检测-图像对对比学习研究方案"
-            }
-          },
-          {
-            "id": "b119886f243531ae",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "人脸篡改检测白板.canvas",
-                "viewState": {
-                  "x": 2570.466888599551,
-                  "y": 2003.2720932823836,
+                  "x": 1993.3777324675186,
+                  "y": 2210.748018896682,
                   "zoom": -1
                 }
               },
               "icon": "lucide-layout-dashboard",
               "title": "人脸篡改检测白板"
             }
-          },
-          {
-            "id": "b2ca0560b0acbe99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CV_src_code/实验方案与代码实现：R-INE 残差与双模式检测.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "实验方案与代码实现：R-INE 残差与双模式检测"
-            }
-          },
-          {
-            "id": "89a5733818fb4cc8",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://ieeexplore.ieee.org/document/1455848",
-                "title": "Microwave biological effects: An overview | IEEE Journals & Magazine | IEEE Xplore",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Microwave biological effects: An overview | IEEE Journals & Magazine | IEEE Xplore"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -406,11 +281,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 683.2
+    "width": 384.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -431,18 +306,73 @@
       "media-extended:Open external media": false
     }
   },
-  "active": "9c5ca07991602ea7",
+  "floating": {
+    "id": "54b2b9997cfdd161",
+    "type": "floating",
+    "children": [
+      {
+        "id": "83f0916144141902",
+        "type": "window",
+        "children": [
+          {
+            "id": "7a47b1446767b7fc",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "9afa96c4ea2c1ff4",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "CV_src_code/深度伪造检测-图像对对比学习研究方案.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "深度伪造检测-图像对对比学习研究方案"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 768,
+        "y": 332,
+        "width": 1024,
+        "height": 800,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "57486d4e34aa9b44",
   "lastOpenFiles": [
-    "CV_src_code/memory bank 实现方案.md",
-    "CV_src_code/对比实验算法.md",
-    "CV_src_code/实验方案与代码实现：R-INE 残差与双模式检测.md",
-    "CV_src_code/深度伪造检测-图像对对比学习研究方案.md",
     "人脸篡改检测白板.canvas",
     "CV_src_code/金字塔和特征金字塔笔记.md",
     "CV_src_code/改进版RINEPlusSSCA.md",
+    "CV_src_code/deepfake_adapter.md",
+    "金融研究思考.md",
+    "技术/oracle/oracle数据库笔记.md",
+    "高度总结，20分钟完成Oracle PLSQL学习_哔哩哔哩_bilibili.md",
+    "技术/oracle/oracle期末速成学习计划.md",
+    "CV相关论文/undercover deepfakes detecting fake segments in videos.pdf",
+    "CV_src_code/对比实验算法.md",
+    "技术/未命名",
+    "CV_src_code/深度伪造检测-图像对对比学习研究方案.md",
+    "CV_src_code/实验方案与代码实现：R-INE 残差与双模式检测.md",
+    "CV_src_code/memory bank 实现方案.md",
     "CV相关论文/resnet.pdf",
     "img/e90a8f52-5c6c-4ccd-a0ec-da5bd3a83327.png",
-    "CV相关论文/undercover deepfakes detecting fake segments in videos.pdf",
     "CV_src_code/Vision Transformer (ViT) 模型详解.md",
     "CV_src_code/Swan-T.md",
     "CV_src_code/深度伪造检测数据集大全.md",
@@ -464,16 +394,9 @@
     "ieeexplore.ieee.org.md",
     "CV_src_code/zero-shot分类检测适配器方案.md",
     "CV相关论文/ferretNet.pdf",
-    "技术可行性方案.md",
-    "技术/C++/C++期末速成学习计划.md",
     "img/Pasted image 20251125132627.png",
-    "技术/JAVA/Java期末速成学习计划.md",
-    "技术/oracle/oracle期末速成学习计划.md",
     "Java",
-    "C++",
     "img/Pasted image 20251124172128.png",
-    "CV论文阅读笔记/rine.md",
-    "CV_src_code/池化操作详解.md",
     "img/Pasted image 20251122230541.png",
     "img/Pasted image 20251022161909.png",
     "img/Pasted image 20250915174902.png",
