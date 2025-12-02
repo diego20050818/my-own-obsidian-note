@@ -29,6 +29,7 @@ tags:
 3. **验证指标**：
     - 对比标准 Rine 分类器。
     - 观察 $R$ 和 $F$ 在特征空间的距离分布（是否可分）。
+---
 
 ### 阶段 2：双模式开发 (Dual Mode)
 
@@ -50,6 +51,7 @@ tags:
     - 实现 `MemorySystem`，从训练集中提取真实样本原型。
     - 在单样本推理时，检索记忆库作为参考，推理时使用记忆库+输入的形式，输出logits。
         
+---
 
 ### 阶段 3：优化与消融 (Optimization)
 
@@ -70,6 +72,7 @@ tags:
     - 在 Celeb-DF 和 WildDeepfake 上测试模型的泛化性。
         
 
+---
 ---
 
 ## 💻 核心模块代码实现
@@ -175,6 +178,7 @@ class RINE_Network(nn.Module):
         log_likelihood = -0.5 * torch.sum(z**2, dim=1)
         return log_likelihood
 ```
+---
 
 ### 2. 残差检测器 (R-INE Residual Detector)
 

@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CV_src_code/face anti-spoofing VIT架构图.md",
+                "file": "技术/华为ict/Atlas系列的硬件产品.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,10 +52,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "face anti-spoofing VIT架构图"
+              "title": "Atlas系列的硬件产品"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -145,7 +146,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277
+    "width": 277,
+    "collapsed": true
   },
   "right": {
     "id": "75d34375152ca33a",
@@ -263,7 +265,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 384.5
+    "width": 384.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -284,15 +287,25 @@
       "media-extended:Open external media": false
     }
   },
-  "active": "fdce15101f8ae70f",
+  "active": "57486d4e34aa9b44",
   "lastOpenFiles": [
-    "CV_src_code/对比实验算法.md",
+    "Pasted image 20251202205400.png",
+    "Pasted image 20251202205252.png",
+    "Pasted image 20251202204950.png",
+    "Pasted image 20251202204624.png",
+    "Pasted image 20251202203348.png",
+    "CV_src_code/实验方案与代码实现：R-INE 残差与双模式检测.md",
+    "技术/华为ict/Atlas系列的硬件产品.md",
     "CV_src_code/face anti-spoofing VIT架构图.md",
+    "技术/华为ict/5 华为人工智能平台 - 副本.pptx",
+    "技术/华为ict/1、Atlas人工智能计算解决方案.pptx",
+    "CV_src_code/memory bank 实现方案.md",
+    "技术/华为ict",
+    "CV_src_code/对比实验算法.md",
     "CV_src_code/deepfake_adapter.md",
     "人脸篡改检测白板.canvas",
     "未命名 1.base",
     "未命名.canvas",
-    "CV_src_code/memory bank 实现方案.md",
     "CV_src_code/face anti-spoofing ViT full model code.md",
     "background/afir.png",
     "background",
@@ -306,8 +319,6 @@
     "高度总结，20分钟完成Oracle PLSQL学习_哔哩哔哩_bilibili.md",
     "技术/oracle/oracle期末速成学习计划.md",
     "CV相关论文/undercover deepfakes detecting fake segments in videos.pdf",
-    "技术/未命名",
-    "CV_src_code/实验方案与代码实现：R-INE 残差与双模式检测.md",
     "CV相关论文/resnet.pdf",
     "img/e90a8f52-5c6c-4ccd-a0ec-da5bd3a83327.png",
     "CV_src_code/Vision Transformer (ViT) 模型详解.md",
@@ -316,23 +327,15 @@
     "CV相关论文/CASIA_Image_Tampering_Detection_Evaluation_Database.pdf",
     "CV_src_code/索菲尔算子笔记.md",
     "CV相关论文/Edge-Aware Graph Matching Network for Part-Based Semantic Segmentation.pdf",
-    "CV相关论文/edge enhanced  feature distillation network for efficient super resolution.pdf",
     "边缘检测算法比较.md",
     "技术/C++/C++课程里hhy记不住的东西.md",
-    "技术/深度学习",
     "技术/机器学习/test.md",
     "洪浩洋汇报2025年11月26日.md",
     "Pasted image 20251127135455.png",
     "单文本实现的rine双分支架构.md",
     "CV研究思考2.md",
-    "[sherpa-onnx-sense-voice-small.md",
-    "嵌入.md",
     "img/Pasted image 20251125132627.png",
     "img/Pasted image 20251124172128.png",
-    "img/Pasted image 20251122230541.png",
-    "img/Pasted image 20251022161909.png",
-    "img/Pasted image 20250915174902.png",
-    "img/d4770cfddb49bb8672d1c871eb0924dd.png",
-    "img/Pasted image 20251123231337.png"
+    "img/Pasted image 20251122230541.png"
   ]
 }
