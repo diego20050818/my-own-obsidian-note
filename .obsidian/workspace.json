@@ -39,9 +39,9 @@
               "state": {
                 "file": "人脸篡改检测白板.canvas",
                 "viewState": {
-                  "x": 4952.024440531922,
-                  "y": 3396.346785360229,
-                  "zoom": 0.7569455683501864
+                  "x": 4737.02252190375,
+                  "y": 3115.8585094601067,
+                  "zoom": -0.2430544316498135
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -175,7 +175,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 542.5
+    "width": 542.5,
+    "collapsed": true
   },
   "right": {
     "id": "75d34375152ca33a",
@@ -206,13 +207,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "人脸篡改检测白板.canvas",
+                "file": "CV_src_code/对比实验算法.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "人脸篡改检测白板 的大纲"
+              "title": "对比实验算法 的大纲"
             }
           },
           {
@@ -293,7 +294,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 384.5
+    "width": 384.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -314,15 +316,64 @@
       "media-extended:Open external media": false
     }
   },
-  "active": "57486d4e34aa9b44",
+  "floating": {
+    "id": "345ae81a4b3b69e5",
+    "type": "floating",
+    "children": [
+      {
+        "id": "6eef78b81cadd0d4",
+        "type": "window",
+        "children": [
+          {
+            "id": "d6ffa36bfec7df7f",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "6f02bcf0f65da0bd",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "CV_src_code/对比实验算法.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "对比实验算法"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 0,
+        "y": 24,
+        "width": 1280,
+        "height": 1416,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "6f02bcf0f65da0bd",
   "lastOpenFiles": [
-    "CV相关论文/MOCO_He_Momentum_Contrast_for_Unsupervised_Visual_Representation_Learning_CVPR_2020_paper.pdf",
     "人脸篡改检测白板.canvas",
+    "CV_src_code/对比实验算法.md",
     "CV_src_code/深度伪造检测-图像对对比学习研究方案.md",
+    "CV相关论文/MOCO_He_Momentum_Contrast_for_Unsupervised_Visual_Representation_Learning_CVPR_2020_paper.pdf",
     "img/ima-时序图.png",
     "img/ima-流程图.png",
     "技术/C++/C++课程里hhy记不住的东西.md",
-    "CV_src_code/对比实验算法.md",
     "CV_src_code/改进版RINEPlusSSCA.md",
     "CV_src_code/神经网络升维降维数学原理.md",
     "CV_src_code/深度伪造检测数据集大全.md",
