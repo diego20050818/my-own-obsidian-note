@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术/华为ict/Atlas系列的硬件产品.md",
+                "file": "CV_src_code/改进版RINEPlusSSCA.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Atlas系列的硬件产品"
+              "title": "改进版RINEPlusSSCA"
             }
           }
         ],
@@ -146,8 +146,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277,
-    "collapsed": true
+    "width": 542.5
   },
   "right": {
     "id": "75d34375152ca33a",
@@ -289,13 +288,13 @@
   },
   "active": "57486d4e34aa9b44",
   "lastOpenFiles": [
+    "技术/华为ict/Atlas系列的硬件产品.md",
     "Pasted image 20251202205400.png",
     "Pasted image 20251202205252.png",
     "Pasted image 20251202204950.png",
     "Pasted image 20251202204624.png",
     "Pasted image 20251202203348.png",
     "CV_src_code/实验方案与代码实现：R-INE 残差与双模式检测.md",
-    "技术/华为ict/Atlas系列的硬件产品.md",
     "CV_src_code/face anti-spoofing VIT架构图.md",
     "技术/华为ict/5 华为人工智能平台 - 副本.pptx",
     "技术/华为ict/1、Atlas人工智能计算解决方案.pptx",
@@ -335,7 +334,6 @@
     "单文本实现的rine双分支架构.md",
     "CV研究思考2.md",
     "img/Pasted image 20251125132627.png",
-    "img/Pasted image 20251124172128.png",
-    "img/Pasted image 20251122230541.png"
+    "img/Pasted image 20251124172128.png"
   ]
 }
