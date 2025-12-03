@@ -39,9 +39,9 @@
               "state": {
                 "file": "人脸篡改检测白板.canvas",
                 "viewState": {
-                  "x": 1530.2897431271172,
-                  "y": 1162.1405506139158,
-                  "zoom": -1.9097210983164798
+                  "x": 4952.024440531922,
+                  "y": 3396.346785360229,
+                  "zoom": 0.7569455683501864
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -316,6 +316,8 @@
   },
   "active": "57486d4e34aa9b44",
   "lastOpenFiles": [
+    "CV相关论文/MOCO_He_Momentum_Contrast_for_Unsupervised_Visual_Representation_Learning_CVPR_2020_paper.pdf",
+    "人脸篡改检测白板.canvas",
     "CV_src_code/深度伪造检测-图像对对比学习研究方案.md",
     "img/ima-时序图.png",
     "img/ima-流程图.png",
@@ -324,11 +326,9 @@
     "CV_src_code/改进版RINEPlusSSCA.md",
     "CV_src_code/神经网络升维降维数学原理.md",
     "CV_src_code/深度伪造检测数据集大全.md",
-    "人脸篡改检测白板.canvas",
     "img/75ec15e85a6800591312214cb4a92888.png",
     "CV相关论文/edge enhanced  feature distillation network for efficient super resolution.pdf",
     "img/Pasted image 20251202203348.png",
-    "CV相关论文/MOCO_He_Momentum_Contrast_for_Unsupervised_Visual_Representation_Learning_CVPR_2020_paper.pdf",
     "技术/华为ict/Atlas系列的硬件产品.md",
     "img/Pasted image 20251202205400.png",
     "img/Pasted image 20251202205252.png",

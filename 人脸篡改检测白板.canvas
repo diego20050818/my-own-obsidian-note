@@ -63,7 +63,8 @@
 		{"id":"64b45ff04c3b29ce","type":"file","file":"img/75ec15e85a6800591312214cb4a92888.png","x":4000,"y":3220,"width":400,"height":290},
 		{"id":"5c00bc8dc382e433","type":"file","file":"CV_src_code/改进版RINEPlusSSCA.md","x":300,"y":1700,"width":400,"height":400},
 		{"id":"8dde03b29f24d4a0","type":"file","file":"img/d4770cfddb49bb8672d1c871eb0924dd.png","x":300,"y":1058,"width":399,"height":62,"color":"1"},
-		{"id":"8d5c4d28671f4d98","type":"link","url":"https://github.com/mever-team/rine","x":300,"y":2160,"width":400,"height":400}
+		{"id":"8d5c4d28671f4d98","type":"link","url":"https://github.com/mever-team/rine","x":300,"y":2160,"width":400,"height":400},
+		{"id":"b83a1ab22ff5c58b","x":4680,"y":3165,"width":400,"height":400,"type":"link","url":"https://github.com/facebookresearch/moco"}
 	],
 	"edges":[
 		{"id":"55a0d455330d3a31","fromNode":"ede63d419f6f1037","fromSide":"bottom","toNode":"8190159890dc483f","toSide":"top"},
@@ -96,6 +97,7 @@
 		{"id":"339e9edd8a38d18c","fromNode":"623dda2f7f2a83d4","fromSide":"bottom","toNode":"f3656c5b3cd42570","toSide":"top"},
 		{"id":"f86c03f5a57f41c2","fromNode":"0a1e1cd9d34d006b","fromSide":"bottom","toNode":"2b06661d6d3a820e","toSide":"top"},
 		{"id":"b6fe6e70ddbe3e3e","fromNode":"4f9bea43946bec5a","fromSide":"bottom","toNode":"0f2819311ea15353","toSide":"left"},
-		{"id":"b59bc643ed7ba899","fromNode":"8c0081fe68ff3571","fromSide":"bottom","toNode":"ce7b4a4707557c26","toSide":"top"}
+		{"id":"b59bc643ed7ba899","fromNode":"8c0081fe68ff3571","fromSide":"bottom","toNode":"ce7b4a4707557c26","toSide":"top"},
+		{"id":"428b29191d695736","fromNode":"8c0081fe68ff3571","fromSide":"bottom","toNode":"b83a1ab22ff5c58b","toSide":"top"}
 	]
 }
