@@ -3,8 +3,8 @@
 		{"id":"210b231661f18b52","type":"group","x":480,"y":-840,"width":5220,"height":1440,"color":"1","label":"模块"},
 		{"id":"0f2819311ea15353","type":"group","x":3841,"y":1842,"width":3079,"height":2398,"color":"4","label":"详细的对比学习框架讨论"},
 		{"id":"31296b972b73cf71","type":"group","x":280,"y":740,"width":3000,"height":2060,"color":"3","label":"模型架构"},
+		{"id":"5e3745f0d60e606e","type":"group","x":3920,"y":1880,"width":1280,"height":1720,"color":"3","label":"记忆库-MOCO"},
 		{"id":"af9da7ebd002f60b","type":"group","x":-1320,"y":1840,"width":1520,"height":1400,"color":"6","label":"dataset"},
-		{"id":"5e3745f0d60e606e","type":"group","x":3920,"y":1880,"width":1280,"height":1440,"color":"3","label":"记忆库-MOCO"},
 		{"id":"4f9bea43946bec5a","type":"group","x":1680,"y":1570,"width":1560,"height":1150,"color":"4","label":"对比学习框架"},
 		{"id":"7928f9b9cfd128ca","type":"group","x":280,"y":888,"width":440,"height":1752,"color":"1","label":"RINE"},
 		{"id":"7fad2cce8e4befe0","type":"group","x":764,"y":858,"width":1236,"height":620,"color":"4","label":"FAS"},
@@ -59,7 +59,10 @@
 		{"id":"69b45e37f417cfcf","type":"link","url":"https://mp.weixin.qq.com/s/EdUPPT1VproAnpzuFog0vg","x":1780,"y":-89,"width":400,"height":400},
 		{"id":"e0ba8c9d1b71e682","type":"file","file":"CV_src_code/DCT离散余弦变换笔记.md","x":1920,"y":-600,"width":400,"height":400},
 		{"id":"f629e49cefde36e1","type":"file","file":"CV_src_code/Swan-T.md","x":2360,"y":-600,"width":400,"height":400,"color":"2"},
-		{"id":"ce7b4a4707557c26","x":4000,"y":2780,"width":400,"height":400,"type":"file","file":"CV相关论文/MOCO_He_Momentum_Contrast_for_Unsupervised_Visual_Representation_Learning_CVPR_2020_paper.pdf"}
+		{"id":"ce7b4a4707557c26","type":"file","file":"CV相关论文/MOCO_He_Momentum_Contrast_for_Unsupervised_Visual_Representation_Learning_CVPR_2020_paper.pdf","x":4000,"y":2780,"width":400,"height":400},
+		{"id":"d3fb541cffc926d1","type":"file","file":"img/ima-流程图.png","x":4440,"y":2780,"width":400,"height":323},
+		{"id":"723eea08ccce5142","type":"file","file":"img/ima-时序图.png","x":4440,"y":3180,"width":400,"height":287},
+		{"id":"64b45ff04c3b29ce","x":4000,"y":3220,"width":400,"height":290,"type":"file","file":"img/75ec15e85a6800591312214cb4a92888.png"}
 	],
 	"edges":[
 		{"id":"55a0d455330d3a31","fromNode":"ede63d419f6f1037","fromSide":"bottom","toNode":"8190159890dc483f","toSide":"top"},

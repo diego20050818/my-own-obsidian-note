@@ -71,6 +71,30 @@
               "icon": "lucide-layout-dashboard",
               "title": "人脸篡改检测白板"
             }
+          },
+          {
+            "id": "914835b5b9caf4ec",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "img/ima-流程图.png"
+              },
+              "icon": "lucide-image",
+              "title": "ima-流程图"
+            }
+          },
+          {
+            "id": "bcb5570ea78fed5e",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "img/ima-时序图.png"
+              },
+              "icon": "lucide-image",
+              "title": "ima-时序图"
+            }
           }
         ],
         "currentTab": 2
@@ -194,13 +218,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "人脸篡改检测白板.canvas",
+                "file": "img/75ec15e85a6800591312214cb4a92888.png",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "人脸篡改检测白板 的大纲"
+              "title": "75ec15e85a6800591312214cb4a92888 的大纲"
             }
           },
           {
@@ -302,11 +326,14 @@
       "media-extended:Open external media": false
     }
   },
-  "active": "016d408957ffdb96",
+  "active": "7e9458f3d8fd9ff1",
   "lastOpenFiles": [
+    "img/75ec15e85a6800591312214cb4a92888.png",
+    "img/ima-时序图.png",
+    "img/ima-流程图.png",
+    "人脸篡改检测白板.canvas",
     "CV相关论文/edge enhanced  feature distillation network for efficient super resolution.pdf",
     "img/Pasted image 20251202203348.png",
-    "人脸篡改检测白板.canvas",
     "CV_src_code/深度伪造检测-图像对对比学习研究方案.md",
     "CV_src_code/对比实验算法.md",
     "CV相关论文/MOCO_He_Momentum_Contrast_for_Unsupervised_Visual_Representation_Learning_CVPR_2020_paper.pdf",
@@ -341,7 +368,6 @@
     "CV_src_code/Vision Transformer (ViT) 模型详解.md",
     "CV_src_code/Swan-T.md",
     "CV_src_code/深度伪造检测数据集大全.md",
-    "CV相关论文/CASIA_Image_Tampering_Detection_Evaluation_Database.pdf",
     "CV_src_code/索菲尔算子笔记.md",
     "边缘检测算法比较.md",
     "技术/C++/C++课程里hhy记不住的东西.md",
@@ -349,8 +375,6 @@
     "洪浩洋汇报2025年11月26日.md",
     "Pasted image 20251127135455.png",
     "单文本实现的rine双分支架构.md",
-    "CV研究思考2.md",
-    "img/Pasted image 20251125132627.png",
-    "img/Pasted image 20251124172128.png"
+    "CV研究思考2.md"
   ]
 }
