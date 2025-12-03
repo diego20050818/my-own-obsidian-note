@@ -63,9 +63,9 @@
               "state": {
                 "file": "人脸篡改检测白板.canvas",
                 "viewState": {
-                  "x": -765.1684089464864,
-                  "y": 2693.7997707481054,
-                  "zoom": 0.4236122350168536
+                  "x": 4275.936714843242,
+                  "y": 2694.0417785351883,
+                  "zoom": -0.9097210983164801
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -73,7 +73,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -105,7 +105,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#对比学习",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -194,13 +194,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CV_src_code/深度伪造检测-图像对对比学习研究方案.md",
+                "file": "人脸篡改检测白板.canvas",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "深度伪造检测-图像对对比学习研究方案 的大纲"
+              "title": "人脸篡改检测白板 的大纲"
             }
           },
           {
@@ -302,18 +302,20 @@
       "media-extended:Open external media": false
     }
   },
-  "active": "a51475d173102452",
+  "active": "016d408957ffdb96",
   "lastOpenFiles": [
-    "CV_src_code/对比实验算法.md",
+    "CV相关论文/edge enhanced  feature distillation network for efficient super resolution.pdf",
+    "img/Pasted image 20251202203348.png",
     "人脸篡改检测白板.canvas",
+    "CV_src_code/深度伪造检测-图像对对比学习研究方案.md",
+    "CV_src_code/对比实验算法.md",
     "CV相关论文/MOCO_He_Momentum_Contrast_for_Unsupervised_Visual_Representation_Learning_CVPR_2020_paper.pdf",
     "CV_src_code/改进版RINEPlusSSCA.md",
     "技术/华为ict/Atlas系列的硬件产品.md",
-    "Pasted image 20251202205400.png",
-    "Pasted image 20251202205252.png",
-    "Pasted image 20251202204950.png",
-    "Pasted image 20251202204624.png",
-    "Pasted image 20251202203348.png",
+    "img/Pasted image 20251202205400.png",
+    "img/Pasted image 20251202205252.png",
+    "img/Pasted image 20251202204950.png",
+    "img/Pasted image 20251202204624.png",
     "CV_src_code/实验方案与代码实现：R-INE 残差与双模式检测.md",
     "CV_src_code/face anti-spoofing VIT架构图.md",
     "技术/华为ict/5 华为人工智能平台 - 副本.pptx",
@@ -329,7 +331,6 @@
     "新建文件夹",
     "技术可行性方案.md",
     "CV_src_code/金字塔和特征金字塔笔记.md",
-    "CV_src_code/深度伪造检测-图像对对比学习研究方案.md",
     "金融研究思考.md",
     "技术/oracle/oracle数据库笔记.md",
     "高度总结，20分钟完成Oracle PLSQL学习_哔哩哔哩_bilibili.md",
