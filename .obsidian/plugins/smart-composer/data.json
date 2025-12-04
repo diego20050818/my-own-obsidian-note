@@ -545,7 +545,7 @@
             "OBSIDIAN_API_PORT": "27123"
           }
         },
-        "enabled": true,
+        "enabled": false,
         "toolOptions": {
           "read_multiple_notes": {
             "disabled": false,
