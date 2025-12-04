@@ -35,17 +35,24 @@
             "id": "57486d4e34aa9b44",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "人脸篡改检测白板.canvas",
-                "viewState": {
-                  "x": 1645.731787415029,
-                  "y": 1797.8388040063141,
-                  "zoom": -0.2430544316498135
+                "file": "CV_src_code/对比实验算法.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
                 }
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "人脸篡改检测白板"
+              "icon": "lucide-file",
+              "title": "对比实验算法"
             }
           },
           {
@@ -117,7 +124,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#pytorch",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -171,12 +178,12 @@
               "title": "Fanyi Baidu"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 542.5,
-    "collapsed": true
+    "width": 326.5
   },
   "right": {
     "id": "75d34375152ca33a",
@@ -294,8 +301,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 384.5,
-    "collapsed": true
+    "width": 384.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -316,10 +322,10 @@
       "media-extended:Open external media": false
     }
   },
-  "active": "57486d4e34aa9b44",
+  "active": "dd846b45002c48b0",
   "lastOpenFiles": [
-    "CV_src_code/对比实验算法.md",
     "人脸篡改检测白板.canvas",
+    "CV_src_code/对比实验算法.md",
     "CV_src_code/深度伪造检测-图像对对比学习研究方案.md",
     "CV相关论文/MOCO_He_Momentum_Contrast_for_Unsupervised_Visual_Representation_Learning_CVPR_2020_paper.pdf",
     "img/ima-时序图.png",
