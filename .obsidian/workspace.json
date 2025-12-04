@@ -207,13 +207,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CV_src_code/对比实验算法.md",
+                "file": "人脸篡改检测白板.canvas",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "对比实验算法 的大纲"
+              "title": "人脸篡改检测白板 的大纲"
             }
           },
           {
@@ -316,59 +316,10 @@
       "media-extended:Open external media": false
     }
   },
-  "floating": {
-    "id": "345ae81a4b3b69e5",
-    "type": "floating",
-    "children": [
-      {
-        "id": "6eef78b81cadd0d4",
-        "type": "window",
-        "children": [
-          {
-            "id": "d6ffa36bfec7df7f",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "6f02bcf0f65da0bd",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "CV_src_code/对比实验算法.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "对比实验算法"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 0,
-        "y": 24,
-        "width": 1280,
-        "height": 1416,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "6f02bcf0f65da0bd",
+  "active": "57486d4e34aa9b44",
   "lastOpenFiles": [
-    "人脸篡改检测白板.canvas",
     "CV_src_code/对比实验算法.md",
+    "人脸篡改检测白板.canvas",
     "CV_src_code/深度伪造检测-图像对对比学习研究方案.md",
     "CV相关论文/MOCO_He_Momentum_Contrast_for_Unsupervised_Visual_Representation_Learning_CVPR_2020_paper.pdf",
     "img/ima-时序图.png",
