@@ -178,8 +178,7 @@
               "title": "Fanyi Baidu"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -301,7 +300,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 785.5
+    "width": 555.5
   },
   "left-ribbon": {
     "hiddenItems": {
