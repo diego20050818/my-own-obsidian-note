@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CV_src_code/RINEPlusSSCA source code.md",
+                "file": "未命名.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "RINEPlusSSCA source code"
+              "title": "未命名"
             }
           },
           {
@@ -348,6 +348,9 @@
   },
   "active": "80b59c1583583162",
   "lastOpenFiles": [
+    "未命名.base",
+    "CV研究思考2.md",
+    "CV_src_code/RINEPlusSSCA source code.md",
     "未命名.md",
     "CV_src_code/对比实验算法.md",
     "人脸篡改检测白板.canvas",
@@ -392,9 +395,6 @@
     "CV_src_code/Vision Transformer (ViT) 模型详解.md",
     "CV_src_code/Swan-T.md",
     "CV_src_code/索菲尔算子笔记.md",
-    "边缘检测算法比较.md",
-    "技术/机器学习/test.md",
-    "洪浩洋汇报2025年11月26日.md",
-    "单文本实现的rine双分支架构.md"
+    "边缘检测算法比较.md"
   ]
 }
